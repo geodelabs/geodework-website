@@ -19,6 +19,20 @@
 
 ## Getting Started
 
+### Node version
+
+This project uses `nvm` (Node Version Manager) to manage Node.js versions. The `.nvmrc` file in the root directory specifies the canonical version of Node.js to use.
+
+To install `nvm`, follow the [installation instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+Once `nvm` is installed, you can switch to the correct Node.js version by running:
+
+```bash
+nvm use
+```
+
+### Dependencies
+
 We use `pnpm` for package management. If needed, here are [instructions to install `pnpm`](https://pnpm.io/installation).
 
 Start by installing the dependencies:
@@ -28,6 +42,8 @@ pnpm install
 # or
 pnpm i
 ```
+
+### Development
 
 Next, run the development server:
 
