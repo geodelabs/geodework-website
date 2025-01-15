@@ -1,0 +1,20 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --white: 0, 0%, 100%; /* #ffffff text */
+
+    --blue-600: 227, 65%, 60%; /* #5773DB primary-light */
+    --blue-700: 228, 65%, 50%; /* #2D4FD2 primary */
+    --blue-800: 227, 65%, 40%; /* #2440A8 primary-dark */
+
+    --cyan-400: 197, 90%, 64%; /* #50C6F6 primary-alt */
+
+    --amber-400: 44, 100%, 59%; /* #FFC72E accent */
+    --amber-200: 44, 100%, 77%; /* #FFDF88 accent-light */
+
+    --yellow-600: 44, 88%, 46%; /* #DEA70E accent-dark */
+
+    --rose-800: 350, 34%, 50%; /* #AB5563 accent-alt */
+  }
+}

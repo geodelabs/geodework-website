@@ -1,0 +1,22 @@
+@tailwind base;
+
+/* SEMANTIC TOKEN DECLARATIONS: Abstracted from color palettes for theming */
+
+@layer base {
+  /* Light mode (base, default) token declarations */
+  :root {
+    --primary: var(--blue-700);
+    --primary-light: var(--blue-600);
+    --primary-dark: var(--blue-800);
+    --primary-alt: var(--cyan-400);
+
+    --accent: var(--amber-400);
+    --accent-light: var(--amber-200);
+    --accent-dark: var(--yellow-600);
+    --accent-alt: var(--rose-800);
+
+    --background: var(--primary);
+    --body: var(--white);
+    --body-secondary: var(--white), 0.7;
+  }
+}
