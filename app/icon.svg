@@ -1,0 +1,21 @@
+<svg width="401" height="400" viewBox="0 0 401 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_326_563)">
+<rect width="400" height="400" transform="translate(0.5)" fill="white"/>
+<rect width="400" height="400" transform="translate(0.5)" fill="url(#pattern0_326_563)" fill-opacity="0.1"/>
+<circle cx="200.5" cy="200" r="194.5" fill="#2D4FD2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200.5 0H0.5V200V400H200.5H400.5V200V0H200.5ZM200.5 0C310.957 0 400.5 89.5431 400.5 200C400.5 310.457 310.957 400 200.5 400C90.0431 400 0.5 310.457 0.5 200C0.5 89.5431 90.0431 0 200.5 0Z" fill="#4360F9" fill-opacity="0.1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200.143 172.76L172.448 200.455L200.143 228.15L227.838 200.455L200.143 172.76ZM187.958 200.455L200.143 212.64L212.328 200.455L200.143 188.269L187.958 200.455Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200.143 139.05L253.321 169.752V231.157L200.143 261.86L146.965 231.157V169.752L200.143 139.05ZM242.354 176.084L200.143 151.713L157.931 176.084V224.826L200.143 249.197L242.354 224.826V176.084Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200.143 103.287L131.435 131.747L102.975 200.455L131.435 269.163L200.143 297.623L268.851 269.163L297.311 200.455L268.851 131.747L200.143 103.287ZM200.143 115.157L260.458 140.14L285.441 200.455L260.458 260.77L200.143 285.753L139.828 260.77L114.845 200.455L139.828 140.14L200.143 115.157Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200.143 67.0696L121.741 92.5439L73.286 159.237V241.673L121.741 308.366L200.143 333.84L278.545 308.366L327 241.673V159.237L278.545 92.5439L200.143 67.0696ZM200.143 78.6008L271.767 101.873L316.033 162.8V238.11L271.767 299.037L200.143 322.309L128.519 299.037L84.2529 238.11V162.8L128.519 101.873L200.143 78.6008Z" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0_326_563" patternContentUnits="objectBoundingBox" width="0.05" height="0.05">
+<use xlink:href="#image0_326_563" transform="scale(0.025)"/>
+</pattern>
+<clipPath id="clip0_326_563">
+<rect width="400" height="400" fill="white" transform="translate(0.5)"/>
+</clipPath>
+<image id="image0_326_563" width="2" height="2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAARSURBVHgBY2BgYPjPgAT+AwAPAwH/IAVGEwAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
