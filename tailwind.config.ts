@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        body: "var(--font-ibm-plex-sans)",
+        mono: "var(--font-ibm-plex-mono)",
+      },
       colors: {
         primary: {
           DEFAULT: "hsla(var(--primary))",

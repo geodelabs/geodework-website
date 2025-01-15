@@ -10,7 +10,42 @@
   * {
     @apply border-primary-dark;
   }
+
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply bg-primary text-body;
+    @apply font-body bg-primary text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono;
+  }
+
+  a,
+  pre,
+  code,
+  kbd,
+  samp {
+    @apply font-mono text-base leading-relaxed;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol,
+  ul {
+    @apply list-inside;
   }
 }
