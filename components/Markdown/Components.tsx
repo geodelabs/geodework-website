@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { type Components } from "react-markdown"
 
 import Link from "@/components/ui/link"
@@ -15,9 +14,9 @@ export const MarkdownComponents: Components = {
   h3: ({ children }) => (
     <h3 className="mb-4 mt-8 text-2xl md:text-3xl">{children}</h3>
   ),
-  p: ({ children }) => <p className="m-0 mb-4">{children}</p>,
+  p: ({ children }) => <p className="m-0 mb-4 last-of-type:mb-0">{children}</p>,
   blockquote: ({ children }) => (
-    <blockquote className="my-4 border-l-4 border-accent px-4 py-2">
+    <blockquote className="my-8 border-l-4 border-accent px-4 py-2">
       {children}
     </blockquote>
   ),
