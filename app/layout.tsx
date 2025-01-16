@@ -37,7 +37,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto]">
+        <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
           <header
             className={cn(
               "z-10 flex items-center justify-between max-sm:flex-col",
