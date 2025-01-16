@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: "var(--font-ibm-plex-sans)",
-        "plex-mono": "var(--font-ibm-plex-mono)",
+        mono: "var(--font-ibm-plex-mono)",
       },
       colors: {
         primary: {

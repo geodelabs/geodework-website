@@ -4,10 +4,6 @@
   :root {
     --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
     --font-ibm-plex-mono: "IBM Plex Mono", Courier, monospace;
-
-    .font-mono {
-      @apply font-plex-mono font-light tracking-widest;
-    }
   }
 }
 
