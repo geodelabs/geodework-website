@@ -10,6 +10,7 @@ export default function Blog() {
       <div className="absolute inset-0 -z-10 h-[12rem]">
         <Image
           src={BgTexture}
+          priority
           style={{
             objectPosition: "50% 90%", // Overflow top edge
           }}
