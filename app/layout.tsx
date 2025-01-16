@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link
           rel="preload"
-          href="/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2"
+          href="/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
