@@ -14,7 +14,7 @@ const HomepageHero = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
         <Image
           src={BgTexture}
           style={{
-            objectPosition: "50% 95%", // Overflow top edge
+            objectPosition: "50% 90%", // Overflow top edge
           }}
           className={cn("mx-auto h-full w-full max-w-screen-xl object-cover")}
           alt=""
@@ -24,10 +24,10 @@ const HomepageHero = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
       <div className="mx-auto grid scale-100 grid-cols-3 font-mono text-2xl lowercase tracking-widest transition-transform [&>div:hover]:scale-105 [&>div:hover]:transition-transform [&>div]:self-center">
         {/* CENTRAL GEODE */}
         <div className="pointer-events-none relative col-start-2 row-span-4 row-start-2 grid !size-[300px] place-items-center place-self-center [&>*]:absolute">
-          <GeodePolygon4 className="animate-spin-cw-7-5" />
-          <GeodePolygon6 className="animate-spin-ccw-15" />
-          <GeodePolygon8 className="animate-spin-cw-30" />
-          <GeodePolygon10 className="animate-spin-ccw-60" />
+          <GeodePolygon4 className="md:text-[17rem] sm:text-[10rem] text-[7rem] animate-spin-cw-7-5" />
+          <GeodePolygon6 className="md:text-[17rem] sm:text-[10rem] text-[7rem] animate-spin-ccw-15" />
+          <GeodePolygon8 className="md:text-[17rem] sm:text-[10rem] text-[7rem] animate-spin-cw-30" />
+          <GeodePolygon10 className="md:text-[17rem] sm:text-[10rem] text-[7rem] animate-spin-ccw-60" />
         </div>
         {/* TOP */}
         <div className="col-span-3 row-start-1 place-self-center">
