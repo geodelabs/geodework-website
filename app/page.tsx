@@ -1,4 +1,5 @@
 import HomepageHero from "@/components/Hero"
+import Subscribe from "@/components/Subscribe"
 import GeodeGlyph from "@/public/images/geode-glyph.svg"
 
 export default function Home() {
@@ -12,12 +13,7 @@ export default function Home() {
         <div className="text-body-secondary">January 2025</div>
       </div>
 
-      <div className="flex max-w-[30rem] flex-col gap-4 tracking-widest">
-        <div className="text-center font-mono">
-          <strong>subscribe</strong> to our newsletter
-        </div>
-        {/* TODO: Add input and button */}
-      </div>
+      <Subscribe />
 
       <GeodeGlyph className="text-[2rem]" />
     </div>
