@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply font-body bg-primary text-body;
+    @apply font-body bg-primary text-body antialiased;
   }
 
   h1,
