@@ -4,6 +4,7 @@ import NextLink, { type LinkProps as NextLinkProps } from "next/link"
 import ExternalLink from "@/components/svgs/external-link.svg"
 
 import * as url from "@/lib/url"
+import { cn } from "@/lib/utils"
 
 type BaseProps = {
   hideArrow?: boolean
@@ -65,10 +66,13 @@ export const BaseLink = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
 BaseLink.displayName = "BaseLink"
 
 const InlineLink = forwardRef<HTMLAnchorElement, LinkProps>(
-  (props: LinkProps, ref) => {
+  ({ className, ...props }: LinkProps, ref) => {
     return (
       <BaseLink
-        className="font-body text-accent visited:text-accent-dark hover:text-accent-light"
+        className={cn(
+          "font-body text-accent visited:text-accent-dark hover:text-accent-light",
+          className
+        )}
         ref={ref}
         {...props}
       />
