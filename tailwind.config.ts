@@ -13,6 +13,9 @@ export default {
         body: "var(--font-ibm-plex-sans)",
         mono: "var(--font-ibm-plex-mono)",
       },
+      fontSize: {
+        "4xl": "2.375rem",
+      },
       colors: {
         primary: {
           DEFAULT: "hsla(var(--primary))",

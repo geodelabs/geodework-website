@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply font-body bg-primary text-body antialiased;
+    @apply bg-primary font-body text-body antialiased;
   }
 
   h1,
@@ -46,6 +46,6 @@
 
   ol,
   ul {
-    @apply list-inside;
+    @apply list-inside ps-4 mb-2;
   }
 }
