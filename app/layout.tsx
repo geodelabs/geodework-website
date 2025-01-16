@@ -54,7 +54,7 @@ export default function RootLayout({
             <nav className="flex gap-6">
               <Link href="/#">Home</Link>
               <Link href="/about">About</Link> {/* TODO: Update */}
-              <Link href="/#blog">Blog</Link> {/* TODO: Update */}
+              <Link href="/blog">Blog</Link> {/* TODO: Update */}
             </nav>
           </header>
 
