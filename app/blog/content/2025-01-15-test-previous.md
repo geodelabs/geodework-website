@@ -3,9 +3,7 @@ title: Some Big Exciting Blog Post!
 image: /images/blue-backup-blog-banner.png
 ---
 
-## Introduction
-
-Welcome to this placeholder markdown page. This document is designed to demonstrate various markdown styling capabilities using realistic copy filler.
+Welcome to another placeholder markdown page. This document is designed to demonstrate various markdown styling capabilities using realistic copy filler.
 
 ### Purpose
 
