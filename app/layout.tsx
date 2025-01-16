@@ -37,11 +37,11 @@ export default function RootLayout({
       </head>
 
       <body>
-        <div className="grid min-h-screen grid-rows-[auto_1fr_auto] items-center justify-items-center">
+        <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto]">
           <header
             className={cn(
               "z-10 flex items-center justify-between max-sm:flex-col",
-              "w-full max-w-screen-lg py-4",
+              "w-full py-4",
               "[&_a]:outline-offset-8"
             )}
           >
@@ -58,9 +58,7 @@ export default function RootLayout({
             </nav>
           </header>
 
-          <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-            {children}
-          </main>
+          <main className="row-start-2">{children}</main>
           <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6"></footer>
         </div>
       </body>
