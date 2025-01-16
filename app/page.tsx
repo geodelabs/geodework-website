@@ -1,5 +1,9 @@
-import Hero from "@/components/Hero"
+import HomepageHero from "@/components/Hero"
 
 export default function Home() {
-  return <Hero className="py-16" />
+  return (
+    <div>
+      <HomepageHero className="py-16" />
+    </div>
+  )
 }

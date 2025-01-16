@@ -41,7 +41,7 @@ export default function RootLayout({
           <header
             className={cn(
               "z-10 flex items-center justify-between max-sm:flex-col",
-              "w-full py-4",
+              "w-full py-8",
               "[&_a]:outline-offset-8"
             )}
           >

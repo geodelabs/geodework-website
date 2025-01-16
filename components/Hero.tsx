@@ -7,7 +7,7 @@ import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
 import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 
-const Hero = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
+const HomepageHero = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div className={className}>
       <div className="absolute inset-0 -z-10 h-[36rem]">
@@ -60,4 +60,4 @@ const Hero = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
   )
 }
 
-export default Hero
+export default HomepageHero
