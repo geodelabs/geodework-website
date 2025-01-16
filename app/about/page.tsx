@@ -1,23 +1,11 @@
+import GeodeIcon from "@/components/GeodeIcon"
+import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
-import { cn } from "@/lib/utils"
-import BgTexture from "@/public/images/bg-texture.png"
-import GeodeGlyph from "@/public/images/geode-glyph.svg"
-import Image from "next/image"
 
 export default function About() {
   return (
     <div className="flex flex-col items-center gap-16">
-      <div className="absolute inset-0 -z-10 h-[12rem]">
-        <Image
-          src={BgTexture}
-          priority
-          style={{
-            objectPosition: "50% 90%", // Overflow top edge
-          }}
-          className={cn("mx-auto h-full w-full max-w-screen-xl object-cover")}
-          alt=""
-        />
-      </div>
+      <HeroBackground />
 
       <article className="mt-16">
         <h1 className="mb-16 text-center font-mono text-6xl font-light">
@@ -49,7 +37,7 @@ export default function About() {
         </section>
       </article>
 
-      <GeodeGlyph className="text-[2rem]" />
+      <GeodeIcon />
 
       <Subscribe />
     </div>
