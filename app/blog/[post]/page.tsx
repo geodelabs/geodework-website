@@ -12,6 +12,7 @@ import { BLOG_CONTENT_DIR } from "@/lib/constants"
 
 import HeroBackground from "@/components/HeroBackground"
 import { notFound } from "next/navigation"
+import { formatDate } from "@/lib/datetime"
 
 export default async function BlogPost({
   params,
@@ -65,12 +66,7 @@ export default async function BlogPost({
           <h1 className="text-4xl font-semibold leading-tight tracking-widest">
             {title}
           </h1>
-          <div className="mb-4 text-body-secondary">
-            {date.toLocaleDateString(navigator?.language || "en", {
-              timeZone: "UTC",
-              dateStyle: "long",
-            })}
-          </div>
+          <div className="mb-4 text-body-secondary">{formatDate(date)}</div>
         </div>
 
         <section>

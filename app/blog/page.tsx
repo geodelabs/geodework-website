@@ -16,6 +16,7 @@ import {
   matchFilename,
   sanitizePostPreviewContent,
 } from "@/lib/blog"
+import { formatDate } from "@/lib/datetime"
 
 export default async function Blog() {
   if (!fs.existsSync(BLOG_CONTENT_DIR))
@@ -57,30 +58,30 @@ export default async function Blog() {
         </h1>
 
         <section className="flex max-w-screen-md flex-col gap-16">
-          {blogPosts.map(({ title, content, date, path }, i) => (
-            <Link
-              href={path}
-              key={i}
-              className="transition-transform hover:scale-[102%] hover:transition-transform"
-            >
-              <div
-                className="bg-primary-dark p-8 text-white"
-                style={{
-                  clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
-                }}
+          {blogPosts
+            .sort((a, b) => b.date.getTime() - a.date.getTime())
+            .map(({ title, content, date, path }, i) => (
+              <Link
+                href={path}
+                key={i}
+                className="transition-transform hover:scale-[102%] hover:transition-transform"
               >
-                <h2 className="font-body text-xl font-semibold tracking-[0.15em]">
-                  {title}
-                </h2>
-                <div className="mb-4 text-body-secondary">
-                  {date.toLocaleDateString(navigator?.language || "en", {
-                    timeZone: "UTC",
-                  })}
+                <div
+                  className="bg-primary-dark p-8 text-white"
+                  style={{
+                    clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
+                  }}
+                >
+                  <h2 className="font-body text-xl font-semibold tracking-[0.15em]">
+                    {title}
+                  </h2>
+                  <div className="mb-4 text-body-secondary">
+                    {formatDate(date)}
+                  </div>
+                  <p className="line-clamp-4">{content}</p>
                 </div>
-                <p className="line-clamp-4">{content}</p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
         </section>
       </article>
 
