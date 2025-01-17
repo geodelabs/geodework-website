@@ -10,7 +10,7 @@ const HeroBackground = ({
       src={BgTexture}
       priority
       style={{
-        objectPosition: "50% 90%", // Overflow top edge
+        objectPosition: "50% 100%", // Overflow top edge
       }}
       className="mx-auto h-full w-full max-w-screen-xl object-cover"
       alt=""
