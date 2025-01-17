@@ -56,7 +56,7 @@ export default async function BlogPost({
       <HeroBackground />
 
       <article
-        className="mt-16 w-full max-w-screen-md bg-primary-dark p-[3.75rem]"
+        className="mt-16 w-full max-w-screen-md space-y-16 bg-primary-dark px-6 py-15 sm:px-12 md:px-15"
         style={{
           clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
         }}
@@ -73,7 +73,9 @@ export default async function BlogPost({
           </div>
         </div>
 
-        <MarkdownProvider>{content}</MarkdownProvider>
+        <section>
+          <MarkdownProvider>{content}</MarkdownProvider>
+        </section>
 
         <GeodeIcon className="mx-auto my-8" />
       </article>
@@ -86,7 +88,7 @@ export default async function BlogPost({
               clipPath:
                 "polygon(0 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.375rem)",
             }}
-            className="w-[16ch] bg-accent py-2 text-primary hover:bg-accent-dark"
+            className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             previous
           </Link>
@@ -98,7 +100,7 @@ export default async function BlogPost({
               clipPath:
                 "polygon(0 0, calc(100% - 0.5rem) 0, 100% 0.375rem, 100% 100%, 0 100%)",
             }}
-            className="w-[16ch] bg-accent py-2 text-primary hover:bg-accent-dark"
+            className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             next
           </Link>
