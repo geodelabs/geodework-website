@@ -7,7 +7,7 @@ const Subscribe = () => (
       <input
         type="email"
         placeholder="email"
-        className="w-full bg-primary-light px-4 py-1 text-body placeholder:text-body/80"
+        className="w-full rounded-none bg-primary-light px-4 py-1 text-body placeholder:text-body/80"
         style={{
           clipPath:
             "polygon(0 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.375rem)",
@@ -16,7 +16,7 @@ const Subscribe = () => (
       <button
         // TODO: Make and use ui/button
         type="submit"
-        className="bg-accent px-4 py-1 text-primary text-white hover:bg-accent-dark"
+        className="bg-accent px-4 py-1 text-primary text-white visited:text-primary hover:bg-accent-dark hover:text-primary"
         style={{
           clipPath:
             "polygon(0 0, calc(100% - 0.5rem) 0, 100% 0.375rem, 100% 100%, 0 100%)",
