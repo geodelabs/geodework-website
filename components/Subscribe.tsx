@@ -16,7 +16,7 @@ const Subscribe = () => (
       <button
         // TODO: Make and use ui/button
         type="submit"
-        className="bg-accent px-4 py-1 text-primary text-white visited:text-primary hover:bg-accent-dark hover:text-primary"
+        className="bg-accent px-4 py-1 !text-primary hover:bg-accent-dark"
         style={{
           clipPath:
             "polygon(0 0, calc(100% - 0.5rem) 0, 100% 0.375rem, 100% 100%, 0 100%)",

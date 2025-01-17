@@ -57,7 +57,7 @@ export default async function BlogPost({
       <HeroBackground />
 
       <article
-        className="mt-16 w-full max-w-screen-md space-y-16 bg-primary-dark px-6 py-15 sm:px-12 md:px-15"
+        className="py-15 md:px-15 mt-16 w-full max-w-screen-md space-y-16 bg-primary-dark px-6 sm:px-12"
         style={{
           clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
         }}
