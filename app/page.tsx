@@ -1,22 +1,62 @@
+import fs from "fs"
+import { resolve } from "path"
+import matter from "gray-matter"
+
 import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
+import Link from "@/components/ui/link"
+
 import { cn } from "@/lib/utils"
+import { dateToUTCNoonDate, matchFilename } from "@/lib/blog"
+import { formatDate } from "@/lib/datetime"
 
 import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
 
+import { BLOG_CONTENT_DIR } from "@/lib/constants"
+
 export default async function Home() {
+  if (!fs.existsSync(BLOG_CONTENT_DIR))
+    throw new Error(`Missing blog content directory: ${BLOG_CONTENT_DIR}`)
+
+  const latestBlogfile = fs
+    .readdirSync(BLOG_CONTENT_DIR)
+    .reduce((latest, next) => {
+      if (!latest) return next
+      if (!next) return latest
+      const latestDate = dateToUTCNoonDate(matchFilename(latest)![1])
+      const nextDate = dateToUTCNoonDate(matchFilename(next)![1])
+      return latestDate > nextDate ? latest : next
+    })
+
+  const match = matchFilename(latestBlogfile)
+
+  if (!match) throw new Error("No valid blog posts found")
+
+  const markdown = fs.readFileSync(
+    resolve(BLOG_CONTENT_DIR, latestBlogfile),
+    "utf8"
+  )
+  const {
+    data: { title },
+  } = matter(markdown)
+
+  const date = dateToUTCNoonDate(match[1])
+  const path = `/blog/${latestBlogfile.replace(/\.md$/, "")}`
+
+  const latestPost = { title, date, path }
+
   return (
     <div className="flex flex-col items-center gap-16">
-      <div className="py-16">
+      <section className="py-16">
         <HeroBackground className="h-[36rem]" />
         <div
           className={cn(
-            "mx-auto grid grid-cols-3 [&>div]:self-center",
-            "font-mono text-[clamp(0.875rem,3vw,1.5rem)] lowercase tracking-widest",
+            "mx-auto grid grid-cols-3 gap-x-4 [&>div]:self-center",
+            "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest",
             "scale-100 transition-transform [&>div:hover]:scale-105 [&>div:hover]:transition-transform"
           )}
         >
@@ -39,7 +79,7 @@ export default async function Home() {
             Coordination
           </div>
           {/* LEFT */}
-          <div className="col-start-1 row-start-2 -me-4 w-fit place-self-end text-end sm:-me-12">
+          <div className="col-start-1 row-start-2 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12">
             Global Community
           </div>
           <div className="col-start-1 row-start-3 w-fit place-self-end text-end">
@@ -48,7 +88,7 @@ export default async function Home() {
           <div className="col-start-1 row-start-4 w-fit place-self-end text-end">
             Execution
           </div>
-          <div className="col-start-1 row-start-5 -me-4 w-fit place-self-end text-end sm:-me-12">
+          <div className="col-start-1 row-start-5 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12">
             Grassroots
           </div>
           {/* RIGHT */}
@@ -65,13 +105,17 @@ export default async function Home() {
             Decentralization
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="flex max-w-screen-sm flex-col items-center tracking-widest">
+      <section className="flex max-w-screen-sm flex-col items-center tracking-widest">
         <div className="font-mono font-light text-accent">from the blog</div>
-        <div className="text-2xl font-semibold">title of the post</div>
-        <div className="text-body-secondary">January 2025</div>
-      </div>
+        <Link href={latestPost.path} className="">
+          <div className="text-2xl font-semibold text-white hover:text-accent-light">
+            {latestPost.title}
+          </div>
+        </Link>
+        <div className="text-body-secondary">{formatDate(latestPost.date)}</div>
+      </section>
 
       <Subscribe />
 
