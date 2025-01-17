@@ -1,9 +1,14 @@
-import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants"
-import { cn } from "@/lib/utils"
-import GeodeworkLogo from "@/public/images/geodework-logo.svg"
 import type { Metadata } from "next"
-import Link from "next/link"
-import "../styles/globals.css"
+
+import Link from "@/components/ui/link"
+
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants"
+
+import { cn } from "@/lib/utils"
+
+import GeodeworkLogo from "@/public/images/geodework-logo.svg"
+
+import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: SITE_NAME,
@@ -40,26 +45,30 @@ export default function RootLayout({
         <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
           <header
             className={cn(
-              "z-10 flex items-center justify-between max-sm:flex-col",
-              "w-full py-8",
+              "z-10 w-full py-8 max-sm:flex-col",
+              "flex items-center justify-between gap-3",
               "[&_a]:outline-offset-8"
             )}
           >
             {/* Header start */}
-            <Link href="/">
+            <Link href="/" className="!text-white">
               <GeodeworkLogo />
             </Link>
 
             {/* Header end */}
-            <nav className="flex gap-6">
+            <nav
+              className="flex gap-6"
+              style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
+            >
               <Link href="/#">Home</Link>
-              <Link href="/about">About</Link> {/* TODO: Update */}
-              <Link href="/blog">Blog</Link> {/* TODO: Update */}
+              <Link href="/about">About</Link>
+              <Link href="/blog">Blog</Link>
             </nav>
           </header>
 
           <main className="row-start-2">{children}</main>
-          <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6"></footer>
+
+          <footer className="row-start-3 my-20 flex flex-wrap items-center justify-center gap-6"></footer>
         </div>
       </body>
     </html>
