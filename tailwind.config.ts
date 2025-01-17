@@ -34,22 +34,14 @@ export default {
           secondary: "hsla(var(--body-secondary))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "spin-ccw": {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(-360deg)" },
-        },
+      spacing: {
+        15: "3.75rem",
       },
       animation: {
-        "spin-cw-7-5": "spin 7.5s linear infinite",
-        "spin-ccw-15": "spin-ccw 15s linear infinite",
-        "spin-cw-30": "spin 30s linear infinite",
-        "spin-ccw-60": "spin-ccw 60s linear infinite",
+        "spin-7-5": "spin 7.5s linear infinite",
+        "spin-15": "spin 15s linear infinite",
+        "spin-30": "spin 30s linear infinite",
+        "spin-60": "spin 60s linear infinite",
       },
     },
   },
