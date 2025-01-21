@@ -1,52 +1,15 @@
-import fs from "fs"
-import { resolve } from "path"
-
-import matter from "gray-matter"
+import { join } from "path"
 
 import GeodeIcon from "@/components/GeodeIcon"
 import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
 
-import { BLOG_CONTENT_DIR } from "@/lib/constants"
-import type { BlogPost } from "@/lib/types"
-
 import HeroBackground from "@/components/HeroBackground"
-import {
-  dateToUTCNoonDate,
-  matchFilename,
-  sanitizePostPreviewContent,
-} from "@/lib/blog"
+import { getBlogPosts } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 
 export default async function Blog() {
-  if (!fs.existsSync(BLOG_CONTENT_DIR))
-    throw new Error(`Missing blog content directory: ${BLOG_CONTENT_DIR}`)
-
-  // Expected filename is in format YYYY-MM-DD-some-title.md after
-
-  const blogPosts: BlogPost[] = []
-  for (const file of fs.readdirSync(BLOG_CONTENT_DIR)) {
-    const match = matchFilename(file)
-    if (!match) {
-      console.warn(
-        "File doesn't match expected pattern YYYY-MM-DD-post-title.md (skipped):",
-        file
-      )
-      continue
-    }
-
-    const markdown = fs.readFileSync(resolve(BLOG_CONTENT_DIR, file), "utf8")
-    const {
-      data: { title },
-      content: markdownContent,
-    } = matter(markdown)
-
-    const date = dateToUTCNoonDate(match[1])
-    const content = sanitizePostPreviewContent(markdownContent)
-    const path = `/blog/${file.replace(/\.md$/, "")}`
-
-    blogPosts.push({ title, date, content, path })
-  }
+  const blogPosts = getBlogPosts()
 
   return (
     <div className="flex flex-col items-center gap-16">
@@ -58,11 +21,10 @@ export default async function Blog() {
         </h1>
 
         <section className="flex max-w-screen-md flex-col gap-16">
-          {blogPosts
-            .sort((a, b) => b.date.getTime() - a.date.getTime())
-            .map(({ title, content, date, path }, i) => (
+          {blogPosts.map(
+            ({ frontmatter: { title, publishedTime }, content, slug }, i) => (
               <Link
-                href={path}
+                href={join("blog", slug)}
                 key={i}
                 className="transition-transform hover:scale-[102%] hover:transition-transform"
               >
@@ -76,12 +38,13 @@ export default async function Blog() {
                     {title}
                   </h2>
                   <div className="mb-4 text-body-secondary">
-                    {formatDate(date)}
+                    {formatDate(publishedTime)}
                   </div>
                   <p className="line-clamp-4">{content}</p>
                 </div>
               </Link>
-            ))}
+            )
+          )}
         </section>
       </article>
 

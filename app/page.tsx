@@ -1,14 +1,10 @@
-import fs from "fs"
-import { resolve } from "path"
-import matter from "gray-matter"
-
 import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
 
 import { cn } from "@/lib/utils"
-import { dateToUTCNoonDate, matchFilename } from "@/lib/blog"
+import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 
 import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
@@ -16,38 +12,11 @@ import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
 
-import { BLOG_CONTENT_DIR } from "@/lib/constants"
-
 export default async function Home() {
-  if (!fs.existsSync(BLOG_CONTENT_DIR))
-    throw new Error(`Missing blog content directory: ${BLOG_CONTENT_DIR}`)
+  const allPosts = getBlogPosts()
+  if (!allPosts.length) throw new Error("No blog posts found")
 
-  const latestBlogfile = fs
-    .readdirSync(BLOG_CONTENT_DIR)
-    .reduce((latest, next) => {
-      if (!latest) return next
-      if (!next) return latest
-      const latestDate = dateToUTCNoonDate(matchFilename(latest)![1])
-      const nextDate = dateToUTCNoonDate(matchFilename(next)![1])
-      return latestDate > nextDate ? latest : next
-    })
-
-  const match = matchFilename(latestBlogfile)
-
-  if (!match) throw new Error("No valid blog posts found")
-
-  const markdown = fs.readFileSync(
-    resolve(BLOG_CONTENT_DIR, latestBlogfile),
-    "utf8"
-  )
-  const {
-    data: { title },
-  } = matter(markdown)
-
-  const date = dateToUTCNoonDate(match[1])
-  const path = `/blog/${latestBlogfile.replace(/\.md$/, "")}`
-
-  const latestPost = { title, date, path }
+  const latestPost = allPosts[0]
 
   return (
     <div className="flex flex-col items-center gap-16">
@@ -109,12 +78,14 @@ export default async function Home() {
 
       <section className="flex max-w-screen-sm flex-col items-center tracking-widest">
         <div className="font-mono font-light text-accent">from the blog</div>
-        <Link href={latestPost.path} className="">
+        <Link href={getHrefFromSlug(latestPost.slug)} className="">
           <div className="text-2xl font-semibold text-white hover:text-accent-light">
-            {latestPost.title}
+            {latestPost.frontmatter.title}
           </div>
         </Link>
-        <div className="text-body-secondary">{formatDate(latestPost.date)}</div>
+        <div className="text-body-secondary">
+          {formatDate(latestPost.frontmatter.publishedTime)}
+        </div>
       </section>
 
       <Subscribe />

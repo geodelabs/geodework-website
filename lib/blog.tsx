@@ -1,14 +1,11 @@
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
 import removeMd from "remove-markdown"
-import { MAX_WORDS_PER_POST_PREVIEW } from "@/lib/constants"
 
-export const expectedFilenamePattern =
-  /^(2\d{3}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01]))(?:-[\w\d]+)*\.md$/i
+import { BLOG_PATH, MAX_WORDS_PER_POST_PREVIEW } from "@/lib/constants"
 
-export const matchFilename = (file: string) =>
-  file.match(expectedFilenamePattern)
-
-export const dateToUTCNoonDate = (date: string) =>
-  new Date(date + "T12:00:00.000Z")
+import type { FrontMatter, BlogPost } from "./types"
 
 export const getSlicedContent = (content: string, maxLength: number = 125) => {
   const SLICED_TEXT = content.split(" ").slice(0, maxLength).join(" ")
@@ -40,3 +37,46 @@ export const sanitizePostPreviewContent = (content: string): string => {
     : wordArray.length
   return wordArray.slice(0, sliceEnd).join(" ") + (isTooLong ? "..." : "")
 }
+
+const getMarkdownFiles = (dir: string) =>
+  fs.readdirSync(dir).filter((file) => path.extname(file) === ".md")
+
+const readMarkdownFile = (filePath: string) => {
+  const rawContent = fs.readFileSync(filePath, "utf-8")
+  const matterOutput = matter(rawContent)
+
+  return {
+    frontmatter: matterOutput.data as FrontMatter,
+    content: matterOutput.content,
+  }
+}
+
+const getMarkdownData = (dir: string) => {
+  const mdFiles = getMarkdownFiles(dir)
+  return mdFiles.map((file) => {
+    const { frontmatter, content } = readMarkdownFile(path.join(dir, file))
+    const slug = path.basename(file, path.extname(file))
+
+    return {
+      frontmatter,
+      slug,
+      content,
+    }
+  })
+}
+
+export const getBlogPosts = (): BlogPost[] => {
+  const allPosts = getMarkdownData(
+    path.join(process.cwd(), "app", "blog", "content")
+  )
+  const sortedPosts = allPosts.sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishedTime).getTime() -
+      new Date(a.frontmatter.publishedTime).getTime()
+  )
+
+  // Most recent post in [0] position, old posts at end
+  return sortedPosts
+}
+
+export const getHrefFromSlug = (slug: string) => path.join(BLOG_PATH, slug)

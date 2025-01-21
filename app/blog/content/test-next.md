@@ -1,6 +1,6 @@
 ---
 title: Some Big Exciting Blog Post!
-image: /images/blue-backup-blog-banner.png
+publishedTime: 2025-01-17
 ---
 
 Welcome to a third placeholder markdown page. This document is designed to demonstrate various markdown styling capabilities using realistic copy filler.

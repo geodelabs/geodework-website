@@ -1,11 +1,11 @@
-export type BlogPost = {
-  title: string
-  date: Date
-  content: string
-  path: string
-}
-
 export type FrontMatter = {
   title: string
-  image?: string
+  publishedTime: string
+  description?: string
+}
+
+export type BlogPost = {
+  frontmatter: FrontMatter
+  slug: string
+  content: string
 }
