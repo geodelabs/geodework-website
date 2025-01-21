@@ -43,8 +43,9 @@ export default async function BlogPost({
     })
   const currentIndex = allPosts.findIndex((f) => f === file)
   const lastIndex = allPosts.length - 1
-  const prevIndex = currentIndex === 0 ? null : currentIndex - 1
-  const nextIndex = currentIndex === lastIndex ? null : currentIndex + 1
+  // Sorted more recent first; "next" is newer, "prev" is older
+  const prevIndex = currentIndex === lastIndex ? null : currentIndex + 1
+  const nextIndex = currentIndex === 0 ? null : currentIndex - 1
 
   const markdownContent = fs.readFileSync(filepath, "utf8")
   const { data, content } = matter(markdownContent)
