@@ -87,22 +87,22 @@ These instructions will guide a user through creating a pull request to add a bl
 
 5. Fill in the `title` field with the title of your post.
 
-  Note, the `title` field will be parsed and used at the primary header for the page (an `<h1>` tag in HTML, or line beginning with `#` in Markdown).
+    Note, the `title` field will be parsed and used at the primary header for the page (an `<h1>` tag in HTML, or line beginning with `#` in Markdown).
 
-  > There should only be one of these per page—refrain from using lines with single `#` in post content.
+    > There should only be one of these per page—refrain from using lines with single `#` in post content.
 
 6. Write your post content in standard markdown format. [More on markdown syntax](https://www.markdownguide.org/basic-syntax/)
 
 7. When ready, click "Commit changes".
 
-  a. Name the commit or leave the default.
+    a. Name the commit or leave the default.
 
-  b. Select _Create a new branch for this commit and start a pull request_ to allow review before merging to production
+    b. Select _Create a new branch for this commit and start a pull request_ to allow review before merging to production
 
-  c. Default suggested branch name should suffice
+    c. Default suggested branch name should suffice
 
-  d. Click "Propose changes"
+    d. Click "Propose changes"
 
-8. Click "Create pull request" to submit the post for review, allowing the preview to build on Netlify.
+9. Click "Create pull request" to submit the post for review, allowing the preview to build on Netlify.
 
 This will generate a preview deployment through Netlify with a link to preview the post before merging. Review the post, and if everything looks good, contact an admin for review and merge, or for any assistance.
