@@ -2,6 +2,7 @@ import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
+import { Meteors } from "@/components/ui/meteors"
 
 import { cn } from "@/lib/utils"
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
@@ -11,7 +12,6 @@ import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
-import { Meteors } from "@/components/ui/meteors"
 
 export default async function Home() {
   const allPosts = getBlogPosts()
@@ -22,9 +22,14 @@ export default async function Home() {
   return (
     <div className="flex flex-col items-center gap-16">
       <section className="py-16">
-        <Meteors number={20} className="-top-4" />
-        <Meteors number={20} className="-top-4 bg-accent-alt" />
+        <Meteors number={20} />
+        <Meteors
+          number={20}
+          className="bg-accent-alt before:from-accent-alt/80"
+        />
+
         <HeroBackground className="h-[36rem]" />
+
         <div
           className={cn(
             "mx-auto grid grid-cols-3 gap-x-4 [&>div]:self-center",
