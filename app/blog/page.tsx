@@ -22,10 +22,10 @@ export default async function Blog() {
 
         <section className="flex max-w-screen-md flex-col gap-16">
           {blogPosts.map(
-            ({ frontmatter: { title, publishedTime }, content, slug }, i) => (
+            ({ frontmatter: { title, publishedTime }, content, slug }) => (
               <Link
                 href={join("blog", slug)}
-                key={i}
+                key={publishedTime}
                 className="transition-transform hover:scale-[102%] hover:transition-transform"
               >
                 <div
