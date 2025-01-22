@@ -11,6 +11,7 @@ import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
+import { Meteors } from "@/components/ui/meteors"
 
 export default async function Home() {
   const allPosts = getBlogPosts()
@@ -21,6 +22,8 @@ export default async function Home() {
   return (
     <div className="flex flex-col items-center gap-16">
       <section className="py-16">
+        <Meteors number={20} className="-top-4" />
+        <Meteors number={20} className="-top-4 bg-accent-alt" />
         <HeroBackground className="h-[36rem]" />
         <div
           className={cn(
