@@ -11,6 +11,7 @@ import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
+import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 
 export default async function Home() {
   const allPosts = getBlogPosts()
@@ -19,21 +20,20 @@ export default async function Home() {
   const latestPost = allPosts[0]
 
   const heroItemClasses = cn(
+    "self-center",
     "scale-100 hover:scale-110",
     "drop-shadow-[0_0px_16px_rgb(0_0_0_/_0)] hover:drop-shadow-[0_8px_16px_rgb(0_0_0_/_10)]",
     "transition-all hover:transition-all"
   )
 
+  const heroItemFontClasses =
+    "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest transition-shadow"
+
   return (
     <div className="flex flex-col items-center gap-16">
       <section className="py-16">
         <HeroBackground className="h-[36rem]" />
-        <div
-          className={cn(
-            "mx-auto grid grid-cols-3 gap-x-4 [&>div]:self-center",
-            "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest transition-shadow"
-          )}
-        >
+        <div className={cn("mx-auto grid grid-cols-3 gap-x-4")}>
           {/* CENTRAL GEODE */}
           <div
             className={cn(
@@ -55,7 +55,9 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Coordination
+            <TypewriterEffect
+              words={[{ text: "Coordination", className: heroItemFontClasses }]}
+            />
           </div>
           {/* LEFT */}
           <div
@@ -64,7 +66,13 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Global Community
+            <TypewriterEffect
+              words={[
+                { text: "Global", className: heroItemFontClasses },
+                { text: "Community", className: heroItemFontClasses },
+              ]}
+              delayInSeconds={1.5}
+            />
           </div>
           <div
             className={cn(
@@ -72,7 +80,10 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Technology
+            <TypewriterEffect
+              words={[{ text: "Technology", className: heroItemFontClasses }]}
+              delayInSeconds={3}
+            />
           </div>
           <div
             className={cn(
@@ -80,7 +91,9 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Execution
+            <TypewriterEffect
+              words={[{ text: "Execution", className: heroItemFontClasses }]}
+            />
           </div>
           <div
             className={cn(
@@ -88,7 +101,10 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Grassroots
+            <TypewriterEffect
+              words={[{ text: "Grassroots", className: heroItemFontClasses }]}
+              delayInSeconds={0.5}
+            />
           </div>
           {/* RIGHT */}
           <div
@@ -97,13 +113,25 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Ethereum
+            <TypewriterEffect
+              words={[{ text: "Ethereum", className: heroItemFontClasses }]}
+              delayInSeconds={3.5}
+            />
           </div>
           <div className={cn(heroItemClasses, "col-start-3 row-start-3 w-fit")}>
-            Build
+            <TypewriterEffect
+              words={[{ text: "Build", className: heroItemFontClasses }]}
+              delayInSeconds={2.5}
+            />
           </div>
           <div className={cn(heroItemClasses, "col-start-3 row-start-4 w-fit")}>
-            Open Internet
+            <TypewriterEffect
+              words={[
+                { text: "Open", className: heroItemFontClasses },
+                { text: "Internet", className: heroItemFontClasses },
+              ]}
+              delayInSeconds={2}
+            />
           </div>
           <div
             className={cn(
@@ -111,7 +139,10 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Ecosystem
+            <TypewriterEffect
+              words={[{ text: "Ecosystem", className: heroItemFontClasses }]}
+              delayInSeconds={1}
+            />
           </div>
           {/* BOTTOM */}
           <div
@@ -120,7 +151,12 @@ export default async function Home() {
               heroItemClasses
             )}
           >
-            Decentralization
+            <TypewriterEffect
+              words={[
+                { text: "Decentralization", className: heroItemFontClasses },
+              ]}
+              delayInSeconds={4}
+            />
           </div>
         </div>
       </section>
