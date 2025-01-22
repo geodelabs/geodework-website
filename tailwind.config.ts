@@ -42,6 +42,17 @@ export default {
         "spin-15": "spin 15s linear infinite",
         "spin-30": "spin 30s linear infinite",
         "spin-60": "spin 60s linear infinite",
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(270deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(270deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
       },
     },
   },
