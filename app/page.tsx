@@ -18,6 +18,12 @@ export default async function Home() {
 
   const latestPost = allPosts[0]
 
+  const heroItemClasses = cn(
+    "scale-100 hover:scale-110",
+    "drop-shadow-[0_0px_16px_rgb(0_0_0_/_0)] hover:drop-shadow-[0_8px_16px_rgb(0_0_0_/_10)]",
+    "transition-all hover:transition-all"
+  )
+
   return (
     <div className="flex flex-col items-center gap-16">
       <section className="py-16">
@@ -25,8 +31,7 @@ export default async function Home() {
         <div
           className={cn(
             "mx-auto grid grid-cols-3 gap-x-4 [&>div]:self-center",
-            "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest",
-            "scale-100 transition-transform [&>div:hover]:scale-105 [&>div:hover]:transition-transform"
+            "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest transition-shadow"
           )}
         >
           {/* CENTRAL GEODE */}
@@ -44,33 +49,77 @@ export default async function Home() {
             <GeodePolygon10 className="motion-safe:animate-spin-60" />
           </div>
           {/* TOP */}
-          <div className="col-span-3 row-start-1 place-self-center">
+          <div
+            className={cn(
+              "col-span-3 row-start-1 place-self-center",
+              heroItemClasses
+            )}
+          >
             Coordination
           </div>
           {/* LEFT */}
-          <div className="col-start-1 row-start-2 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12">
+          <div
+            className={cn(
+              "col-start-1 row-start-2 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12",
+              heroItemClasses
+            )}
+          >
             Global Community
           </div>
-          <div className="col-start-1 row-start-3 w-fit place-self-end text-end">
+          <div
+            className={cn(
+              "col-start-1 row-start-3 w-fit place-self-end text-end",
+              heroItemClasses
+            )}
+          >
             Technology
           </div>
-          <div className="col-start-1 row-start-4 w-fit place-self-end text-end">
+          <div
+            className={cn(
+              "col-start-1 row-start-4 w-fit place-self-end text-end",
+              heroItemClasses
+            )}
+          >
             Execution
           </div>
-          <div className="col-start-1 row-start-5 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12">
+          <div
+            className={cn(
+              "col-start-1 row-start-5 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12",
+              heroItemClasses
+            )}
+          >
             Grassroots
           </div>
           {/* RIGHT */}
-          <div className="col-start-3 row-start-2 -ms-4 w-fit sm:-ms-12">
+          <div
+            className={cn(
+              "col-start-3 row-start-2 -ms-4 w-fit sm:-ms-12",
+              heroItemClasses
+            )}
+          >
             Ethereum
           </div>
-          <div className="col-start-3 row-start-3 w-fit">Build</div>
-          <div className="col-start-3 row-start-4 w-fit">Open Internet</div>
-          <div className="col-start-3 row-start-5 -ms-4 w-fit sm:-ms-12">
+          <div className={cn(heroItemClasses, "col-start-3 row-start-3 w-fit")}>
+            Build
+          </div>
+          <div className={cn(heroItemClasses, "col-start-3 row-start-4 w-fit")}>
+            Open Internet
+          </div>
+          <div
+            className={cn(
+              "col-start-3 row-start-5 -ms-4 w-fit sm:-ms-12",
+              heroItemClasses
+            )}
+          >
             Ecosystem
           </div>
           {/* BOTTOM */}
-          <div className="col-span-3 row-start-6 place-self-center">
+          <div
+            className={cn(
+              "col-span-3 row-start-6 place-self-center",
+              heroItemClasses
+            )}
+          >
             Decentralization
           </div>
         </div>
