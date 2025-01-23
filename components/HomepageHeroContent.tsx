@@ -69,7 +69,7 @@ const items: {
 ]
 
 const heroItemContainerClasses = cn(
-  "self-center",
+  "self-center leading-tight",
   "scale-100 motion-safe:hover:scale-110",
   "drop-shadow-[0_0px_16px_rgb(0_0_0_/_0)] hover:drop-shadow-[0_8px_16px_rgb(0_0_0_/_10)]",
   "transition-all hover:transition-all"
@@ -117,7 +117,7 @@ const HomepageHeroContent = () => (
         <Fragment key={label}>
           <div
             className={cn(
-              "relative flex text-nowrap motion-reduce:hidden",
+              "relative flex motion-reduce:hidden",
               heroItemContainerClasses,
               className
             )}
