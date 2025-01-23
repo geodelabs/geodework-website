@@ -1,5 +1,5 @@
 import Image from "next/image"
-import BgTexture from "@/public/images/bg-texture.png"
+import background from "@/public/images/bg-texture.png"
 import { cn } from "@/lib/utils"
 
 const HeroBackground = ({
@@ -7,13 +7,16 @@ const HeroBackground = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div className={cn("absolute inset-0 -z-10 h-[12rem]", className)}>
     <Image
-      src={BgTexture}
+      src={background}
       priority
       style={{
         objectPosition: "50% 100%", // Overflow top edge
+        width: "100%",
+        height: "100%",
       }}
-      className="mx-auto h-full w-full max-w-screen-xl object-cover"
-      alt=""
+      sizes="100vw"
+      className="mx-auto max-w-screen-xl object-cover"
+      alt="background image"
     />
   </div>
 )
