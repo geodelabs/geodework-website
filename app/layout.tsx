@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 import Link from "@/components/ui/link"
 
-import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants"
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
 
 import { cn } from "@/lib/utils"
 
@@ -10,9 +10,26 @@ import GeodeworkLogo from "@/public/images/geodework-logo.svg"
 
 import "@/styles/globals.css"
 
+const title = SITE_NAME
+const description = SITE_DESCRIPTION
+const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
+
 export const metadata: Metadata = {
-  title: SITE_NAME,
-  description: SITE_DESCRIPTION,
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url: SITE_URL,
+    images: [{ url: ogImage }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [ogImage],
+  },
 }
 
 export default function RootLayout({

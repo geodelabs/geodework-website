@@ -3,7 +3,7 @@ import { MarkdownProvider } from "@/components/Markdown/Provider"
 import Link from "@/components/ui/link"
 
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
-import { SITE_URL } from "@/lib/constants"
+import { SITE_NAME, SITE_URL } from "@/lib/constants"
 
 import HeroBackground from "@/components/HeroBackground"
 import { notFound } from "next/navigation"
@@ -27,10 +27,12 @@ export async function generateMetadata({
   const post = getBlogPosts().find((post) => post.slug === slug)
   if (!post) notFound()
 
-  const { title, publishedTime, description } = post.frontmatter
-  // const ogImage = image
-  //   ? image
-  //   : `${SITE_URL}/og?title=${encodeURIComponent(title)}`
+  const { title, publishedTime, description, image } = post.frontmatter
+  const ogImage = !image
+    ? `${SITE_URL}/og?title=${encodeURIComponent(title + " | " + SITE_NAME)}`
+    : image.startsWith("http")
+      ? image
+      : `${SITE_URL}/images/${image}`
 
   return {
     title,
@@ -41,17 +43,13 @@ export async function generateMetadata({
       type: "article",
       publishedTime,
       url: `${SITE_URL}/blog/${post.slug}`,
-      // images: [
-      //   {
-      //     url: ogImage,
-      //   },
-      // ],
+      images: [{ url: ogImage }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      // images: [ogImage],
+      images: [ogImage],
     },
   }
 }
