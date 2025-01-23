@@ -1,6 +1,31 @@
+import type { Metadata } from "next/types"
+
 import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
+
+const title = "About " + SITE_NAME
+const description = SITE_DESCRIPTION
+const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
+
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url: SITE_URL,
+    images: [{ url: ogImage }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [ogImage],
+  },
+}
 
 export default function About() {
   return (
