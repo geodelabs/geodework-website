@@ -1,6 +1,8 @@
 import Image from "next/image"
-import background from "@/public/images/bg-texture.png"
+
 import { cn } from "@/lib/utils"
+
+import background from "@/public/images/bg-texture.png"
 
 const HeroBackground = ({
   className,
@@ -15,8 +17,8 @@ const HeroBackground = ({
         height: "100%",
       }}
       sizes="100vw"
-      className="mx-auto max-w-screen-xl object-cover"
-      alt="background image"
+      className="mx-auto max-w-screen-xl animate-fade-in object-cover"
+      alt=""
     />
   </div>
 )

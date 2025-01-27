@@ -50,7 +50,7 @@ export default async function Blog() {
               <Link
                 href={join("blog", slug)}
                 key={publishedTime}
-                className="transition-transform hover:scale-[102%] hover:transition-transform"
+                className="transition-transform motion-safe:hover:scale-[102%] hover:transition-transform"
               >
                 <div
                   className="bg-primary-dark p-8 text-white"
