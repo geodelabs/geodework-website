@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils"
 import { motion, stagger, useAnimate, useInView } from "framer-motion"
 import { useEffect } from "react"
 
-const defaultCursorSizeClasses = "h-[1em] w-[0.125em] -translate-x-2 translate-y-0.5"
+const defaultCursorSizeClasses =
+  "h-[1em] w-[0.125em] -translate-x-2 translate-y-0.5"
 
 export const TypewriterEffect = ({
   words,
@@ -45,10 +46,10 @@ export const TypewriterEffect = ({
             delay: stagger(0.1),
             ease: "easeInOut",
           }
-        );
-      }, delayInSeconds * 1000); // Convert seconds to milliseconds
+        )
+      }, delayInSeconds * 1000) // Convert seconds to milliseconds
 
-      return () => clearTimeout(timeoutId); // Cleanup timeout on unmount or isInView change
+      return () => clearTimeout(timeoutId) // Cleanup timeout on unmount or isInView change
     }
   }, [isInView])
 
@@ -60,7 +61,7 @@ export const TypewriterEffect = ({
             <div key={`word-${idx}`} className="inline-block">
               {word.text.map((char, index) => (
                 <motion.span
-                  initial={{ }}
+                  initial={{}}
                   key={`char-${index}`}
                   className={cn(`hidden opacity-0`, word.className)}
                 >
@@ -153,7 +154,7 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}
       >
-        <div style={{ whiteSpace: "nowrap" }}>{renderWords()}{" "}</div>
+        <div style={{ whiteSpace: "nowrap" }}>{renderWords()} </div>
       </motion.div>{" "}
       <motion.span
         initial={{

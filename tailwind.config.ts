@@ -43,7 +43,7 @@ export default {
         "spin-30": "spin 30s linear infinite",
         "spin-60": "spin 60s linear infinite",
         "meteor-effect": "meteor 5s linear infinite",
-        "fade-in": "fade-in 1000ms ease-in-out",
+        "fade-in": "fade-in 1s ease-in-out",
       },
       keyframes: {
         meteor: {
