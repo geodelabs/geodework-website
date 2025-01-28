@@ -16,6 +16,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col items-center gap-16">
+      {/* Hero */}
       <section className="py-16">
         <Meteors number={20} />
         <Meteors
@@ -27,6 +28,7 @@ export default async function Home() {
         <HomepageHeroContent />
       </section>
 
+      {/* From the blog */}
       <section className="flex max-w-screen-sm flex-col items-center tracking-widest">
         <div className="font-mono font-light text-accent">from the blog</div>
         <Link href={getHrefFromSlug(latestPost.slug)} className="">
@@ -39,9 +41,8 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Subscribe */}
       <Subscribe />
-
-      <GeodeIcon />
     </div>
   )
 }
