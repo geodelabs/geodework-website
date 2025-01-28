@@ -11,7 +11,7 @@ const containerClassName = cn(
 )
 
 const fontClassName =
-  "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest transition-shadow"
+  "font-mono text-[clamp(0.875rem,3.75vw,1.5rem)] lowercase tracking-widest transition-shadow motion-reduce:hidden"
 
 const MotionReducedFallback = ({
   className,
@@ -44,15 +44,9 @@ const HeroTypewriterEffect = ({ items }: HeroTypewriterEffectProps) => {
 
         return (
           <Fragment key={label}>
-            <div
-              className={cn(
-                "relative flex motion-reduce:hidden",
-                containerClassName,
-                className
-              )}
-            >
+            <div className={cn("relative flex", containerClassName, className)}>
               {/* Maintains vertical space while animation is writing in */}
-              <MotionReducedFallback className="invisible inline-block h-fit w-0">
+              <MotionReducedFallback className="invisible inline-block h-fit w-0 motion-reduce:visible">
                 {label}
               </MotionReducedFallback>
 
@@ -62,9 +56,6 @@ const HeroTypewriterEffect = ({ items }: HeroTypewriterEffectProps) => {
                 delayInSeconds={delayInSeconds}
               />
             </div>
-            <MotionReducedFallback className="hidden motion-reduce:inline-block">
-              {label}
-            </MotionReducedFallback>
           </Fragment>
         )
       })}
