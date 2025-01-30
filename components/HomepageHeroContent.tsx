@@ -12,7 +12,12 @@ import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
 const HomepageHeroContent = () => {
   const heroItems: HeroTypewriterItem[] = [
     {
-      label: "Global Community",
+      label: "Global",
+      delayInSeconds: 0,
+      className: "col-span-3 row-start-1 place-self-center",
+    },
+    {
+      label: "Community",
       delayInSeconds: 1.5,
       className:
         "col-start-1 row-start-2 -me-4 w-fit place-self-end text-end sm:-me-8 md:-me-12",
