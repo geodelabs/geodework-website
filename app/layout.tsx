@@ -71,16 +71,6 @@ export default function RootLayout({
             <Link href="/" className="!text-white">
               <GeodeworkLogo />
             </Link>
-
-            {/* Header end */}
-            <nav
-              className="flex gap-6"
-              style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
-            >
-              <Link href="/#">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/blog">Blog</Link>
-            </nav>
           </header>
 
           <main className="row-start-2">{children}</main>

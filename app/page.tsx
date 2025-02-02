@@ -1,18 +1,13 @@
 import HeroBackground from "@/components/HeroBackground"
 import HomepageHeroContent from "@/components/HomepageHeroContent"
-import Subscribe from "@/components/Subscribe"
-import Link from "@/components/ui/link"
 import { Meteors } from "@/components/ui/meteors"
-
-import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
+import GitHub from "@/components/svgs/github.svg"
+import Mail from "@/components/svgs/mail.svg"
+import Twitter from "@/components/svgs/twitter.svg"
+import Link from "@/components/ui/link"
 import { cn } from "@/lib/utils"
 
 export default async function Home() {
-  const allPosts = getBlogPosts()
-  if (!allPosts.length) throw new Error("No blog posts found")
-
-  const latestPost = allPosts[0]
-
   return (
     <div className="flex flex-col items-center gap-20">
       {/* Hero */}
@@ -26,24 +21,53 @@ export default async function Home() {
         <HeroBackground className="h-[36rem]" />
         <HomepageHeroContent />
       </section>
-
-      {/* From the blog */}
-      <section className="-mt-8 max-w-screen-sm flex-col-reverse items-center gap-1 p-8 tracking-widest">
+      {/* Socials */}
+      <section className="flex gap-x-2">
         <Link
-          className="group flex flex-col items-center"
-          href={getHrefFromSlug(latestPost.slug)}
+          aria-label="Email"
+          href="mailto:hello@geodework.com"
+          className={cn(
+            "group grid rotate-0 place-items-center p-4 text-2xl",
+            "bg-accent-dark text-white/90 visited:text-white/90",
+            "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-dark hover:transition-transform"
+          )}
+          hideArrow
+          style={{
+            clipPath:
+              "polygon(0 0, 100% 0, 100% 100%, 1rem 100%, 0 calc(100% - 1rem))",
+          }}
         >
-          <p className="text-center text-sm font-light text-accent group-hover:text-body">
-            read latest &gt;
-          </p>
-          <p className="text-center font-mono text-lg text-body group-hover:text-accent">
-            {latestPost.frontmatter.title}
-          </p>
+          <Mail className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
+        </Link>
+        <Link
+          aria-label="Twitter"
+          href="https://x.com/Geodework"
+          className={cn(
+            "group grid rotate-0 place-items-center p-4 text-2xl",
+            "bg-primary-light text-white/90 visited:text-white/90",
+            "transition-transform hover:-rotate-2 hover:bg-body hover:text-primary-dark hover:transition-transform"
+          )}
+          hideArrow
+        >
+          <Twitter className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
+        </Link>
+        <Link
+          aria-label="GitHub"
+          href="https://github.com/geodework/"
+          className={cn(
+            "group grid rotate-0 place-items-center p-4 text-2xl",
+            "bg-accent-alt text-white/90 visited:text-white/90",
+            "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-alt hover:transition-transform"
+          )}
+          hideArrow
+          style={{
+            clipPath:
+              "polygon(0 0, calc(100% - 1rem) 0, 100% 1rem, 100% 100%, 0 100%)",
+          }}
+        >
+          <GitHub className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
         </Link>
       </section>
-
-      {/* Subscribe to newsletter */}
-      <Subscribe />
     </div>
   )
 }
