@@ -4,6 +4,7 @@ import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
+import Socials from "@/components/Socials"
 
 const title = "About " + SITE_NAME
 const description = SITE_DESCRIPTION
@@ -61,6 +62,8 @@ export default function About() {
           </p>
         </section>
       </article>
+
+      <Socials />
 
       <GeodeIcon />
 
