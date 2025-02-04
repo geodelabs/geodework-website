@@ -11,14 +11,14 @@ const Socials = () => (
       aria-label="Email"
       href="mailto:hello@geodework.com"
       className={cn(
-        "group grid rotate-0 place-items-center p-4 text-2xl",
+        "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
         "bg-accent-dark text-white/90 visited:text-white/90",
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-dark hover:transition-transform"
       )}
       hideArrow
       style={{
         clipPath:
-          "polygon(0 0, 100% 0, 100% 100%, 1rem 100%, 0 calc(100% - 1rem))",
+          "polygon(0 0, 100% 0, 100% 100%, 0.75em 100%, 0 calc(100% - 0.75em))",
       }}
     >
       <Mail className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
@@ -27,7 +27,7 @@ const Socials = () => (
       aria-label="Twitter"
       href="https://x.com/Geodework"
       className={cn(
-        "group grid rotate-0 place-items-center p-4 text-2xl",
+        "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
         "bg-primary-light text-white/90 visited:text-white/90",
         "transition-transform hover:-rotate-2 hover:bg-body hover:text-primary-dark hover:transition-transform"
       )}
@@ -39,14 +39,14 @@ const Socials = () => (
       aria-label="GitHub"
       href="https://github.com/geodework/"
       className={cn(
-        "group grid rotate-0 place-items-center p-4 text-2xl",
+        "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
         "bg-accent-alt text-white/90 visited:text-white/90",
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-alt hover:transition-transform"
       )}
       hideArrow
       style={{
         clipPath:
-          "polygon(0 0, calc(100% - 1rem) 0, 100% 1rem, 100% 100%, 0 100%)",
+          "polygon(0 0, calc(100% - 0.75em) 0, 100% 0.75em, 100% 100%, 0 100%)",
       }}
     >
       <GitHub className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
