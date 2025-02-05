@@ -1,8 +1,12 @@
-import type { Metadata } from "next/types"
+import type { MDXComponents } from "mdx/types"
 
 import GeodeIcon from "@/components/GeodeIcon"
+
+import About from "./content.mdx"
+
 import HeroBackground from "@/components/HeroBackground"
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
+import type { Metadata } from "next/types"
 
 const title = "About " + SITE_NAME
 const description = SITE_DESCRIPTION
@@ -26,42 +30,25 @@ export const metadata: Metadata = {
   },
 }
 
-export default function About() {
+const overrideComponents: MDXComponents = {
+  h1: ({ children }) => (
+    <h1 className="mb-16 text-center font-mono text-6xl font-light">
+      {children}
+    </h1>
+  ),
+}
+
+export default function AboutPage() {
   return (
-    <div className="flex flex-col items-center gap-16">
+    <>
       <HeroBackground />
+      <article className="mx-auto mt-16 max-w-prose [&>p]:mb-12">
+        <About components={overrideComponents} />
 
-      <article className="mt-16">
-        <h1 className="mb-16 text-center font-mono text-6xl font-light">
-          About
-        </h1>
-
-        <section className="max-w-prose space-y-12">
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. 
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. 
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. 
-          </p>
-        </section>
+        <div className="mt-16 flex justify-center">
+          <GeodeIcon />
+        </div>
       </article>
-
-      <GeodeIcon />
-    </div>
+    </>
   )
 }
