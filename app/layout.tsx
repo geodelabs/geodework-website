@@ -98,7 +98,7 @@ export default function RootLayout({
           </div> */}
 
           <p className="w-full p-4 text-center text-body-secondary">
-            &copy; Geodework 2025
+            &copy; Geodework {new Date().getFullYear()}
           </p>
         </footer>
       </body>
