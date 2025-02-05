@@ -40,9 +40,6 @@ export default async function Home() {
           </p>
         </Link>
       </section>
-
-      {/* Subscribe to newsletter */}
-      <Subscribe />
     </div>
   )
 }

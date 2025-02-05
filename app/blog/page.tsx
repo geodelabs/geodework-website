@@ -2,7 +2,6 @@ import type { Metadata } from "next/types"
 import { join } from "path"
 
 import GeodeIcon from "@/components/GeodeIcon"
-import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
 
 import HeroBackground from "@/components/HeroBackground"
@@ -73,8 +72,6 @@ export default async function Blog() {
       </article>
 
       <GeodeIcon />
-
-      <Subscribe />
     </div>
   )
 }
