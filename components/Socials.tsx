@@ -12,7 +12,7 @@ const Socials = () => (
       href="mailto:hello@geodework.com"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
-        "bg-accent-dark text-white/90 visited:text-white/90",
+        "bg-transparent text-white/90 visited:text-white/90",
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-dark hover:transition-transform"
       )}
       hideArrow
@@ -28,7 +28,7 @@ const Socials = () => (
       href="https://x.com/Geodework"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
-        "bg-primary-light text-white/90 visited:text-white/90",
+        "bg-transparent text-white/90 visited:text-white/90",
         "transition-transform hover:-rotate-2 hover:bg-body hover:text-primary-dark hover:transition-transform"
       )}
       hideArrow
@@ -40,7 +40,7 @@ const Socials = () => (
       href="https://github.com/geodework/"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
-        "bg-accent-alt text-white/90 visited:text-white/90",
+        "bg-transparent text-white/90 visited:text-white/90",
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-alt hover:transition-transform"
       )}
       hideArrow
