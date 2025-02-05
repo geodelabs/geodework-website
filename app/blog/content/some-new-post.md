@@ -14,3 +14,5 @@ Try to avoid starting lines with
 **bold**
 __italics__
 
+
+![bg-image](/images/bg-texture.png)
