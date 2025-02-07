@@ -3,28 +3,23 @@ const Subscribe = () => (
     <div className="text-center font-mono">
       <strong>subscribe</strong> to our newsletter
     </div>
-    <form className="flex items-center gap-2 max-sm:flex-col">
-      <input
-        type="email"
-        placeholder="email"
-        className="w-full rounded-none bg-primary-light px-4 py-1 text-body placeholder:text-body/80"
-        style={{
-          clipPath:
-            "polygon(0 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.375rem)",
-        }}
+
+    <div
+      style={{
+        clipPath: `polygon(
+              0.125em 0.625em, calc(100% - 1em) 0.625em, calc(100% - 0.125em) 1.375em,
+              calc(100% - 0.125em) calc(100% - 0.625em), 1em calc(100% - 0.625em), 0.125em calc(100% - 1.375em)
+            )`,
+      }}
+    >
+      <iframe
+        src="https://embeds.beehiiv.com/355286b8-5542-4f41-8667-491754f878fb?slim=true"
+        data-test-id="beehiiv-embed"
+        height="52"
+        frameBorder="0"
+        scrolling="no"
       />
-      <button
-        // TODO: Make and use ui/button
-        type="submit"
-        className="bg-accent px-4 py-1 !text-primary hover:bg-accent-dark"
-        style={{
-          clipPath:
-            "polygon(0 0, calc(100% - 0.5rem) 0, 100% 0.375rem, 100% 100%, 0 100%)",
-        }}
-      >
-        subscribe
-      </button>
-    </form>
+    </div>
   </div>
 )
 
