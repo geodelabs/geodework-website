@@ -1,15 +1,23 @@
 ---
-title: New Website Coming Soon With A Really Long Blog Post Title To Celebrate
-publishedTime: 2025-02-05 19:00:00
+title: Example blog post entry
+publishedTime: 2420-04-20 16:20:00 Z-00:00
 ---
 
-New website is coming soon. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+## Header levels
 
-Welcome to this placeholder markdown page. This document is designed to demonstrate various markdown styling capabilities using realistic copy filler.
+Remember that the `title` property above will be used as the one-and-only `h1` header on the page. All header levels should start at `h2` (`##`) and should not skip levels when nesting.
 
-### Purpose
+## Published Time
 
-The purpose of this document is to showcase different markdown features such as **bold text**, _italic text_, `inline code`, and more.
+### Formatting
+
+This field is required and should be in the format of `YYYY-MM-DD HH:MM:SS Z±HH:MM`. The `Z` is a literal character and the `±HH:MM` is the timezone offset from UTC. For example, `2023-10-01 12:00:00 Z-04:00` would be October 1st, 2023 at noon in the Eastern Time Zone (UTC-4).
+
+A shortcut for UTC time is to simply place a Z at the end of the timestamp, like `2023-10-01 12:00:00 Z`. This would be October 1st, 2023 at noon in the UTC timezone.
+
+### Filtering
+
+Publish dates in the future will be filtered out and not displayed until the publish date is reached.
 
 ## Section One: Overview
 
