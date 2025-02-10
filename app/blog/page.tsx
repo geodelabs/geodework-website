@@ -5,7 +5,7 @@ import GeodeIcon from "@/components/GeodeIcon"
 import Link from "@/components/ui/link"
 
 import HeroBackground from "@/components/HeroBackground"
-import { getBlogPosts } from "@/lib/blog"
+import { getBlogPosts, isPublished } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
 
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 
 export default async function Blog() {
   const blogPosts = getBlogPosts()
+  const publishedPosts = blogPosts.filter(isPublished)
 
   return (
     <div className="flex flex-col items-center gap-16">
@@ -44,7 +45,7 @@ export default async function Blog() {
         </h1>
 
         <section className="flex max-w-screen-md flex-col gap-16">
-          {blogPosts.map(
+          {publishedPosts.map(
             ({ frontmatter: { title, publishedTime }, content, slug }) => (
               <Link
                 href={join("blog", slug)}
@@ -67,6 +68,19 @@ export default async function Blog() {
                 </div>
               </Link>
             )
+          )}
+          {!publishedPosts.length && (
+            <div
+              className="bg-primary-dark p-8 text-white"
+              style={{
+                clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
+              }}
+            >
+              <h2 className="font-body text-xl font-semibold tracking-[0.15em]">
+                No posts yet!
+              </h2>
+              <p className="line-clamp-4">Come back soon for the latest</p>
+            </div>
           )}
         </section>
       </article>

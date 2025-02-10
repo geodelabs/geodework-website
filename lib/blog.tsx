@@ -80,3 +80,9 @@ export const getBlogPosts = (): BlogPost[] => {
 }
 
 export const getHrefFromSlug = (slug: string) => path.join(BLOG_PATH, slug)
+
+export const isPublished = (post: BlogPost) => {
+  const now = new Date()
+  const publishedTime = new Date(post.frontmatter.publishedTime)
+  return publishedTime <= now
+}
