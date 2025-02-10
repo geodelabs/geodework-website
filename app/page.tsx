@@ -22,7 +22,7 @@ export default async function Home() {
           className="bg-accent-alt before:from-accent-alt/80"
         />
 
-        <HeroBackground className="h-[36rem]" />
+        <HeroBackground className="h-[36rem] animate-fade-in" />
         <HomepageHeroContent />
       </section>
 

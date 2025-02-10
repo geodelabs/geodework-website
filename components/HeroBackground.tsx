@@ -17,7 +17,7 @@ const HeroBackground = ({
         height: "100%",
       }}
       sizes="100vw"
-      className="mx-auto max-w-screen-xl animate-fade-in object-cover"
+      className="mx-auto max-w-screen-xl object-cover"
       alt=""
     />
   </div>
