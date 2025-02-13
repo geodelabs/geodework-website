@@ -80,8 +80,7 @@ export default function RootLayout({
           >
             <Link href="/#">Home</Link>
             <Link href="/about">About</Link>
-            {/* TODO: Re-enable when first blog post available */}
-            {/* <Link href="/blog">Blog</Link> */}
+            <Link href="/blog">Blog</Link>
           </nav>
         </header>
 
