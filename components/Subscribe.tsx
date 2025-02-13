@@ -7,9 +7,12 @@ const Subscribe = () => (
     <div
       style={{
         clipPath: `polygon(
-              0.125em 0.625em, calc(100% - 1em) 0.625em, calc(100% - 0.125em) 1.375em,
-              calc(100% - 0.125em) calc(100% - 0.625em), 1em calc(100% - 0.625em), 0.125em calc(100% - 1.375em)
-            )`,
+          0.125em 0.125em,
+          calc(100% - 0.125em) 0.125em,
+          calc(100% - 0.125em) calc(100% - 1em),
+          calc(100% - 1em) calc(100% - 0.125em),
+          0.125em calc(100% - 0.125em)
+        )`,
       }}
     >
       <iframe
@@ -18,6 +21,11 @@ const Subscribe = () => (
         height="52"
         frameBorder="0"
         scrolling="no"
+        style={{
+          margin: 0,
+          borderRadius: "0px !important",
+          backgroundColor: "transparent",
+        }}
       />
     </div>
   </div>
