@@ -1,17 +1,15 @@
-// TODO: Re-enable blog features when first post available
 import HeroBackground from "@/components/HeroBackground"
 import HomepageHeroContent from "@/components/HomepageHeroContent"
 import { Meteors } from "@/components/ui/meteors"
-// import Subscribe from "@/components/Subscribe"
-// import Link from "@/components/ui/link"
+import Link from "@/components/ui/link"
 
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
 
 export default async function Home() {
-  // const allPosts = getBlogPosts()
-  // if (!allPosts.length) throw new Error("No blog posts found")
+  const allPosts = getBlogPosts()
+  if (!allPosts.length) throw new Error("No blog posts found")
 
-  // const latestPost = allPosts[0]
+  const latestPost = allPosts[0]
 
   return (
     <div className="flex flex-col items-center gap-20">
@@ -28,7 +26,7 @@ export default async function Home() {
       </section>
 
       {/* From the blog */}
-      {/* <section className="-mt-8 max-w-screen-sm flex-col-reverse items-center gap-1 p-8 tracking-widest">
+      <section className="-mt-8 max-w-screen-sm flex-col-reverse items-center gap-1 p-8 tracking-widest">
         <Link
           className="group flex flex-col items-center"
           href={getHrefFromSlug(latestPost.slug)}
@@ -40,7 +38,7 @@ export default async function Home() {
             {latestPost.frontmatter.title}
           </p>
         </Link>
-      </section> */}
+      </section>
     </div>
   )
 }
