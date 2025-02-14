@@ -91,11 +91,10 @@ export default function RootLayout({
 
           <Socials />
 
-          {/* TODO: Re-enable footer links when pages available */}
-          {/* <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6">
             <Link href="/terms-of-service">Terms of Service</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
-          </div> */}
+          </div>
 
           <p className="w-full p-4 text-center text-body-secondary">
             &copy; Geodework {new Date().getFullYear()}
