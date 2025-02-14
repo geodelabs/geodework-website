@@ -65,6 +65,12 @@ const getMarkdownData = (dir: string) => {
   })
 }
 
+export const isPublished = (post: BlogPost) => {
+  const now = new Date()
+  const publishedTime = new Date(post.frontmatter.publishedTime)
+  return publishedTime <= now
+}
+
 export const getBlogPosts = (): BlogPost[] => {
   const allPosts = getMarkdownData(
     path.join(process.cwd(), "app", "blog", "content")
@@ -75,14 +81,10 @@ export const getBlogPosts = (): BlogPost[] => {
       new Date(a.frontmatter.publishedTime).getTime()
   )
 
+  const published = sortedPosts.filter(isPublished)
+
   // Most recent post in [0] position, old posts at end
-  return sortedPosts
+  return published
 }
 
 export const getHrefFromSlug = (slug: string) => path.join(BLOG_PATH, slug)
-
-export const isPublished = (post: BlogPost) => {
-  const now = new Date()
-  const publishedTime = new Date(post.frontmatter.publishedTime)
-  return publishedTime <= now
-}

@@ -21,4 +21,5 @@ export const MarkdownComponents: Components = {
     </blockquote>
   ),
   pre: ({ children }) => <pre className="bg-black/20 p-4">{children}</pre>,
+  hr: () => <hr className="my-12 border-primary" />,
 }
