@@ -3,12 +3,13 @@
 import { useState, useEffect } from "react"
 
 import { generateClipPath } from "@/styles/clipPaths"
+import { MATOMO_OPT_OUT_LS_KEY } from "@/lib/constants"
 
 const MatomoOptOut = () => {
   const [isOptedOut, setIsOptedOut] = useState(false)
 
   useEffect(() => {
-    const matomoOptOut = localStorage.getItem("matomo-opt-out")
+    const matomoOptOut = localStorage.getItem(MATOMO_OPT_OUT_LS_KEY)
     if (matomoOptOut === "true") {
       setIsOptedOut(true)
     }
@@ -16,10 +17,10 @@ const MatomoOptOut = () => {
 
   const handleCheckboxChange = () => {
     if (isOptedOut) {
-      localStorage.removeItem("matomo-opt-out")
+      localStorage.removeItem(MATOMO_OPT_OUT_LS_KEY)
       setIsOptedOut(false)
     } else {
-      localStorage.setItem("matomo-opt-out", "true")
+      localStorage.setItem(MATOMO_OPT_OUT_LS_KEY, "true")
       setIsOptedOut(true)
     }
   }
