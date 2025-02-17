@@ -2,7 +2,7 @@ import Link from "./ui/link"
 
 import { cn } from "@/lib/utils"
 
-import * as clipPaths from "@/styles/clipPaths"
+import { generateClipPath } from "@/styles/clipPaths"
 
 import GitHub from "./svgs/github.svg"
 import Mail from "./svgs/mail.svg"
@@ -19,7 +19,7 @@ const Socials = () => (
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-dark hover:transition-transform"
       )}
       hideArrow
-      style={clipPaths.mediumBottomLeft}
+      style={generateClipPath("BottomLeft")}
     >
       <Mail className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
     </Link>
@@ -44,7 +44,7 @@ const Socials = () => (
         "transition-transform hover:rotate-2 hover:bg-body hover:text-accent-alt hover:transition-transform"
       )}
       hideArrow
-      style={clipPaths.mediumUpperRight}
+      style={generateClipPath("TopRight")}
     >
       <GitHub className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
     </Link>

@@ -11,7 +11,7 @@ import { formatDate } from "@/lib/datetime"
 
 import { SITE_NAME, SITE_URL } from "@/lib/constants"
 
-import * as clipPaths from "@/styles/clipPaths"
+import { generateClipPath } from "@/styles/clipPaths"
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>
@@ -78,7 +78,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
 
       <article
         className="mt-16 w-full max-w-screen-md space-y-16 bg-primary-dark px-6 py-15 sm:px-12 md:px-15"
-        style={clipPaths.largeUpperRight}
+        style={generateClipPath("TopRight", "large")}
       >
         <div>
           <h1 className="text-4xl font-semibold leading-tight tracking-widest">
@@ -100,7 +100,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         {prevPost && (
           <Link
             href={getHrefFromSlug(prevPost.slug)}
-            style={clipPaths.smallBottomLeft}
+            style={generateClipPath("BottomLeft", "small")}
             className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             previous
@@ -109,7 +109,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         {nextPost && (
           <Link
             href={getHrefFromSlug(nextPost.slug)}
-            style={clipPaths.smallUpperRight}
+            style={generateClipPath("TopRight", "small")}
             className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             next

@@ -1,8 +1,8 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
-import * as clipPaths from "@/styles/clipPaths"
+import { generateClipPath } from "@/styles/clipPaths"
 
 const MatomoOptOut = () => {
   const [isOptedOut, setIsOptedOut] = useState(false)
@@ -27,7 +27,7 @@ const MatomoOptOut = () => {
   return (
     <div
       className="my-12 flex flex-col gap-4 bg-primary-dark p-8"
-      style={clipPaths.largeUpperRight}
+      style={generateClipPath("TopRight", "large")}
     >
       <p>
         You can opt out of being tracked by Matomo Analytics and prevent the

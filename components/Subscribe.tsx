@@ -1,4 +1,4 @@
-import * as clipPaths from "@/styles/clipPaths"
+import { subscribeIFrame } from "@/styles/clipPaths"
 
 const Subscribe = () => (
   <div className="flex max-w-[30rem] flex-col gap-4 tracking-widest">
@@ -6,7 +6,7 @@ const Subscribe = () => (
       <strong>subscribe</strong> to our newsletter
     </div>
 
-    <div style={clipPaths.subscribeIFrame}>
+    <div style={subscribeIFrame}>
       <iframe
         src="https://embeds.beehiiv.com/355286b8-5542-4f41-8667-491754f878fb?slim=true"
         data-test-id="beehiiv-embed"
