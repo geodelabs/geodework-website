@@ -3,11 +3,13 @@ import { join } from "path"
 
 import GeodeIcon from "@/components/GeodeIcon"
 import Link from "@/components/ui/link"
-
 import HeroBackground from "@/components/HeroBackground"
+
 import { getBlogPosts, isPublished } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
+
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
+import { generateClipPath } from "@/styles/clipPaths"
 
 const title = SITE_NAME + " Blog"
 const description = SITE_DESCRIPTION
@@ -54,9 +56,7 @@ export default async function Blog() {
               >
                 <div
                   className="bg-primary-dark p-8 text-white"
-                  style={{
-                    clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
-                  }}
+                  style={generateClipPath("TopRight", "large")}
                 >
                   <h2 className="font-body text-xl font-semibold tracking-[0.15em]">
                     {title}
@@ -72,9 +72,7 @@ export default async function Blog() {
           {!publishedPosts.length && (
             <div
               className="bg-primary-dark p-8 text-white"
-              style={{
-                clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
-              }}
+              style={generateClipPath("TopRight", "large")}
             >
               <h2 className="font-body text-xl font-semibold tracking-[0.15em]">
                 No posts yet!

@@ -1,14 +1,17 @@
+import { Metadata } from "next"
+import { notFound } from "next/navigation"
+
 import GeodeIcon from "@/components/GeodeIcon"
 import { MarkdownProvider } from "@/components/Markdown/Provider"
 import Link from "@/components/ui/link"
+import HeroBackground from "@/components/HeroBackground"
 
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
+import { formatDate } from "@/lib/datetime"
+
 import { SITE_NAME, SITE_URL } from "@/lib/constants"
 
-import HeroBackground from "@/components/HeroBackground"
-import { notFound } from "next/navigation"
-import { formatDate } from "@/lib/datetime"
-import { Metadata } from "next"
+import { generateClipPath } from "@/styles/clipPaths"
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>
@@ -75,9 +78,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
 
       <article
         className="mt-16 w-full max-w-screen-md space-y-16 bg-primary-dark px-6 py-15 sm:px-12 md:px-15"
-        style={{
-          clipPath: `polygon(0 0, calc(100% - 1.875rem) 0, 100% 1.875rem, 100% 100%, 0 100%)`,
-        }}
+        style={generateClipPath("TopRight", "large")}
       >
         <div>
           <h1 className="text-4xl font-semibold leading-tight tracking-widest">
@@ -99,10 +100,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         {prevPost && (
           <Link
             href={getHrefFromSlug(prevPost.slug)}
-            style={{
-              clipPath:
-                "polygon(0 0, 100% 0, 100% 100%, 0.5rem 100%, 0 calc(100% - 0.375rem)",
-            }}
+            style={generateClipPath("BottomLeft", "small")}
             className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             previous
@@ -111,10 +109,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         {nextPost && (
           <Link
             href={getHrefFromSlug(nextPost.slug)}
-            style={{
-              clipPath:
-                "polygon(0 0, calc(100% - 0.5rem) 0, 100% 0.375rem, 100% 100%, 0 100%)",
-            }}
+            style={generateClipPath("TopRight", "small")}
             className="w-[16ch] bg-accent py-2 text-primary visited:text-primary hover:bg-accent-dark hover:text-primary"
           >
             next
