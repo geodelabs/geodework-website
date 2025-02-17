@@ -31,7 +31,7 @@ const MatomoOptOut = () => {
     >
       <p>
         You can opt out of being tracked by Matomo Analytics and prevent the
-        website from analysing the actions you take using the website. This will
+        website from analyzing the actions you take using the website. This will
         prevent us from learning from your actions and creating a better website
         experience for you and other users.
       </p>
