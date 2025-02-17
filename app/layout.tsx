@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils"
 import GeodeworkLogo from "@/public/images/geodework-logo.svg"
 
 import "@/styles/globals.css"
+import Matomo from "@/components/Matomo"
 
 const title = SITE_NAME
 const description = SITE_DESCRIPTION
@@ -100,6 +101,8 @@ export default function RootLayout({
             &copy; Geodework {new Date().getFullYear()}
           </p>
         </footer>
+
+        <Matomo />
       </body>
     </html>
   )
