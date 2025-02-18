@@ -1,6 +1,7 @@
 // General
 export const SITE_NAME = "Geodework"
-export const SITE_DESCRIPTION = "" // TODO: Add site description
+export const SITE_DESCRIPTION =
+  "An ecosystem product studio dedicated to global Ethereum ecosystem development and as such building a better Internet."
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://geodework.com"
 
