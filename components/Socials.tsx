@@ -24,7 +24,7 @@ const Socials = () => (
       <Mail className="scale-100 transition-transform group-hover:scale-125 group-hover:transition-transform" />
     </Link>
     <Link
-      aria-label="Twitter"
+      aria-label="X"
       href="https://x.com/Geodework"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
