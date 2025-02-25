@@ -9,6 +9,7 @@ import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
 import GeodeworkLogo from "@/public/images/geodework-logo.svg"
+import Heart from "@/components/svgs/heart.svg"
 
 import "@/styles/globals.css"
 import Matomo from "@/components/Matomo"
@@ -99,6 +100,12 @@ export default function RootLayout({
 
           <p className="w-full p-4 text-center text-body-secondary">
             &copy; Geodework {new Date().getFullYear()}
+          </p>
+
+          <p>
+            Donations:{" "}
+            <Link href="https://rainbow.me/geodework.eth">geodework.eth</Link>{" "}
+            <Heart className="inline text-[red]" />
           </p>
         </footer>
 
