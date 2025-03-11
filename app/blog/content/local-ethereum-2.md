@@ -1,10 +1,13 @@
-# Local Ethereum
+---
+title: "Local Ethereum #2"
+publishedTime: 2025-03-05 12:00:00 Z-00:00
+---
 
-# 🌍 Beginning
+## February 2025 Roundup 🌍
 
->The story of Ethereum is a story of geography. Ethereum is a global network and a global movement. It is local nodes spread around the world that give rise to the phenomenon that is Ethereum. As such Ethereum is deeply rooted in geography.
+> The story of Ethereum is a story of geography. Ethereum is a global network and a global movement. It is local nodes spread around the world that give rise to the phenomenon that is Ethereum. As such Ethereum is deeply rooted in geography.
 >
->From local ETH communities and meetups to universities, from developers to startups, from policy to user adoption and more, **Local Ethereum** is a newsletter to cover the geo-story of Ethereum. Let’s start!
+> From local ETH communities and meetups to universities, from developers to startups, from policy to user adoption and more, **Local Ethereum** is a newsletter to cover the geo-story of Ethereum. Let’s start!
 
 ![Ethereum Image](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3de61e81-46b8-462f-8a90-e29088e3d2ba/image-ethereum.png?t=1738601603)
 _Artist: [Liam Cobb](https://liamcobb.com/)_
@@ -47,7 +50,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 - The North Korean hacking group [Lazarus Group was responsible for](https://x.com/zachxbt/status/1893211577836302365) the [February 21 cyberattack](https://x.com/Bybit_Official/status/1892965292931702929) on Bybit exchange, which resulted in the theft of $1.5 billion worth of crypto assets. Learn more [here](http://Lazarusbounty.com), and [here](https://slowmist.medium.com/cryptocurrency-apt-intelligence-unveiling-lazarus-groups-intrusion-techniques-a1a6efda7d34).
 
-### **Kazakhstan**
+### Kazakhstan
 
 - [Black Ice Hacker Space](https://wiki.hackerspaces.org/Black_Ice) is active in organizing Ethereum Days meetups, covering Ethereum and security.
 
@@ -97,7 +100,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 - Early Bird ETHCluj 2025 conference (June 26-28) tickets are now [available](https://x.com/ETHCluj/status/1891460430758830405)!
 
-### **Bulgaria**
+### Bulgaria
 
 - [ZKProof 7](https://zkproof.org/events/zkproof-7-sofia/) in Sofia, March 23-25, 2025. ZKProof is an initiative focused on the standardization of Zero-Knowledge Proofs.
 
@@ -105,7 +108,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 ### United States
 
-- Trump said in a post on Truth Social that his January executive order on digital assets would create a [Crypto Strategic Reserve](https://www.reuters.com/world/us/trump-says-cryptocurrency-strategic-reserve-includes-xrp-sol-ada-2025-03-02/) including BTC, ETH, XRP, SOL and ADA. ~~He added later: "And, obviously, BTC and ETH, as other valuable Cryptocurrencies, will be at the heart of the Reserve.”~~
+- Trump said in a post on Truth Social that his January executive order on digital assets would create a [Crypto Strategic Reserve](https://www.reuters.com/world/us/trump-says-cryptocurrency-strategic-reserve-includes-xrp-sol-ada-2025-03-02/) including BTC, ETH, XRP, SOL and ADA.
 - US Senator Hagerty introduced the [GENIUS Act](https://www.hagerty.senate.gov/press-releases/2025/02/04/hagerty-leads-legislation-to-establish-a-stablecoin-regulatory-framework/) to regulate stablecoins.
 - [The SEC acknowledged 21Shares’ filing to allow staking on its Ethereum ETF](https://x.com/WatcherGuru/status/1892352308710678635).
 - [Stablecoin issuer Tether reported $13b of profit in 2024](https://www.coindesk.com/business/2025/01/30/tether-reports-usd13b-profit-for-2024-with-rising-bitcoin-gold-prices-contributing).
@@ -122,7 +125,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 ## Latam 💃
 
-### **Argentina**
+### Argentina
 
 - Everything you need to know about President Milei and the $LIBR scandal is [here](https://www.lanacion.com.ar/economia/IA/auge-y-derrumbe-6-horas-de-vertigo-minuto-a-minuto-como-se-gesto-el-escandalo-de-la-moneda-que-nid17022025/#/) and [here](https://www.forbesargentina.com/money/radiografia-desastre-cripto-afecto-milei-ganadores-perdedores-lanzamiento-libra-n67637). A bleak scenario: [most lost, few won](https://x.com/fergmolina/status/1891126301215355307).
 - Vitalik: [Argentina's Ethereum community is full of amazing builders](https://x.com/VitalikButerin/status/1892598319752355970). [Hosting Devconnect in Argentina could be a great opportunity to show the best of what crypto can offer](https://x.com/VitalikButerin/status/1892598322210521386).
@@ -149,7 +152,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 - [ETHiopia](https://x.com/ETHiopia____/status/1871576386340560970) organized its first pop-up city, ETH hackathon, and conference from January 21st–February 21st, 2025.
 
-## **Oceania 🏄**
+## Oceania 🏄
 
 ### Australia
 
@@ -159,24 +162,21 @@ _Artist: [Liam Cobb](https://liamcobb.com/)_
 
 ---
 
-
 Thanks for reading, and have a nice day! 🌸
 
 Best regards,
 
-
 Riely and the Geodework team.
-
 
 ---
 
 > ❤️❤️❤️
 >
->Love Local Ethereum? [Share](https://geodework.beehiiv.com/subscribe?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1).
+> Love Local Ethereum? [Share](https://geodework.beehiiv.com/subscribe?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1).
 >
->Have any comments or feedback? [DM](http://t.me/rielychen?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1).
+> Have any comments or feedback? [DM](http://t.me/rielychen?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1).
 >
->Want to **advertise** on Local Ethereum? [DM](http://t.me/rielychen?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1) or [Email](mailto:hello@geodework.com).
+> Want to **advertise** on Local Ethereum? [DM](http://t.me/rielychen?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-1) or [Email](mailto:hello@geodework.com).
 >
->*If your company is interested in reaching an audiences of regional community and ecosystem builders, developer communities, universities, startup partners, or policymakers, you may want to advertise with us.*
+> _If your company is interested in reaching an audiences of regional community and ecosystem builders, developer communities, universities, startup partners, or policymakers, you may want to advertise with us._
 >
