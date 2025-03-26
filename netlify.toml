@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://geodework.netlify.app/*"
+  to = "https://geodework.com/:splat"
+  status = 301
+  force = true
