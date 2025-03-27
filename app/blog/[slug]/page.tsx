@@ -12,6 +12,8 @@ import { formatDate } from "@/lib/datetime"
 import { SITE_NAME, SITE_URL } from "@/lib/constants"
 
 import { generateClipPath } from "@/styles/clipPaths"
+import fs from "fs"
+import path from "path"
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>
@@ -72,6 +74,10 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
     currentIndex === lastIndex ? null : allPosts[currentIndex + 1]
   const nextPost = currentIndex === 0 ? null : allPosts[currentIndex - 1]
 
+  // Read the footer content
+  const footerPath = path.join(process.cwd(), "app/blog/content/footer.md")
+  const footerContent = fs.readFileSync(footerPath, "utf-8")
+
   return (
     <div className="flex flex-col items-center gap-16 pb-20">
       <HeroBackground />
@@ -91,6 +97,10 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
 
         <section>
           <MarkdownProvider>{post.content}</MarkdownProvider>
+        </section>
+
+        <section>
+          <MarkdownProvider>{footerContent}</MarkdownProvider>
         </section>
 
         <GeodeIcon className="mx-auto my-8" />
