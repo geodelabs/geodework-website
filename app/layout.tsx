@@ -88,8 +88,14 @@ export default function RootLayout({
 
         <main className="row-start-2">{children}</main>
 
-        <footer className="row-start-3 my-20 flex flex-col items-center gap-6">
+        <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
           <Subscribe />
+
+          <p className="-mt-2">
+            Donations:{" "}
+            <Link href="https://rainbow.me/geodework.eth">geodework.eth</Link>{" "}
+            <Heart className="inline text-[red]" />
+          </p>
 
           <Socials />
 
@@ -102,11 +108,6 @@ export default function RootLayout({
             &copy; Geodework {new Date().getFullYear()}
           </p>
 
-          <p>
-            Donations:{" "}
-            <Link href="https://rainbow.me/geodework.eth">geodework.eth</Link>{" "}
-            <Heart className="inline text-[red]" />
-          </p>
         </footer>
 
         <Matomo />
