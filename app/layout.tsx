@@ -13,28 +13,9 @@ import Heart from "@/components/svgs/heart.svg"
 
 import "@/styles/globals.css"
 import Matomo from "@/components/Matomo"
+import { generateMetadata } from "@/lib/metadata"
 
-const title = SITE_NAME
-const description = SITE_DESCRIPTION
-const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    type: "website",
-    url: SITE_URL,
-    images: [{ url: ogImage }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: [ogImage],
-  },
-}
+export const metadata = generateMetadata()
 
 export default function RootLayout({
   children,
@@ -88,8 +69,14 @@ export default function RootLayout({
 
         <main className="row-start-2">{children}</main>
 
-        <footer className="row-start-3 my-20 flex flex-col items-center gap-6">
+        <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
           <Subscribe />
+          
+          <p className="-mt-2">
+            Donations:{" "}
+            <Link href="/donations">geodework.eth</Link>{" "}
+            <Heart className="inline text-[red]" />
+          </p>
 
           <Socials />
 
@@ -102,11 +89,6 @@ export default function RootLayout({
             &copy; Geodework {new Date().getFullYear()}
           </p>
 
-          <p>
-            Donations:{" "}
-            <Link href="https://rainbow.me/geodework.eth">geodework.eth</Link>{" "}
-            <Heart className="inline text-[red]" />
-          </p>
         </footer>
 
         <Matomo />

@@ -12,3 +12,11 @@ export const MAX_WORDS_PER_POST_PREVIEW = 80
 
 // Matomo
 export const MATOMO_OPT_OUT_LS_KEY = "matomo-opt-out"
+
+// Crypto
+export const ETHEREUM_ADDRESS = "0xEE0735e0126268ddfc618aAE730a847127E8c04E"
+export const ETHEREUM_ENS = "geodework.eth"
+export const BITCOIN_ADDRESS = "34SaUzgf33AHcVshu1PKGuq1JNSc4io82j"
+
+// Donation
+export const BUY_ME_A_COFFEE_URL = "https://buymeacoffee.com/geodework"
