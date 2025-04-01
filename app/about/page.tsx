@@ -5,30 +5,9 @@ import GeodeIcon from "@/components/GeodeIcon"
 import About from "./content.mdx"
 
 import HeroBackground from "@/components/HeroBackground"
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
-import type { Metadata } from "next/types"
+import { generateMetadata } from "@/lib/metadata"
 
-const title = "About " + SITE_NAME
-const description = SITE_DESCRIPTION
-const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    type: "website",
-    url: SITE_URL,
-    images: [{ url: ogImage }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: [ogImage],
-  },
-}
+export const metadata = generateMetadata('About')
 
 const overrideComponents: MDXComponents = {
   h1: ({ children }) => (

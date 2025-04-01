@@ -10,28 +10,9 @@ import { formatDate } from "@/lib/datetime"
 
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
 import { generateClipPath } from "@/styles/clipPaths"
+import { generateMetadata } from "@/lib/metadata"
 
-const title = SITE_NAME + " Blog"
-const description = SITE_DESCRIPTION
-const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    type: "website",
-    url: SITE_URL,
-    images: [{ url: ogImage }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: [ogImage],
-  },
-}
+export const metadata = generateMetadata(SITE_NAME + " Blog")
 
 export default async function Blog() {
   const blogPosts = getBlogPosts()

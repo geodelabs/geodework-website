@@ -25,6 +25,7 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }))
 }
 
+// TODO: Integrate generateMetadata in @lib/metadata.ts
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
