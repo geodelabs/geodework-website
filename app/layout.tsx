@@ -90,10 +90,10 @@ export default function RootLayout({
 
         <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
           <Subscribe />
-
+          
           <p className="-mt-2">
             Donations:{" "}
-            <Link href="https://rainbow.me/geodework.eth">geodework.eth</Link>{" "}
+            <Link href="/donations">geodework.eth</Link>{" "}
             <Heart className="inline text-[red]" />
           </p>
 
