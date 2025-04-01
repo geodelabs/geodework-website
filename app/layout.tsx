@@ -13,28 +13,9 @@ import Heart from "@/components/svgs/heart.svg"
 
 import "@/styles/globals.css"
 import Matomo from "@/components/Matomo"
+import { generateMetadata } from "@/lib/metadata"
 
-const title = SITE_NAME
-const description = SITE_DESCRIPTION
-const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
-
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    type: "website",
-    url: SITE_URL,
-    images: [{ url: ogImage }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: [ogImage],
-  },
-}
+export const metadata = generateMetadata()
 
 export default function RootLayout({
   children,

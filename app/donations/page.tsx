@@ -2,10 +2,9 @@ import { QRCode } from "@/components/ui/qr-code"
 import { SITE_NAME, ETHEREUM_ADDRESS, ETHEREUM_ENS, BITCOIN_ADDRESS, BUY_ME_A_COFFEE_URL } from "@/lib/constants"
 import { CopyButton } from "@/components/ui/copy-button"
 import BitcoinLogo from "@/components/svgs/bitcoin.svg"
-import BuyMeACoffeeLogo from "@/components/svgs/buymeacoffee.svg"
 import Link from "@/components/ui/link"
 import { shortenAddress } from "@/lib/web3"
-
+import { generateMetadata } from "@/lib/metadata"
 const alternativeOptions: {
   name: string,
   url: string,
@@ -15,6 +14,8 @@ const alternativeOptions: {
     url: BUY_ME_A_COFFEE_URL,
   }
 ]
+
+export const metadata = generateMetadata("Donations")
 
 export default function Donations() {
   return (
