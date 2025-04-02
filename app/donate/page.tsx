@@ -15,9 +15,9 @@ const alternativeOptions: {
   }
 ]
 
-export const metadata = generateMetadata("Donations")
+export const metadata = generateMetadata("Donate")
 
-export default function Donations() {
+export default function Donate() {
   return (
     <div className="mx-auto max-w-3xl px-2 sm:py-16">
       <h1 className="mb-8 text-center font-mono text-4xl md:text-5xl">
@@ -66,7 +66,7 @@ export default function Donations() {
                   </div>
                 </div>
                 {alternativeOptions.map((option) => (
-                  <div className="bg-white/5 rounded-2xl p-6">
+                  <div className="bg-white/5 rounded-2xl p-6" key={option.name} >
                     <div className="flex items-center justify-center gap-2">
                       <Link className="group font-mono text-base text-white group-hover:text-yellow-400" href={option.url}>
                         Support us on {option.name}

@@ -73,8 +73,8 @@ export default function RootLayout({
           <Subscribe />
           
           <p className="-mt-2">
-            Donations:{" "}
-            <Link href="/donations">geodework.eth</Link>{" "}
+            Donate:{" "}
+            <Link href="/donate">geodework.eth</Link>{" "}
             <Heart className="inline text-[red]" />
           </p>
 
