@@ -1,10 +1,6 @@
-import type { Metadata } from "next"
-
 import Link from "@/components/ui/link"
 import Socials from "@/components/Socials"
 import Subscribe from "@/components/Subscribe"
-
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants"
 
 import { cn } from "@/lib/utils"
 
@@ -71,10 +67,9 @@ export default function RootLayout({
 
         <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
           <Subscribe />
-          
+
           <p className="-mt-2">
-            Donations:{" "}
-            <Link href="/donations">geodework.eth</Link>{" "}
+            Donate: <Link href="/donate">geodework.eth</Link>{" "}
             <Heart className="inline text-[red]" />
           </p>
 
@@ -88,7 +83,6 @@ export default function RootLayout({
           <p className="w-full p-4 text-center text-body-secondary">
             &copy; Geodework {new Date().getFullYear()}
           </p>
-
         </footer>
 
         <Matomo />
