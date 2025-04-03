@@ -2,30 +2,35 @@
 
 import { CopyButton } from "./copy-button"
 import { cn } from "@/lib/utils"
-import EthereumLogo from "@/components/svgs/ethereum.svg"
 import { QRGradient, qrGradientId } from "./qr-gradient"
 
-import { QRCodeSVG } from 'qrcode.react';
+import { QRCodeSVG } from "qrcode.react"
 import { shortenAddress } from "@/lib/web3"
 
 interface QRCodeProps {
   title: string
   primaryLink: string
+  titleLogoImage?: React.ReactNode
   secondaryLink?: string
   className?: string
   useGradient?: boolean
-  logoUrl?: string
+  embedImageInQRCode?: string
 }
 
-
-export function QRCode({ title, primaryLink, secondaryLink, className, useGradient = false, logoUrl }: QRCodeProps) {
+export function QRCode({
+  title,
+  primaryLink,
+  secondaryLink,
+  className,
+  useGradient = false,
+  embedImageInQRCode,
+  titleLogoImage,
+}: QRCodeProps) {
   return (
-    <div className={cn("flex flex-col items-center gap-4 w-full", className)}>
-      <div className="flex items-center gap-3 w-full justify-center">
-        <div className="rounded-full bg-white p-1 shadow-md flex-shrink-0">
-          <EthereumLogo className="h-6 w-6 sm:h-8 sm:w-8" />
-        </div>
-        <h3 className="text-lg sm:text-2xl font-mono break-words">{title}</h3>
+    <div className={cn("flex w-full flex-col items-center gap-4", className)}>
+      <div className="flex w-full items-center justify-center gap-3">
+        {titleLogoImage && <div>{titleLogoImage}</div>}
+        <h3 className="break-words font-mono text-lg sm:text-2xl">{title}</h3>
       </div>
       <div className="rounded-xl bg-white p-4">
         <div className="relative">
@@ -37,13 +42,13 @@ export function QRCode({ title, primaryLink, secondaryLink, className, useGradie
             fgColor={useGradient ? `url(#${qrGradientId})` : "#000000"}
             level="H"
             className="h-48 w-48"
-            {...(logoUrl && {
+            {...(embedImageInQRCode && {
               imageSettings: {
-                src: logoUrl,
+                src: embedImageInQRCode,
                 height: 40,
                 width: 40,
-                excavate: true
-              }
+                excavate: true,
+              },
             })}
           />
         </div>
@@ -65,4 +70,4 @@ export function QRCode({ title, primaryLink, secondaryLink, className, useGradie
       </div>
     </div>
   )
-} 
+}
