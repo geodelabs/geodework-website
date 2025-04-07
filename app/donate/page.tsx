@@ -29,9 +29,11 @@ const titleLogoImage = (
   <Image
     src="/images/geode-ethereum.png"
     alt="Geodework Logo"
-    width={36}
-    height={36}
+    width={72}
+    height={72}
     quality={100}
+    priority
+    className="h-[38px] w-[38px]"
   />
 )
 
