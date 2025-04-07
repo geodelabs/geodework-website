@@ -7,11 +7,12 @@ import {
   BUY_ME_A_COFFEE_URL,
 } from "@/lib/constants"
 import { CopyButton } from "@/components/ui/copy-button"
-import EthereumLogo from "@/components/svgs/ethereum.svg"
 import BitcoinLogo from "@/components/svgs/bitcoin.svg"
 import Link from "@/components/ui/link"
 import { shortenAddress } from "@/lib/web3"
 import { generateMetadata } from "@/lib/metadata"
+import Image from "next/image"
+
 const alternativeOptions: {
   name: string
   url: string
@@ -24,7 +25,15 @@ const alternativeOptions: {
 
 export const metadata = generateMetadata("Donate")
 
-const titleLogoImage = <EthereumLogo className="h-6 w-6 sm:h-8 sm:w-8" />
+const titleLogoImage = (
+  <Image
+    src="/images/geode-ethereum.png"
+    alt="Geodework Logo"
+    width={36}
+    height={36}
+    quality={100}
+  />
+)
 
 export default function Donate() {
   return (
