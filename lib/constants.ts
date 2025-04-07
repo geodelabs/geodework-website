@@ -20,3 +20,5 @@ export const BITCOIN_ADDRESS = "34SaUzgf33AHcVshu1PKGuq1JNSc4io82j"
 
 // Donation
 export const BUY_ME_A_COFFEE_URL = "https://buymeacoffee.com/geodework"
+export const GITCOIN_URL =
+  "https://explorer.gitcoin.co/#/projects/0x9688fb4c1d28b3d8774f148917bbd9def2fc1e47ef5098f39e02482c1c1f71b0"

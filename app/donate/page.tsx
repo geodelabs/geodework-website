@@ -5,6 +5,7 @@ import {
   ETHEREUM_ENS,
   BITCOIN_ADDRESS,
   BUY_ME_A_COFFEE_URL,
+  GITCOIN_URL,
 } from "@/lib/constants"
 import { CopyButton } from "@/components/ui/copy-button"
 import BitcoinLogo from "@/components/svgs/bitcoin.svg"
@@ -17,6 +18,10 @@ const alternativeOptions: {
   name: string
   url: string
 }[] = [
+  {
+    name: "Gitcoin",
+    url: GITCOIN_URL,
+  },
   {
     name: "Buy Me a Coffee",
     url: BUY_ME_A_COFFEE_URL,
