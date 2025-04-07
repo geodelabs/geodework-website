@@ -11,6 +11,8 @@ import BitcoinLogo from "@/components/svgs/bitcoin.svg"
 import Link from "@/components/ui/link"
 import { shortenAddress } from "@/lib/web3"
 import { generateMetadata } from "@/lib/metadata"
+import Image from "next/image"
+
 const alternativeOptions: {
   name: string
   url: string
@@ -22,6 +24,16 @@ const alternativeOptions: {
 ]
 
 export const metadata = generateMetadata("Donate")
+
+const titleLogoImage = (
+  <Image
+    src="/images/geode-ethereum.png"
+    alt="Geodework Logo"
+    width={36}
+    height={36}
+    quality={100}
+  />
+)
 
 export default function Donate() {
   return (
@@ -48,7 +60,8 @@ export default function Donate() {
                   primaryLink={ETHEREUM_ADDRESS}
                   secondaryLink={ETHEREUM_ENS}
                   useGradient={true}
-                  logoUrl="/images/geodework-circle-logo.svg"
+                  embedImageInQRCode="/images/geodework-circle-logo.svg"
+                  titleLogoImage={titleLogoImage}
                 />
               </div>
             </div>
