@@ -1,5 +1,5 @@
 ---
-title: "Taiwan Ethereum Ecosystem Overview #3"
+title: "Taiwan Ethereum Ecosystem Overview"
 publishedTime: 2025-03-20 12:00:00 Z-00:00
 ---
 
@@ -8,7 +8,7 @@ publishedTime: 2025-03-20 12:00:00 Z-00:00
 Special thanks to Hsiao Wei, Changwu, Martinet, Anton, Astro and Sunsec for feedback and review.
 
 ![Ethereum Image](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/98db0321-df12-4d57-a14c-82f00edba640/Screenshot_2025-03-20_at_20.05.08.png?t=1742497577)
-*[ETHTaipei](https://ethtaipei.org/) is just around the corner – secure your spot today!*
+_[ETHTaipei](https://ethtaipei.org/) is just around the corner – secure your spot today!_
 
 ## Tl;dr
 
@@ -39,19 +39,19 @@ Special thanks to Hsiao Wei, Changwu, Martinet, Anton, Astro and Sunsec for feed
 ## Ethereum and related startups
 
 - DeFi
-    - [Furucombo](https://furucombo.app/): multi-chain DeFi aggregator:
-    - [Perpetual Protocol](https://perp.com/): decentralized perpetual futures exchange built on Optimism:
-    - [Zomma Protocol](https://zomma.pro/): DeFi Options Protocol on zkSync Era and Arbitrum:
-    - [Teahouse Finance](https://teahouse.finance/): multi-strategy DeFi asset management platform:
-    - [WooFi](https://woofi.com/about): multi-chain DEX:
-    - [XY Protocol](https://xy.finance/): multi-chain DEX aggregator and bridge:
+  - [Furucombo](https://furucombo.app/): multi-chain DeFi aggregator:
+  - [Perpetual Protocol](https://perp.com/): decentralized perpetual futures exchange built on Optimism:
+  - [Zomma Protocol](https://zomma.pro/): DeFi Options Protocol on zkSync Era and Arbitrum:
+  - [Teahouse Finance](https://teahouse.finance/): multi-strategy DeFi asset management platform:
+  - [WooFi](https://woofi.com/about): multi-chain DEX:
+  - [XY Protocol](https://xy.finance/): multi-chain DEX aggregator and bridge:
 - Creator economy
-    - [Matters Lab](https://matters-lab.io/): a Web3 social media ecosystem, where you can publish blogs on [Matters.Town](https://matters.town).
+  - [Matters Lab](https://matters-lab.io/): a Web3 social media ecosystem, where you can publish blogs on [Matters.Town](https://matters.town).
 - Wallet
-    - Most of Taiwanese use Metamask and Rabby, followed by imToken. Some of them use local hardware wallet like [CoolWallet](https://www.coolwallet.io).
+  - Most of Taiwanese use Metamask and Rabby, followed by imToken. Some of them use local hardware wallet like [CoolWallet](https://www.coolwallet.io).
 - Venture capital and accelerator
-    - [Sudo Research](https://sudoresearch.com/): crypto trading house and venture capital firm founded in 2017.
-    - [AppWorks](https://appworks.tw/): offers startup support via Accelerator, Funds, and School programs.
+  - [Sudo Research](https://sudoresearch.com/): crypto trading house and venture capital firm founded in 2017.
+  - [AppWorks](https://appworks.tw/): offers startup support via Accelerator, Funds, and School programs.
 - Builders who do not work for Taiwanese companies are shining on the global stage, including companies like Ethereum Foundation, Quantstam, imToken, various L2s...
 
 ## Ethereum users
@@ -63,25 +63,27 @@ Special thanks to Hsiao Wei, Changwu, Martinet, Anton, Astro and Sunsec for feed
 ## Web2 and Web3 developers
 
 ### 1. Developers
+
 ![Web2 and Web3 developers](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/11ba09e4-909b-4fce-ab63-38f372aafad9/image.png?t=1742497132)
-*Source: [innovationgraph from Github](https://innovationgraph.github.com/global-metrics/developers)*
+_Source: [innovationgraph from Github](https://innovationgraph.github.com/global-metrics/developers)_
 
 Taiwan has more than 1.27 million developers, with many top talents gravitating toward semiconductor giants like TSMC, manufacturing leaders like Foxconn, and chip designers like MediaTek. These companies provide abundant job opportunities for graduates, while web3 positions remain comparatively limited on the island.
 
 ### 2. Ethereum devs
+
 - Core devs & researchers: Taiwan has produced exceptional builders like Hsiao-Wei Wang from Taipei, who served as Consensus R&D team lead at Ethereum Foundation and now works as a managing director at the Ethereum Foundation.
 - DApp Ecosystem: There are a good amount of Ethereum startups in Taiwan, mainly working in the DeFi and asset management space.
 
 ## University & Blockchain Clubs
 
 - [Prof. Gong Chen](https://mis2.nccu.edu.tw/zh_tw/Faculty/Faculty_01/%E9%99%B3-%E6%81%AD-8231181), National Chengchi University, Department of Management Information systems.
-    - Course: [Ethereum Smart Contract Development](https://mis2.nccu.edu.tw/zh_tw/Faculty/Faculty_01/%E9%99%B3-%E6%81%AD-8231181) and General blockchain related courses.
+  - Course: [Ethereum Smart Contract Development](https://mis2.nccu.edu.tw/zh_tw/Faculty/Faculty_01/%E9%99%B3-%E6%81%AD-8231181) and General blockchain related courses.
 - [Prof. Yu-Chi Chen](https://www-en.ntut.edu.tw/), National Taipei University of Technology, Department of Computer Science and Information Engineering
-    - Course: Cryptography and Privacy
+  - Course: Cryptography and Privacy
 - [Prof. Lo-Yao Yeh](https://sites.google.com/site/yehloyao/home), National Central University
-    - Course: Cryptography and Its Applications
+  - Course: Cryptography and Its Applications
 - [Martinet Lee](https://x.com/martinetlee), National Yang Ming Chiao Tung University, Institute of Network Engineering
-    - Course: [Blockchain Development and Fintech](https://timetable.nycu.edu.tw/)
+  - Course: [Blockchain Development and Fintech](https://timetable.nycu.edu.tw/)
 - Blockchain Clubs: Almost all top universities in Taiwan have blockchain clubs, including National Chengchi University (NCCU), National Taiwan University of Science and Technology (NTUST), and National Taiwan University (NTU). These clubs are typically chain-agnostic and primarily focus on DeFi applications.
 
 ## Media
