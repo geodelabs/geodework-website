@@ -60,7 +60,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `pnpm start`: Starts the production server.
 - `pnpm format`: Formats the code using Prettier.
 
-
 ## Blog Publishing
 
 Blog posts are stored as markdown files in the `app/blog/content` directory. Each post has a unique file name, and contains required `title` and `publishedTime` metadata, or "front matter", at the top of the file:
@@ -72,7 +71,6 @@ publishedTime: 2025-04-20 16:20:00
 ---
 ```
 
-
 ## Create a file using GitHub
 
 These instructions will guide a user through creating a pull request to add a blog entry, using only the GitHub interface:
@@ -81,28 +79,28 @@ These instructions will guide a user through creating a pull request to add a bl
 
 2. Click on the `Add file` button and select `Create new file`.
 
-3. Add a file name with the `.md` extension (e.g., `my-new-post.md`). This will be used as the URL path for the post (e.g., `/blog/my-new-post`).
+3. Add a file name with the `.md` extension (e.g., `my-new-post.md`). This will be used as the URL path for the post (e.g., `/blog/my-new-post`). Make sure the file name matches the slug in the corresponding blog provider.
 
 4. Copy the above front matter template and paste it into the file contents.
 
 5. Fill in the `title` field with the title of your post.
 
-    Note, the `title` field will be parsed and used at the primary header for the page (an `<h1>` tag in HTML, or line beginning with `#` in Markdown).
+   Note, the `title` field will be parsed and used at the primary header for the page (an `<h1>` tag in HTML, or line beginning with `#` in Markdown).
 
-    > There should only be one of these per page—refrain from using lines with single `#` in post content.
+   > There should only be one of these per page—refrain from using lines with single `#` in post content.
 
 6. Write your post content in standard markdown format. [More on markdown syntax](https://www.markdownguide.org/basic-syntax/)
 
 7. When ready, click "Commit changes".
 
-    a. Name the commit or leave the default.
+   a. Name the commit or leave the default.
 
-    b. Select _Create a new branch for this commit and start a pull request_ to allow review before merging to production
+   b. Select _Create a new branch for this commit and start a pull request_ to allow review before merging to production
 
-    c. Default suggested branch name should suffice
+   c. Default suggested branch name should suffice
 
-    d. Click "Propose changes"
+   d. Click "Propose changes"
 
-9. Click "Create pull request" to submit the post for review, allowing the preview to build on Netlify.
+8. Click "Create pull request" to submit the post for review, allowing the preview to build on Netlify.
 
 This will generate a preview deployment through Netlify with a link to preview the post before merging. Review the post, and if everything looks good, contact an admin for review and merge, or for any assistance.
