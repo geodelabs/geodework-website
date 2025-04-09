@@ -9,11 +9,12 @@ import HeroBackground from "@/components/HeroBackground"
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 
-import { SITE_NAME, SITE_URL } from "@/lib/constants"
+import { EBlogProvider, SITE_NAME, SITE_URL } from "@/lib/constants"
 
 import { generateClipPath } from "@/styles/clipPaths"
 import fs from "fs"
 import path from "path"
+import { BlogProvider } from "@/lib/domain/blog-provider"
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>
@@ -40,6 +41,15 @@ export async function generateMetadata({
       ? image
       : `${SITE_URL}/images/${image}`
 
+  const blogProvider = new BlogProvider(post.slug, EBlogProvider.LOCAL_ETHEREUM)
+  const isBlogPostExists = await blogProvider.getIsBlogPostExists()
+
+  if (!isBlogPostExists) {
+    console.error(
+      `Blog post with /${post.slug} does not exist in ${EBlogProvider.LOCAL_ETHEREUM}. Please rename the file name to match the slug`
+    )
+  }
+
   return {
     title,
     description,
@@ -56,6 +66,9 @@ export async function generateMetadata({
       title,
       description,
       images: [ogImage],
+    },
+    alternates: {
+      canonical: blogProvider.getBlogPostUrl(),
     },
   }
 }
