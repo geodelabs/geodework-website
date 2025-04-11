@@ -49,7 +49,7 @@ export default function Grant() {
     <>
       <HeroBackground />
       <div className="flex flex-col items-center gap-16">
-        <article className="mt-16 px-4 md:max-w-5xl">
+        <article className="mt-12 sm:mt-16 md:max-w-5xl">
           <h1 className="mb-8 text-center font-mono text-6xl font-light">
             Grants
           </h1>
@@ -66,7 +66,7 @@ export default function Grant() {
                 Projects We Support
               </h2>
               {/* Country Filter */}
-              <div className="mb-6 flex flex-row items-center justify-between">
+              <div className="mb-4 flex flex-col items-center justify-between sm:flex-row md:mb-6">
                 <div className="flex w-1/2 flex-col">
                   <label
                     htmlFor="country-filter"
@@ -88,46 +88,46 @@ export default function Grant() {
                     ))}
                   </select>
                 </div>
-                <div className="text-md mr-3 mt-auto">
+                <div className="sm:text-md mr-3 mt-4 text-sm md:mt-auto">
                   <p>Last updated: 2025-04-11</p>
                 </div>
               </div>
 
               {/* Projects Table */}
-              <div className="w-full overflow-x-auto">
-                <div className="w-full">
-                  <table className="w-full table-fixed divide-y divide-gray-200">
-                    <thead>
-                      <tr className="text-left">
-                        <th className={columnClasses}>Project</th>
-                        <th className={columnClasses}>Recipient</th>
-                        <th className={columnClasses}>Description</th>
-                        <th className={columnClasses}>Country</th>
+              <div className="max-w-[75vw] overflow-x-scroll md:max-w-full">
+                <table className="w-full divide-y divide-gray-200 md:table-fixed">
+                  <thead>
+                    <tr className="text-left">
+                      <th className={cn(columnClasses, "sm:w-1/4")}>Project</th>
+                      <th className={cn(columnClasses, "sm:w-1/4")}>
+                        Recipient
+                      </th>
+                      <th className={cn(columnClasses, "sm:w-1/2")}>
+                        Description
+                      </th>
+                      <th className={cn(columnClasses, "sm:w-1/4")}>Country</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredProjects.map((project, index) => (
+                      <tr
+                        key={project.project.title}
+                        className={cn(
+                          index % 2 === 0 ? "bg-primary" : "bg-primary-light"
+                        )}
+                      >
+                        <td className={cn(columnClasses, "font-medium")}>
+                          {generateInlineLink([project.project], "project")}
+                        </td>
+                        <td className={columnClasses}>
+                          {generateInlineLink(project.links, "links")}
+                        </td>
+                        <td className={columnClasses}>{project.description}</td>
+                        <td className={columnClasses}>{project.country}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {filteredProjects.map((project, index) => (
-                        <tr
-                          key={project.project.title}
-                          className={cn(
-                            index % 2 === 0 ? "bg-primary" : "bg-primary-light"
-                          )}
-                        >
-                          <td className={cn(columnClasses, "font-medium")}>
-                            {generateInlineLink([project.project], "project")}
-                          </td>
-                          <td className={columnClasses}>
-                            {generateInlineLink(project.links, "links")}
-                          </td>
-                          <td className={columnClasses}>
-                            {project.description}
-                          </td>
-                          <td className={columnClasses}>{project.country}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </section>
