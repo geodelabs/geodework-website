@@ -43,13 +43,13 @@ export const grantsData: IGrant[] = [
   {
     project: {
       title: "PhishQuest: Interactive Web3 Anti-Phishing Training Platform",
-      url: "https://phish-quest.vercel.app",
+      url: "https://phish-quest.vercel.app/",
     },
     description:
       "A security education initiative aiming to enhance users' ability to recognize and defend against phishing attacks by simulating real-world Web3 phishing scenarios and providing hands-on learning experiences.",
     links: [
       {
-        title: "PhishQuest",
+        title: "DeFiHackLabs",
         url: "https://defihacklabs.io",
       },
     ],
