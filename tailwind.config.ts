@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "375px",
+      },
       fontFamily: {
         body: "var(--font-ibm-plex-sans)",
         mono: "var(--font-ibm-plex-mono)",
