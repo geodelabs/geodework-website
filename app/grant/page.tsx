@@ -14,6 +14,11 @@ const countriesByAlphet = [
   ),
 ]
 
+/**
+ * Generates inline links for a given grant
+ * Note: If the volume of links were going to increase, we should consider an another approach
+ * like using markdown or something else. But it's ok for now.
+ */
 const generateInlineLink = (links: IGrant["links"], prefix: string = "") => {
   return links.map((link, index) => {
     return link.url ? (
