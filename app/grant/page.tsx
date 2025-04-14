@@ -60,8 +60,9 @@ export default function Grant() {
           </h1>
           <div className="mb-12 flex flex-col items-center gap-4 text-center">
             <p className="text-lg">
-              We facilitate grants-giving to better support Ethereum projects
-              that are building the future of decentralized technology.
+              We facilitate ecosystem grants with the goal to support Ethereum
+              and open Internet innovation. Learn about the excellent projects,
+              builders, and communities we support below.
             </p>
           </div>
 
