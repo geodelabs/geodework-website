@@ -10,7 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = getBlogPosts()
 
   const frequencyRoutes = {
-    "/grant": "monthly" as const,
+    "/grants": "monthly" as const,
   }
 
   // Static routes
@@ -19,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/blog",
     "/donate",
-    "/grant",
+    "/grants",
     "/privacy-policy",
     "/terms-of-use",
   ].map((route) => ({
