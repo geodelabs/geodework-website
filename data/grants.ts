@@ -11,6 +11,8 @@ export interface IGrant {
   country: string
 }
 
+export const lastUpdated = "2025-04-21"
+
 export const grantsData: IGrant[] = [
   {
     project: {
@@ -189,14 +191,14 @@ export const grantsData: IGrant[] = [
   },
   {
     project: {
-      title: "Web3 Institute Education Grant",
+      title: "Web3 Development Internship Program",
     },
     description:
-      "Part sandbox, incubator, and research engine, the W3I is focused on fuelling the digital economy in Ukraine by developing the Web3 space.",
+      "Web3 Development Internship Program is focused on Ethereum ecosystem development in Ukraine. The program will bridge the gap between technical education and industry needs by connecting students with practical development opportunities.",
     links: [
       {
         title: "Web3 Institute (W3I)",
-        url: "https://w3i.network/",
+        url: "https://w3i.network",
       },
     ],
     country: "Ukraine",
@@ -233,13 +235,14 @@ export const grantsData: IGrant[] = [
   {
     project: {
       title: "The House of Ether 2025",
+      url: "https://thehouseofether.gr/",
     },
     description:
       "A community education initiative with a duration of 12 months, aimed at engaging university students, researchers and academics aged 25-35 as well as the general public in topics of Ethereum, in North-eastern Greece.",
     links: [
       {
         title: "Bluechain",
-        url: "https://bluechain.tech/index.html",
+        url: "https://bluechain.tech/",
       },
     ],
     country: "Greece",
