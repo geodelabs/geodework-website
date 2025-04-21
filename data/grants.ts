@@ -11,6 +11,8 @@ export interface IGrant {
   country: string
 }
 
+export const lastUpdated = "2025-04-21"
+
 export const grantsData: IGrant[] = [
   {
     project: {

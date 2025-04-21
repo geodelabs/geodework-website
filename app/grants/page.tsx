@@ -3,7 +3,7 @@ import Link from "@/components/ui/link"
 import HeroBackground from "@/components/HeroBackground"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
-import { grantsData, IGrant } from "@/data/grants"
+import { grantsData, lastUpdated, IGrant } from "@/data/grants"
 import React from "react"
 
 const countriesByAlphet = [
@@ -95,7 +95,7 @@ export default function Grant() {
                   </select>
                 </div>
                 <div className="sm:text-md mr-3 mt-4 text-sm md:mt-auto">
-                  <p>Last updated: 2025-04-11</p>
+                  <p>Last updated: {lastUpdated}</p>
                 </div>
               </div>
 
