@@ -10,7 +10,7 @@ import Heart from "@/components/svgs/heart.svg"
 import "@/styles/globals.css"
 import Matomo from "@/components/Matomo"
 import { generateMetadata } from "@/lib/metadata"
-
+import AdSense from "@/components/Adsense"
 export const metadata = generateMetadata()
 
 export default function RootLayout({
@@ -37,6 +37,7 @@ export default function RootLayout({
           type="image/png"
           sizes="180x180"
         />
+        <AdSense />
       </head>
 
       <body className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
