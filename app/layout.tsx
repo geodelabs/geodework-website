@@ -10,7 +10,7 @@ import Heart from "@/components/svgs/heart.svg"
 import "@/styles/globals.css"
 import Matomo from "@/components/Matomo"
 import { generateMetadata } from "@/lib/metadata"
-import AdSense from "@/components/Adsense"
+import AdSense from "@/components/AdSense"
 export const metadata = generateMetadata()
 
 export default function RootLayout({
