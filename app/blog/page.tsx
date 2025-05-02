@@ -5,7 +5,11 @@ import GeodeIcon from "@/components/GeodeIcon"
 import Link from "@/components/ui/link"
 import HeroBackground from "@/components/HeroBackground"
 
-import { getBlogPosts, isPublished } from "@/lib/blog"
+import {
+  getBlogPosts,
+  isPublished,
+  sanitizePostPreviewContent,
+} from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
@@ -17,7 +21,6 @@ export const metadata = generateMetadata(SITE_NAME + " Blog")
 export default async function Blog() {
   const blogPosts = getBlogPosts()
   const publishedPosts = blogPosts.filter(isPublished)
-
   return (
     <div className="flex flex-col items-center gap-16">
       <HeroBackground />
@@ -45,7 +48,9 @@ export default async function Blog() {
                   <div className="mb-4 text-body-secondary">
                     {formatDate(publishedTime)}
                   </div>
-                  <p className="line-clamp-4">{content}</p>
+                  <p className="line-clamp-4">
+                    {sanitizePostPreviewContent(content)}
+                  </p>
                 </div>
               </Link>
             )
