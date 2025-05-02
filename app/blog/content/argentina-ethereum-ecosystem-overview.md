@@ -1,6 +1,6 @@
 ---
 title: "Argentina Ethereum Ecosystem Overview"
-publishedTime: 2025-03-20 12:00:00 Z-00:00
+publishedTime: 2025-04-23 12:00:00 Z-00:00
 ---
 
 ## This month, let's explore Argentina's thriving Ethereum ecosystem.
