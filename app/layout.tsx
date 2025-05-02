@@ -16,16 +16,17 @@ import Matomo from "@/components/Matomo"
 
 const title = SITE_NAME
 const description = SITE_DESCRIPTION
-const ogImage = `${SITE_URL}/og?title=${encodeURIComponent(title)}`
+const ogImage = `/og?title=${encodeURIComponent(title)}`
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title,
   description,
   openGraph: {
     title,
     description,
     type: "website",
-    url: SITE_URL,
+    url: "/",
     images: [{ url: ogImage }],
   },
   twitter: {
