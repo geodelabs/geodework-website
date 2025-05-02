@@ -4,6 +4,10 @@ export const SITE_DESCRIPTION =
   "An ecosystem product studio dedicated to global Ethereum ecosystem development and as such building a better Internet."
 export const GEODEWORK_URL = "https://geodework.com"
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || GEODEWORK_URL
+export const BLOG_NAME = SITE_NAME + " Blog"
+export const BLOG_DESCRIPTION =
+  "Insights, updates, and stories from the Geodework team."
+export const PUBLIC_DIR = "./public/"
 
 // Blog
 export const BLOG_PATH = "/blog"

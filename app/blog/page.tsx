@@ -1,4 +1,3 @@
-import type { Metadata } from "next/types"
 import { join } from "path"
 
 import GeodeIcon from "@/components/GeodeIcon"
@@ -11,8 +10,9 @@ import {
   sanitizePostPreviewContent,
 } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
+import { generateRssFeed, saveRssFeed } from "@/lib/rss"
 
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "@/lib/constants"
+import { SITE_NAME } from "@/lib/constants"
 import { generateClipPath } from "@/styles/clipPaths"
 import { generateMetadata } from "@/lib/metadata"
 
@@ -21,6 +21,10 @@ export const metadata = generateMetadata(SITE_NAME + " Blog")
 export default async function Blog() {
   const blogPosts = getBlogPosts()
   const publishedPosts = blogPosts.filter(isPublished)
+
+  // generate and save RSS feed
+  saveRssFeed(await generateRssFeed(publishedPosts))
+
   return (
     <div className="flex flex-col items-center gap-16">
       <HeroBackground />
