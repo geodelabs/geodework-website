@@ -16,7 +16,7 @@ import { SITE_NAME } from "@/lib/constants"
 import { generateClipPath } from "@/styles/clipPaths"
 import { generateMetadata } from "@/lib/metadata"
 
-export const metadata = generateMetadata(SITE_NAME + " Blog")
+export const metadata = generateMetadata("Blog", "/blog")
 
 export default async function Blog() {
   const blogPosts = getBlogPosts()

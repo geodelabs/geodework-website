@@ -4,7 +4,7 @@ import React from "react"
 import { generateMetadata } from "@/lib/metadata"
 import GrantsMain from "@/components/GrantsMain"
 
-export const metadata = generateMetadata("Grants")
+export const metadata = generateMetadata("Grants", "/grants")
 
 export default function Grant() {
   return (
