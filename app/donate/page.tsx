@@ -34,7 +34,7 @@ const alternativeOptions: {
   },
 ]
 
-export const metadata = generateMetadata("Donate")
+export const metadata = generateMetadata("Donate", "/donate")
 
 const titleLogoImage = (
   <Image

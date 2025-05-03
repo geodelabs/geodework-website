@@ -7,7 +7,7 @@ import About from "./content.mdx"
 import HeroBackground from "@/components/HeroBackground"
 import { generateMetadata } from "@/lib/metadata"
 
-export const metadata = generateMetadata('About')
+export const metadata = generateMetadata("About", "/about")
 
 const overrideComponents: MDXComponents = {
   h1: ({ children }) => (
