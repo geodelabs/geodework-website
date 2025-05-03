@@ -6,7 +6,7 @@ export const GEODEWORK_URL = "https://geodework.com"
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || GEODEWORK_URL
 export const BLOG_NAME = SITE_NAME + " Blog"
 export const BLOG_DESCRIPTION =
-  "Insights, updates, and stories from the Geodework team."
+  "A global Ethereum newsletter by Geodework, spotlighting local communities, events, and developments shaping the decentralized future of the ecosystem."
 export const PUBLIC_DIR = "./public/"
 
 // Blog
