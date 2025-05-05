@@ -1,7 +1,7 @@
 import HeroBackground from "@/components/HeroBackground"
 import HomepageHeroContent from "@/components/HomepageHeroContent"
-import { Meteors } from "@/components/ui/meteors"
 import Link from "@/components/ui/link"
+import { Meteors } from "@/components/ui/meteors"
 
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
 

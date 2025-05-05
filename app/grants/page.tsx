@@ -1,8 +1,9 @@
-import HeroBackground from "@/components/HeroBackground"
 import React from "react"
 
-import { generateMetadata } from "@/lib/metadata"
 import GrantsMain from "@/components/GrantsMain"
+import HeroBackground from "@/components/HeroBackground"
+
+import { generateMetadata } from "@/lib/metadata"
 
 export const metadata = generateMetadata("Grants", "/grants")
 

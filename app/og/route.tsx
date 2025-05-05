@@ -5,8 +5,8 @@ import { SITE_NAME, SITE_URL } from "@/lib/constants"
 import GeodeGlyph from "@/public/images/geode-glyph.svg"
 
 export function GET(request: Request) {
-  let url = new URL(request.url)
-  let title = url.searchParams.get("title") || SITE_NAME
+  const url = new URL(request.url)
+  const title = url.searchParams.get("title") || SITE_NAME
 
   return new ImageResponse(
     (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next/types"
+
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./constants"
 
 // TODO: Change description to be dynamic based on the page

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Check, Copy } from "lucide-react"
+
 import { cn } from "@/lib/utils"
 
 interface CopyButtonProps {
@@ -27,7 +28,7 @@ export function CopyButton({ text, className }: CopyButtonProps) {
       )}
     >
       {copied ? (
-          <Check className="h-4 w-4" />
+        <Check className="h-4 w-4" />
       ) : (
         <>
           Copy
@@ -36,4 +37,4 @@ export function CopyButton({ text, className }: CopyButtonProps) {
       )}
     </button>
   )
-} 
+}

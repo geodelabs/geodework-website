@@ -1,6 +1,7 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
+
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "../constants"
 import { generateMetadata } from "../metadata"
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from "../constants"
 
 describe("generateMetadata", () => {
   it("should generate metadata with default values when no arguments are provided", () => {

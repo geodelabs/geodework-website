@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
+
 import { cn } from "@/lib/utils"
 
 const containerClassName = cn(

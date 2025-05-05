@@ -1,9 +1,10 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
+
+import { MATOMO_OPT_OUT_LS_KEY } from "@/lib/constants"
 
 import { generateClipPath } from "@/styles/clipPaths"
-import { MATOMO_OPT_OUT_LS_KEY } from "@/lib/constants"
 
 const MatomoOptOut = () => {
   const [isOptedOut, setIsOptedOut] = useState(false)

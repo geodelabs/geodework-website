@@ -1,10 +1,10 @@
 import type { MDXComponents } from "mdx/types"
 
 import GeodeIcon from "@/components/GeodeIcon"
+import HeroBackground from "@/components/HeroBackground"
 
 import About from "./content.mdx"
 
-import HeroBackground from "@/components/HeroBackground"
 import { generateMetadata } from "@/lib/metadata"
 
 export const metadata = generateMetadata("About", "/about")

@@ -1,20 +1,20 @@
+import fs from "fs"
+import path from "path"
+
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import GeodeIcon from "@/components/GeodeIcon"
+import HeroBackground from "@/components/HeroBackground"
 import { MarkdownProvider } from "@/components/Markdown/Provider"
 import Link from "@/components/ui/link"
-import HeroBackground from "@/components/HeroBackground"
-
-import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
-import { formatDate } from "@/lib/datetime"
 
 import { EBlogProvider, SITE_NAME, SITE_URL } from "@/lib/constants"
 
-import { generateClipPath } from "@/styles/clipPaths"
-import fs from "fs"
-import path from "path"
+import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
+import { formatDate } from "@/lib/datetime"
 import { BlogProvider } from "@/lib/domain/blog-provider"
+import { generateClipPath } from "@/styles/clipPaths"
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>

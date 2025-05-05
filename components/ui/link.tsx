@@ -3,8 +3,9 @@ import NextLink, { type LinkProps as NextLinkProps } from "next/link"
 
 import ExternalLink from "@/components/svgs/external-link.svg"
 
-import * as url from "@/lib/url"
 import { cn } from "@/lib/utils"
+
+import * as url from "@/lib/url"
 
 type BaseProps = {
   hideArrow?: boolean

@@ -1,20 +1,23 @@
+import Image from "next/image"
+
+import HeroBackground from "@/components/HeroBackground"
+import BitcoinLogo from "@/components/svgs/bitcoin.svg"
+import { CopyButton } from "@/components/ui/copy-button"
+import Link from "@/components/ui/link"
 import { QRCode } from "@/components/ui/qr-code"
+
 import {
-  SITE_NAME,
-  ETHEREUM_ADDRESS,
-  ETHEREUM_ENS,
   BITCOIN_ADDRESS,
   BUY_ME_A_COFFEE_URL,
+  ETHEREUM_ADDRESS,
+  ETHEREUM_ENS,
   GITCOIN_URL,
   GIVETH_URL,
+  SITE_NAME,
 } from "@/lib/constants"
-import { CopyButton } from "@/components/ui/copy-button"
-import BitcoinLogo from "@/components/svgs/bitcoin.svg"
-import Link from "@/components/ui/link"
-import { shortenAddress } from "@/lib/web3"
+
 import { generateMetadata } from "@/lib/metadata"
-import Image from "next/image"
-import HeroBackground from "@/components/HeroBackground"
+import { shortenAddress } from "@/lib/web3"
 
 const alternativeOptions: {
   name: string

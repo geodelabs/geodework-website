@@ -1,4 +1,5 @@
 import type { MDXComponents } from "mdx/types"
+
 import { MarkdownComponents } from "@/components/Markdown/Components"
 
 const customComponents: MDXComponents = {

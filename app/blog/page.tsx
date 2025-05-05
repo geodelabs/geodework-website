@@ -1,8 +1,10 @@
 import { join } from "path"
 
 import GeodeIcon from "@/components/GeodeIcon"
-import Link from "@/components/ui/link"
 import HeroBackground from "@/components/HeroBackground"
+import Link from "@/components/ui/link"
+
+import { SITE_NAME } from "@/lib/constants"
 
 import {
   getBlogPosts,
@@ -10,11 +12,9 @@ import {
   sanitizePostPreviewContent,
 } from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
-import { generateRssFeed, saveRssFeed } from "@/lib/rss"
-
-import { SITE_NAME } from "@/lib/constants"
-import { generateClipPath } from "@/styles/clipPaths"
 import { generateMetadata } from "@/lib/metadata"
+import { generateRssFeed, saveRssFeed } from "@/lib/rss"
+import { generateClipPath } from "@/styles/clipPaths"
 
 export const metadata = generateMetadata("Blog", "/blog")
 

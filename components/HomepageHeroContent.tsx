@@ -4,10 +4,10 @@ import HeroTypewriterEffect, {
   type HeroTypewriterItem,
 } from "./HeroTypewriterEffect"
 
-import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 import GeodePolygon4 from "@/public/images/geode-polygon-4.svg"
 import GeodePolygon6 from "@/public/images/geode-polygon-6.svg"
 import GeodePolygon8 from "@/public/images/geode-polygon-8.svg"
+import GeodePolygon10 from "@/public/images/geode-polygon-10.svg"
 
 const HomepageHeroContent = () => {
   const heroItems: HeroTypewriterItem[] = [

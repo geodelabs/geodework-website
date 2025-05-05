@@ -1,10 +1,12 @@
 "use client"
 
-import { CopyButton } from "./copy-button"
+import { QRCodeSVG } from "qrcode.react"
+
 import { cn } from "@/lib/utils"
+
+import { CopyButton } from "./copy-button"
 import { QRGradient, qrGradientId } from "./qr-gradient"
 
-import { QRCodeSVG } from "qrcode.react"
 import { shortenAddress } from "@/lib/web3"
 
 interface QRCodeProps {
