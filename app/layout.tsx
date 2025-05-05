@@ -1,16 +1,16 @@
-import Link from "@/components/ui/link"
+import AdSense from "@/components/AdSense"
+import Matomo from "@/components/Matomo"
 import Socials from "@/components/Socials"
 import Subscribe from "@/components/Subscribe"
+import Heart from "@/components/svgs/heart.svg"
+import Link from "@/components/ui/link"
 
 import { cn } from "@/lib/utils"
 
-import GeodeworkLogo from "@/public/images/geodework-logo.svg"
-import Heart from "@/components/svgs/heart.svg"
-
 import "@/styles/globals.css"
-import Matomo from "@/components/Matomo"
+
 import { generateMetadata } from "@/lib/metadata"
-import AdSense from "@/components/AdSense"
+import GeodeworkLogo from "@/public/images/geodework-logo.svg"
 export const metadata = generateMetadata()
 
 export default function RootLayout({

@@ -1,4 +1,4 @@
-import { LOCAL_ETHEREUM_BLOG_URL, EBlogProvider } from "../constants"
+import { EBlogProvider, LOCAL_ETHEREUM_BLOG_URL } from "../constants"
 
 export class BlogProvider {
   constructor(
@@ -36,7 +36,6 @@ export class BlogProvider {
   async getIsBlogPostExists(): Promise<boolean> {
     const methods = this.getMethodsByBlogProvider(this.blogProvider)
     const url = methods.getBlogPostUrl()
-    console.log("...url", url)
     return await methods.getIsBlogPostExists(url)
   }
 }

@@ -1,12 +1,11 @@
-import Link from "./ui/link"
-
 import { cn } from "@/lib/utils"
-
-import { generateClipPath } from "@/styles/clipPaths"
 
 import GitHub from "./svgs/github.svg"
 import Mail from "./svgs/mail.svg"
 import Twitter from "./svgs/twitter.svg"
+import Link from "./ui/link"
+
+import { generateClipPath } from "@/styles/clipPaths"
 
 const Socials = () => (
   <section className="flex gap-x-2">

@@ -1,8 +1,9 @@
 "use client"
 
-import { cn } from "@/lib/utils"
-import { motion, stagger, useAnimate, useInView } from "framer-motion"
 import { useEffect } from "react"
+import { motion, stagger, useAnimate, useInView } from "framer-motion"
+
+import { cn } from "@/lib/utils"
 
 const defaultCursorSizeClasses =
   "h-[1em] w-[0.125em] -translate-x-2 translate-y-0.5"

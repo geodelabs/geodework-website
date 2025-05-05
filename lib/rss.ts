@@ -1,13 +1,12 @@
 import fs from "fs"
-import { Feed, type Item } from "feed"
-
-import { BLOG_PATH, PUBLIC_DIR, SITE_URL } from "./constants"
-
 import { resolve } from "path"
+
+import { Feed, type Item } from "feed"
 import removeMd from "remove-markdown"
 
 import { BLOG_DESCRIPTION, BLOG_NAME, SITE_NAME } from "@/lib/constants"
 
+import { BLOG_PATH, PUBLIC_DIR, SITE_URL } from "./constants"
 import type { BlogPost } from "./types"
 import { normalizeUrl } from "./url"
 

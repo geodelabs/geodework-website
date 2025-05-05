@@ -1,7 +1,10 @@
 import { MetadataRoute } from "next"
-import { getBlogPosts } from "@/lib/blog"
+
 import type { BlogPost } from "@/lib/types"
+
 import { GEODEWORK_URL } from "@/lib/constants"
+
+import { getBlogPosts } from "@/lib/blog"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = GEODEWORK_URL
