@@ -6,7 +6,7 @@ import removeMd from "remove-markdown"
 
 import { BLOG_PATH, MAX_WORDS_PER_POST_PREVIEW } from "@/lib/constants"
 
-import type { BlogPost,FrontMatter } from "./types"
+import type { BlogPost, FrontMatter } from "./types"
 
 export const getSlicedContent = (content: string, maxLength: number = 125) => {
   const SLICED_TEXT = content.split(" ").slice(0, maxLength).join(" ")

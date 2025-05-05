@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect,useState } from "react"
+import { useEffect, useState } from "react"
 
 import { MATOMO_OPT_OUT_LS_KEY } from "@/lib/constants"
 

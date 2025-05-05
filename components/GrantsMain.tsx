@@ -6,7 +6,7 @@ import Link from "@/components/ui/link"
 
 import { cn } from "@/lib/utils"
 
-import { grantsData, IGrant,lastUpdated } from "@/data/grants"
+import { grantsData, IGrant, lastUpdated } from "@/data/grants"
 
 const countriesByAlphet = [
   ...new Set(

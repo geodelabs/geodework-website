@@ -1,4 +1,4 @@
-import { describe, expect,it } from "vitest"
+import { describe, expect, it } from "vitest"
 
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "../constants"
 import { generateMetadata } from "../metadata"
