@@ -1,6 +1,11 @@
 import { dirname } from "path"
 import { fileURLToPath } from "url"
+
+import simpleImportSort from "eslint-plugin-simple-import-sort"
+import unusedImports from "eslint-plugin-unused-imports"
 import { FlatCompat } from "@eslint/eslintrc"
+import typescriptEslint from "@typescript-eslint/eslint-plugin"
+import typescriptParser from "@typescript-eslint/parser"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -18,11 +23,20 @@ const eslintConfig = [
     "prettier"
   ),
   {
-    env: {
-      es6: true,
+    ignores: [".next/**/*"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      parser: typescriptParser,
+      globals: {
+        // Add any global variables here
+      },
     },
-    plugins: ["simple-import-sort", "@typescript-eslint", "unused-imports"],
-    parser: "@typescript-eslint/parser",
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+      "@typescript-eslint": typescriptEslint,
+      "unused-imports": unusedImports,
+    },
     rules: {
       "simple-import-sort/imports": [
         "error",
