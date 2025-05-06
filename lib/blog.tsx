@@ -72,6 +72,13 @@ export const isPublished = (post: BlogPost) => {
   return publishedTime <= now
 }
 
+export const hasUniquePublishedDates = (posts: BlogPost[]) => {
+  const list = new Set()
+
+  posts.forEach((post) => list.add(post.frontmatter.publishedTime))
+  return list.size === posts.length
+}
+
 export const getBlogPosts = (): BlogPost[] => {
   const allPosts = getMarkdownData(
     path.join(process.cwd(), "app", "blog", "content")
