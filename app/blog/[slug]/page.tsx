@@ -11,7 +11,11 @@ import Link from "@/components/ui/link"
 
 import { EBlogProvider, SITE_NAME, SITE_URL } from "@/lib/constants"
 
-import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
+import {
+  getBlogPosts,
+  getHrefFromSlug,
+  hasUniquePublishedDates,
+} from "@/lib/blog"
 import { formatDate } from "@/lib/datetime"
 import { BlogProvider } from "@/lib/domain/blog-provider"
 import { generateClipPath } from "@/styles/clipPaths"
@@ -22,6 +26,8 @@ type BlogPostPageProps = {
 
 export function generateStaticParams() {
   const posts = getBlogPosts()
+  if (!hasUniquePublishedDates(posts))
+    throw new Error("Duplicate published dates")
 
   return posts.map((post) => ({ slug: post.slug }))
 }
