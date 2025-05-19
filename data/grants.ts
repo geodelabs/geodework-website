@@ -262,4 +262,135 @@ export const grantsData: IGrant[] = [
     ],
     country: "Japan",
   },
+  {
+    project: {
+      title: "Onchain bootcamp 2025",
+      url: "https://www.facebook.com/people/Onchain-Bootcamp/61576231011833/",
+    },
+    description:
+      "Onchain bootcamp 2025 is a 10-Day(16 - 27 June) Structured Program, which is taking place at Chulalongkorn University providing with comprehensive Ethereum-based curriculum, hands-on workshops and support for career pipeline.",
+    links: [
+      {
+        title: "CUBS (Chulalongkorn University Blockchain Society)",
+        url: "https://chulablockchain.com/",
+      },
+    ],
+    country: "Thailand",
+  },
+  {
+    project: {
+      title: "Agentic Ethereum Hackathon 2025",
+      url: "https://reskilll.com/hack/agentic",
+    },
+    description:
+      "Agentic Ethereum Hackathon is a 30-hour hackathon which will gather over 150-200 passionate developers from Delhi NCR or Bangalore, aiming to catalyze the creation of AI-driven autonomous agents and smart contracts on Ethereum, fostering innovation at the intersection of blockchain and artificial intelligence.",
+    links: [
+      {
+        title: "Reskilll",
+        url: "https://reskilll.com/",
+      },
+    ],
+    country: "India",
+  },
+  {
+    project: {
+      title: "ETHKL 2025",
+    },
+    description: "ETHKL 2025 development and self-sustainability exploration v3.",
+    links: [
+      {
+        title: "ETHKL",
+        url: "https://ethkl.org/",
+      },
+    ],
+    country: "Malaysia",
+  },
+  {
+    project: {
+      title: "DAOstar Research Fellowship",
+      url: "https://daostar.org/research",
+    },
+    description:
+      "The DAOstar Research Fellowship Program funds research fellows in 2025 to produce actionable research on DAO governance, labor practices, contributor retention, and compensation structures with outputs including: public research reports, blog posts, and presentations at conferences.",
+    links: [
+      {
+        title: "Metagov",
+        url: "https://metagov.org/",
+      },
+    ],
+    country: "USA",
+  },
+  {
+    project: {
+      title: "ETH Belgrade 2025",
+      url: "https://ethbelgrade.rs/",
+    },
+    description:
+      "ETH Belgrade(June 3–5) featuring both a conference and a hackathon, will be focused on topics of  Ethereum, ZK, DeFi, and Web3 security.",
+    links: [
+      {
+        title: "ETH Belgrade",
+        url: "https://x.com/ethbelgrade",
+      },
+    ],
+    country: "Serbia",
+  },
+  {
+    project: {
+      title: "Web3SSH:2.0",
+      url: "https://web3ssh.dev/",
+    },
+    description:
+      "Web3SSH 2.0 is a 7-day summer blockchain/Ethereum focused offline camp, which consists of a Summer School program and a Hackathon, taking place at IIIT Sri City, India, from 29 June to 6th July, 2025.",
+    links: [
+      {
+        title: "IIIT Sri City, India",
+        url: "https://www.iiits.ac.in/",
+      },
+    ],
+    country: "India",
+  },
+  {
+    project: {
+      title: "Ethereum Mexico Org 2025",
+    },
+    description:
+      "Ethereum Mexico Org 2025 is focused on growing the Ethereum ecosystem in Mexico through education and community-driven programs.",
+    links: [
+      {
+        title: "Ethereum Mexico",
+        url: "https://www.ethmexico.org/",
+      },
+    ],
+    country: "Mexico",
+  },
+  {
+    project: {
+      title: "Copenhagen Ethereum Meetup 10 Years Anniversary",
+    },
+    description:
+      "This meetup(held on 7/14/2025) is non-technical and will be a reflection on what happened for Ethereum ecosystem in the past 10 years and where they see the space is heading in the next 10 years.",
+    links: [
+      {
+        title: "Copenhagen Ethereum Meetup",
+        url: "https://www.meetup.com/copenhagen-ethereum-meetup/",
+      },
+    ],
+    country: "Denmark",
+  },
+  {
+    project: {
+      title: "ETHCluj 2025: Ethereum for Everyone",
+      url: "https://www.ethcluj.org/",
+    },
+    description:
+      "ETHCluj is hosting a 3-day conference from June 26-28, 2025 at Technical University of Cluj-Napoca, Romania.\n\nThis conference will feature 3 stages including workshop, sessions and hands-on workshops, with topics across six main tracks, including Dev Onboarding, Ethereum Roadmap, DeFi, AI, Regulation, and Adoption.",
+    links: [
+      {
+        title: "ETHCluj",
+        url: "https://x.com/ETHCluj",
+      },
+    ],
+    country: "Romania",
+  }
 ]
