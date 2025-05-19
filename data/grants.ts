@@ -4,11 +4,30 @@ interface ILink {
   hasComma?: boolean
 }
 
+export type TCountry =
+  | 'Argentina'
+  | 'Colombia'
+  | 'Denmark'
+  | 'Greece'
+  | 'Honduras'
+  | 'India'
+  | 'Japan'
+  | 'Malaysia'
+  | 'Mexico'
+  | 'Poland'
+  | 'Romania'
+  | 'Serbia'
+  | 'Slovakia'
+  | 'Taiwan'
+  | 'Thailand'
+  | 'Ukraine'
+  | 'USA';
+
 export interface IGrant {
   project: ILink
   description: string
   links: ILink[]
-  country: string
+  country: TCountry
 }
 
 export const lastUpdated = "2025-04-21"
