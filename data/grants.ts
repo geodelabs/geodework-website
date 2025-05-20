@@ -30,7 +30,7 @@ export interface IGrant {
   country: TCountry
 }
 
-export const lastUpdated = "2025-04-21"
+export const lastUpdated = "2025-05-20"
 
 export const grantsData: IGrant[] = [
   {
