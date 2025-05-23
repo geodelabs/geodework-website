@@ -1,11 +1,10 @@
-import fs from "fs"
 import path from "path"
 
-import matter from "gray-matter"
 import removeMd from "remove-markdown"
 
 import { BLOG_PATH, MAX_WORDS_PER_POST_PREVIEW } from "@/lib/constants"
 
+import { getBlogMarkdownData } from "./markdown-utils"
 import type { BlogPost, FrontMatter } from "./types"
 
 export const getSlicedContent = (content: string, maxLength: number = 125) => {
@@ -39,33 +38,6 @@ export const sanitizePostPreviewContent = (content: string): string => {
   return wordArray.slice(0, sliceEnd).join(" ") + (isTooLong ? "..." : "")
 }
 
-const getMarkdownFiles = (dir: string) =>
-  fs.readdirSync(dir).filter((file) => path.extname(file) === ".md")
-
-const readMarkdownFile = (filePath: string) => {
-  const rawContent = fs.readFileSync(filePath, "utf-8")
-  const matterOutput = matter(rawContent)
-
-  return {
-    frontmatter: matterOutput.data as FrontMatter,
-    content: matterOutput.content,
-  }
-}
-
-const getMarkdownData = (dir: string) => {
-  const mdFiles = getMarkdownFiles(dir)
-  return mdFiles.map((file) => {
-    const { frontmatter, content } = readMarkdownFile(path.join(dir, file))
-    const slug = path.basename(file, path.extname(file))
-
-    return {
-      frontmatter,
-      slug,
-      content,
-    }
-  })
-}
-
 export const isPublished = (post: BlogPost) => {
   const now = new Date()
   const publishedTime = new Date(post.frontmatter.publishedTime)
@@ -80,9 +52,10 @@ export const hasUniquePublishedDates = (posts: BlogPost[]) => {
 }
 
 export const getBlogPosts = (): BlogPost[] => {
-  const allPosts = getMarkdownData(
+  const allPosts = getBlogMarkdownData(
     path.join(process.cwd(), "app", "blog", "content")
   )
+
   const sortedPosts = allPosts.sort(
     (a, b) =>
       new Date(b.frontmatter.publishedTime).getTime() -
