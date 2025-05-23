@@ -95,7 +95,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   const nextPost = currentIndex === 0 ? null : allPosts[currentIndex - 1]
 
   // Read the footer content
-  const footerPath = path.join(process.cwd(), "app/blog/content/footer.md")
+  const footerPath = path.join(process.cwd(), "app/blog/partial/footer.md")
   const footerContent = fs.readFileSync(footerPath, "utf-8")
 
   return (
