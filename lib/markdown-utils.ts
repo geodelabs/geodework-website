@@ -19,10 +19,16 @@ const readMarkdownFile = (filePath: string) => {
   }
 }
 
-export const getMarkdownData = (dir: string) => {
+export const getBlogMarkdownData = (dir: string) => {
   const mdFiles = getMarkdownFiles(dir)
   return mdFiles.map((file) => {
     const { frontmatter, content } = readMarkdownFile(path.join(dir, file))
+
+    if (!(frontmatter.title && frontmatter.publishedTime))
+      throw new Error(
+        `Move the non-blog format file ${file} out of ${dir}. It's missing title or publishedTime.`
+      )
+
     const slug = path.basename(file, path.extname(file))
 
     return {

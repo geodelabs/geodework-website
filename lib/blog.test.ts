@@ -49,7 +49,7 @@ describe("hasUniquePublishedDates", () => {
   })
 
   it("should return the correct blog posts", () => {
-    vi.spyOn(markdownUtils, "getMarkdownData").mockReturnValue([
+    vi.spyOn(markdownUtils, "getBlogMarkdownData").mockReturnValue([
       {
         frontmatter: {
           title: "Article-1",

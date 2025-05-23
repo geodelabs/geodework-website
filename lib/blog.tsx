@@ -4,7 +4,7 @@ import removeMd from "remove-markdown"
 
 import { BLOG_PATH, MAX_WORDS_PER_POST_PREVIEW } from "@/lib/constants"
 
-import { getMarkdownData } from "./markdown-utils"
+import { getBlogMarkdownData } from "./markdown-utils"
 import type { BlogPost, FrontMatter } from "./types"
 
 export const getSlicedContent = (content: string, maxLength: number = 125) => {
@@ -52,16 +52,15 @@ export const hasUniquePublishedDates = (posts: BlogPost[]) => {
 }
 
 export const getBlogPosts = (): BlogPost[] => {
-  const allPosts = getMarkdownData(
+  const allPosts = getBlogMarkdownData(
     path.join(process.cwd(), "app", "blog", "content")
   )
-  const sortedPosts = allPosts
-    .filter((post) => post.content)
-    .sort(
-      (a, b) =>
-        new Date(b.frontmatter.publishedTime).getTime() -
-        new Date(a.frontmatter.publishedTime).getTime()
-    )
+
+  const sortedPosts = allPosts.sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishedTime).getTime() -
+      new Date(a.frontmatter.publishedTime).getTime()
+  )
 
   const published = sortedPosts.filter(isPublished)
 
