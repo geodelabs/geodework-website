@@ -82,7 +82,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/?utm_source=localethereum.beehiiv.com&
 
 ## North America 🗽
 
-- [SEC says](https://www.sec.gov/newsroom/speeches-statements/statement-certain-protocol-staking-activities-052925#:~:text=It%20is%20the%20Division's%20view,Exchange%20Act%20of%201934%20(the%20%E2%80%9C) proof-of-stake staking activities do not constitute securities transactions.
+- [SEC says](https://www.sec.gov/newsroom/speeches-statements/statement-certain-protocol-staking-activities-052925#:~:text=It%20is%20the%20Division%27s%20view,Exchange%20Act%20of%201934%20%28the%20%E2%80%9C) proof-of-stake staking activities do not constitute securities transactions.
 - With the closing of the [$425 million private placement](https://x.com/Consensys/status/1929544997646336097?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) led by [Consensys](https://x.com/Consensys?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5), SharpLink will become the largest publicly traded ETH holder globally.
 - Consensys [acquired Web3Auth's wallet infrastructure](https://consensys.io/blog/consensys-acquires-web3auth-to-enhance-metamasks-user-experience-user-safety?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5), aiming to improve the user experience on MetaMask.
 - Succinct introduces [SP1 Hypercube](https://x.com/SuccinctLabs/status/1924845712921264562?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5), claiming real-time Ethereum proving
@@ -118,7 +118,7 @@ _Artist: [Liam Cobb](https://liamcobb.com/?utm_source=localethereum.beehiiv.com&
 
 ### Australia
 
-- Ethereum L2 [RISE](https://explorer.testnet.riselabs.xyz/address/0x182Bc4fFDcCC838c72D169fAbddC19c4D4Ea55Cf?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) [] (https://explorer.testnet.riselabs.xyz/address/0x182Bc4fFDcCC838c72D169fAbddC19c4D4Ea55Cf?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5)[testnet](https://explorer.testnet.riselabs.xyz/address/0x182Bc4fFDcCC838c72D169fAbddC19c4D4Ea55Cf?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) reached [1 billion](https://x.com/rise_chain/status/1920576527520956480?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) transactions. Monthly [Ethereum Melbourne](https://x.com/ethmelbourne?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) meetup for local cool nerds, May: [LP Labyrinth, Recursive Liquidity Madness](https://lu.ma/user/usr-VEFqG8hvMFtTjmx?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5).
+- Ethereum L2 [RISE testnet](https://explorer.testnet.riselabs.xyz/address/0x182Bc4fFDcCC838c72D169fAbddC19c4D4Ea55Cf) reached [1 billion](https://x.com/rise_chain/status/1920576527520956480?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) transactions. Monthly [Ethereum Melbourne](https://x.com/ethmelbourne?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5) meetup for local cool nerds, May: [LP Labyrinth, Recursive Liquidity Madness](https://lu.ma/user/usr-VEFqG8hvMFtTjmx?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-5).
 
 ## Global Ecosystem Update 🗺️
 
