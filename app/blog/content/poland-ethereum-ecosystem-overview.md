@@ -119,8 +119,3 @@ Table: Developer growth by total developers in 2023, % increase from 2022.
 - Chainalysis: Despite war and regulatory questions, [crypto adoption grows in Eastern Europe driven by institutions and DeFi activity](https://www.chainalysis.com/blog/2024-eastern-europe-crypto-adoption/)
 - The Recursive: [We're Not Pitching Ice to Eskimos Anymore": Poland Enters the Scaleup League](https://therecursive.com/poland-startup-ecosystem-investors-startups-scaleups-update-2025/)
 - [ETHWarsaw's Substack](https://ethwarsaw.substack.com/)
-
-Lastly, we just got two great news to share from our friends at EF Next Billion:
-
-- Devconnect Scholars Program in Argentina! 🇦🇷 Calling for 100 people who are expanding Ethereum's reach into new communities and industries to join us in Buenos Aires this November. 🗓 Apply by June 30: [https://blog.ethereum.org/2025/06/03/devconnect-arg-scholars](https://blog.ethereum.org/2025/06/03/devconnect-arg-scholars)
-- Ethereum Season of Internships: Apply for paid, remote internships with over 18 Ethereum ecosystem teams offering 30+ roles across development, design, research, community, comms, and more. A unique opportunity to learn, get mentored, and build real impact in the ecosystem. 🗓 Apply by June 29: [https://blog.ethereum.org/2025/06/12/season-of-internships](https://blog.ethereum.org/2025/06/12/season-of-internships)
