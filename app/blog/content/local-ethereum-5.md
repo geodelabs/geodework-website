@@ -7,14 +7,12 @@ publishedTime: 2025-06-06 00:00:00 Z-00:00
 
 June 06, 2025
 
-![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6d214dec-ea76-451c-9c18-43eb77a9aaec/image-ethereum.png?t=1739222459)
+![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3de61e81-46b8-462f-8a90-e29088e3d2ba/image-ethereum.png?t=1738601603)
+_Artist: [Liam Cobb](https://liamcobb.com/)_
 
 ## 🌍 Beginning
 
 **Local Ethereum** is a newsletter to cover the geo-story of Ethereum.
-
-![](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3de61e81-46b8-462f-8a90-e29088e3d2ba/image-ethereum.png?t=1738601603)
-_Artist: [Liam Cobb](https://liamcobb.com/)_
 
 ## Asia 🌊
 
