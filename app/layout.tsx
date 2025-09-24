@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 import "@/styles/globals.css"
 
 import { generateMetadata } from "@/lib/metadata"
-import GeodeworkLogo from "@/public/images/geodework-logo.svg"
+import GeodeLabsLogo from "@/public/images/geode-labs-logo.svg"
 export const metadata = generateMetadata()
 
 export default function RootLayout({
@@ -50,7 +50,7 @@ export default function RootLayout({
         >
           {/* Header start */}
           <Link href="/" className="!text-white">
-            <GeodeworkLogo />
+            <GeodeLabsLogo />
           </Link>
 
           {/* Header end */}
@@ -71,7 +71,7 @@ export default function RootLayout({
           <Subscribe />
 
           <p className="-mt-2">
-            Donate: <Link href="/donate">geodework.eth</Link>{" "}
+            Donate: <Link href="/donate">geodelabs.eth</Link>{" "}
             <Heart className="inline text-[red]" />
           </p>
 
@@ -83,7 +83,7 @@ export default function RootLayout({
           </div>
 
           <p className="w-full p-4 text-center text-body-secondary">
-            &copy; Geodework {new Date().getFullYear()}
+            &copy; Geode Labs {new Date().getFullYear()}
           </p>
         </footer>
 

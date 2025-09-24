@@ -3,7 +3,7 @@ Thanks for reading, and have a nice day! 🌸
 
 Best regards,
 
-Riely and the Geodework team.
+Riely and the Geode Labs team.
 ---
 
 > ❤️❤️❤️

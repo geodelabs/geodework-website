@@ -42,7 +42,7 @@ export const metadata = generateMetadata("Donate", "/donate")
 const titleLogoImage = (
   <Image
     src="/images/geode-ethereum.png"
-    alt="Geodework Logo"
+    alt="Geode Labs Logo"
     width={72}
     height={72}
     quality={100}
@@ -78,7 +78,7 @@ export default function Donate() {
                     primaryLink={ETHEREUM_ADDRESS}
                     secondaryLink={ETHEREUM_ENS}
                     useGradient={true}
-                    embedImageInQRCode="/images/geodework-circle-logo.svg"
+                    embedImageInQRCode="/images/geode-labs-circle-logo.svg"
                     titleLogoImage={titleLogoImage}
                   />
                 </div>

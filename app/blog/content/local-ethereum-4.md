@@ -129,7 +129,7 @@ Let's start!
 
 ### Argentina
 
-- Dive into the most comprehensive mapping of Argentina's thriving Ethereum landscape. Crafted by the Geodework team with great community support. Please feel free to check out the [Argentina Ethereum Ecosystem Overview](https://localethereum.beehiiv.com/p/argentina-ethereum-ecosystem-overview). Let's bring Argentina onchain!
+- Dive into the most comprehensive mapping of Argentina's thriving Ethereum landscape. Crafted by the Geode Labs team with great community support. Please feel free to check out the [Argentina Ethereum Ecosystem Overview](https://localethereum.beehiiv.com/p/argentina-ethereum-ecosystem-overview). Let's bring Argentina onchain!
 - The Devconnect team is kicking off the road to Devconnect Argentina with "Destino Devconnect," a grants program supporting local initiatives to accelerate Ethereum adoption across Argentina and Latin America. Projects can receive up to $1K in funding, plus additional non-financial support. [Apply now](https://x.com/EFDevcon/status/1914716839973917160?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=local-ethereum-4)!
 
 ### Brazil
