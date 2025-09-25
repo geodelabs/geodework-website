@@ -24,7 +24,7 @@ const Socials = () => (
     </Link>
     <Link
       aria-label="X"
-      href="https://x.com/Geodework"
+      href="https://x.com/geodelabs"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
         "bg-transparent text-white/90 visited:text-white/90",
@@ -36,7 +36,7 @@ const Socials = () => (
     </Link>
     <Link
       aria-label="GitHub"
-      href="https://github.com/geodework/"
+      href="https://github.com/geodelabs/"
       className={cn(
         "group grid rotate-0 place-items-center p-3 text-xl sm:p-4 sm:text-2xl",
         "bg-transparent text-white/90 visited:text-white/90",

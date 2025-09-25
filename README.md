@@ -1,8 +1,8 @@
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
-  <a href="https://geodework.com"><img alt="Geodework hero and logo" src="./public/images/logo-vertical-blue-transparent.svg"></a>
+  <a href="https://geode.build"><img alt="Geode Labs hero and logo" src="./public/images/logo-vertical-blue.svg"></a>
 </div>
 
-# Geodework (Website)
+# Geode Labs (Website)
 
 ## The stack
 

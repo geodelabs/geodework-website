@@ -97,7 +97,7 @@ We explore and document the latest stories on Ethereum technology and community 
 
 ## Opportunities 💡
 
-- [Ethereum Job and Opportunity Board](https://www.ethereumjobboard.com/) by Geodework and BuidlGuidl.
+- [Ethereum Job and Opportunity Board](https://www.ethereumjobboard.com/) by Geode Labs and BuidlGuidl.
 - [Devconnect Scholars Program](https://x.com/EFNextBillion/status/1939707242896642250) is still accepting applications! If you are working in community, art, legal, R&D or related fields, apply now! Deadline extended to July 6th.
 - Sony Block Solutions Labs is launching the "[Soneium For All](https://x.com/soneium/status/1932001906097836388)" incubator.
 - [Ream Labs](https://x.com/ReamLabs) is looking for contributors to build the Ethereum Beam client in Rust. If you are interested, please ping [Unnawut](https://x.com/unnawut).
