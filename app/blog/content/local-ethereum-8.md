@@ -82,32 +82,32 @@ publishedTime: 2025-09-04 00:00:00 Z-00:00
 
 ## Ecosystem Data 🔢
 
-1. **Client diversity has improved.** ![cr: https://clientdiversity.org/#distribution](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/4bb7004e-bc48-423e-a445-2909eb35b725/client_diversity.png) _cr: [https://clientdiversity.org/#distribution](https://clientdiversity.org/#distribution)_
+1. **Client diversity has improved.** ![cr: https://clientdiversity.org/#distribution](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/4bb7004e-bc48-423e-a445-2909eb35b725/client_diversity.png) _cr: [clientdiversity.org](https://clientdiversity.org/#distribution)_
 
-  ###
+###
 
-2.  **Centralization watch.** Validator Distribution, Lido at 24%. ![cr: https://dune.com/hildobby/eth2-staking](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/39237d1b-c596-4b3a-a02e-6fb1653f8203/eth_stakers_by_amount.png) _cr: [https://dune.com/hildobby/eth2-staking](https://dune.com/hildobby/eth2-staking)_
+2.  **Centralization watch.** Validator Distribution, Lido at 24%. ![cr: https://dune.com/hildobby/eth2-staking](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/39237d1b-c596-4b3a-a02e-6fb1653f8203/eth_stakers_by_amount.png) _cr: [dune.com](https://dune.com/hildobby/eth2-staking)_
 
-  ###
+###
 
-3. **Total value locked on Ethereum.** Reached $333.9b on September 1, up from $287.5b on August 1, marking a 16.1% month-over-month increase. ![cr: https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl?granularity=day](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/a6acf3fd-c7bb-449d-85e9-671c344d208f/tvl.png) _cr: [https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl?granularity=day](https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl?granularity=day)_
+3. **Total value locked on Ethereum.** Reached $333.9b on September 1, up from $287.5b on August 1, marking a 16.1% month-over-month increase. ![cr: https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl?granularity=day](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/a6acf3fd-c7bb-449d-85e9-671c344d208f/tvl.png) _cr: [tokenterminal.com](https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl?granularity=day)_
 
-  ###
+###
 
 4. **No. of Monthly active address + onchain value.** And Ethereum's onchain volume surges to $346.14b in Aug 2025, a 4-year high.
-![https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-active-addresses-on-the-ethereum-network-monthly](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/6e24dc26-0df1-4c46-8dd1-817f894db040/4.1.png) _[https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-active-addresses-on-the-ethereum-network-monthly](https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-active-addresses-on-the-ethereum-network-monthly)_ ![https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-monthly](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/06a23a1b-50c3-49bc-b83b-444ad232da0b/4.2.png) _[https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-monthly](https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-monthly)_
+   ![theblock.co](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/6e24dc26-0df1-4c46-8dd1-817f894db040/4.1.png) cr: _[theblock.co](https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-active-addresses-on-the-ethereum-network-monthly)_ ![https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-monthly](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/06a23a1b-50c3-49bc-b83b-444ad232da0b/4.2.png) cr: _[theblock.co](https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-monthly)_
 
-  ###
+###
 
-5. **Ethereum Treasuries**. Across 71 entities surpass 4.4 million ETH, valued at over $19.68b on 31st Aug 2025. ![[https://www.strategicethreserve.xyz](https://www.strategicethreserve.xyz/)](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/27807a4e-3884-48ee-9c2e-4e2c52b2a048/eth_treasuries.png) _[https://www.strategicethreserve.xyz](https://www.strategicethreserve.xyz/)_
+5. **Ethereum Treasuries**. Across 71 entities surpass 4.4 million ETH, valued at over $19.68b on 31st Aug 2025. ![[strategicethreserve.xyz](https://www.strategicethreserve.xyz/)](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/27807a4e-3884-48ee-9c2e-4e2c52b2a048/eth_treasuries.png) cr: _[strategicethreserve.xyz](https://www.strategicethreserve.xyz/)_
 
-  ###
+###
 
-6. **Stablecoin Adoption on Ethereum.** Reached $150b on September 1, up from $133.8b on August 1, marking a 12.1% month-over-month increase. ![Screenshot 2025-09-04 at 18.18.21.png](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/59317211-f7dd-4abf-a2c5-bad85cc949ab/stable_coin.png) _[https://defillama.com/stablecoins/ethereum](https://defillama.com/stablecoins/ethereum)_
+6. **Stablecoin Adoption on Ethereum.** Reached $150b on September 1, up from $133.8b on August 1, marking a 12.1% month-over-month increase. ![Screenshot 2025-09-04 at 18.18.21.png](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/59317211-f7dd-4abf-a2c5-bad85cc949ab/stable_coin.png) cr: _[defillama.com](https://defillama.com/stablecoins/ethereum)_
 
-### 
+###
 
-7. **Top 10 projects who generate the most fees on Ethereum:** ![https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/c28d3269-fbff-49c9-b741-c5e1f5102043/top_10.png) _[https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl](https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl)_
+7. **Top 10 projects who generate the most fees on Ethereum:** ![https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/c28d3269-fbff-49c9-b741-c5e1f5102043/top_10.png) cr: _[tokenterminal.com](https://tokenterminal.com/explorer/projects/ethereum/ecosystem/ecosystem-tvl)_
 
 ## Opportunities💡
 

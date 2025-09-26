@@ -4,8 +4,6 @@ import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
 import Link from "@/components/ui/link"
 
-import { SITE_NAME } from "@/lib/constants"
-
 import {
   getBlogPosts,
   isPublished,
