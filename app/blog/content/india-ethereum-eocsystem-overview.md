@@ -34,7 +34,8 @@ Special thanks to Denver Dsouza, Mudit Gupta, Sarang Parikh and Yash Saraswat fo
 
 Most blockchain startups in India focus on application-level projects with a general EVM approach, rather than solely on Ethereum. While fewer in number, infrastructure projects like Polygon significantly impact the local ecosystem. Approximately 70-80% of these startups are based in Tier 1 cities, with Bengaluru as a leading tech hub, followed by Hyderabad, Delhi, and Mumbai.
 
-- Infrastructure & Scaling
+- **Infrastructure & Scaling**
+
   - [Polygon Labs](https://twitter.com/0xPolygon): Ethereum scaling protocols (PoS, zkEVM, AggLayer). India-founded as Matic (2017).
   - [Avail](https://x.com/AvailProject): Modular blockchain focused on data availability for scalable applications.
   - [Stackr labs](https://x.com/0xStackr): Micro-rollup infrastructure for building custom application-specific rollups.
@@ -44,7 +45,8 @@ Most blockchain startups in India focus on application-level projects with a gen
   - [NodeOps](https://x.com/NodeOpsHQ): Automated node management and staking solutions for blockchain networks.
   - [Copperx](https://twitter.com/CopperxHQ): Makes crypto invoicing and business payments simple and compliant.
   - [Reclaim protocol](https://x.com/reclaimprotocol): Verify any data on the internet in seconds with zkTLS.
-- DeFi & Financial Protocols
+
+- **DeFi & Financial Protocols**
   - [Instadapp](https://x.com/Instadapp): Building a full suite of DeFi products: Lite, [0xFluid](https://x.com/0xFluid) and [Avowallet](https://x.com/Avowallet).
   - [Biconomy](https://twitter.com/biconomy): Cross-chain transaction layer offering gasless onboarding and improved user experience.
   - [Polynomial](https://twitter.com/PolynomialFi): Derivatives protocol offering onchain structured products.
@@ -55,26 +57,26 @@ Most blockchain startups in India focus on application-level projects with a gen
   - [Filament Finance](https://x.com/FilamentFinance): A decentralized perpetuals exchange combining off-chain orderbook with on-chain liquidity pools.
   - [Lucidly Finance](https://x.com/LucidlyFinance): A non-custodial DeFi protocol that offers automated on-chain yield strategies
   - [Qiro](https://x.com/Qiro_Finance): Onchain Private Credit Marketplace for RWAs & DePINs.
-- Security & Risk
+- **Security & Risk**
   - [Quill Audits](https://x.com/quillaudits_ai): Provider of smart contract audits and security services.
   - [Chainrisk](https://x.com/chain_risk): Web3 risk analytics and assessment platform.
-- Data & Analytics
+- **Data & Analytics**
   - [Powerloom](https://x.com/powerloom): Decentralized data infrastructure for scalable analytics and reliable data feeds.
   - [Gigabrain](https://x.com/gigabraingg): AI-powered analytics and intelligence for blockchain traders.
-- Communication, Social & DAOs
+- **Communication, Social & DAOs**
   - [Push Chain](https://twitter.com/pushprotocol) (formally Push Protocol and EPNS): Started as the messaging and notification infrastructure for dApps but has since evolved into a PoS Layer 1 blockchain.
   - [Huddle01](https://twitter.com/Huddle01com): Decentralized audio/video collaboration for Web3 teams.
   - [Noice](https://x.com/noicedotso): A tool built on Farcaster's programmable social layer, letting users automate appreciation and tokenize their Farcaster presence.
   - [Atlantis](https://x.com/Atlantis_p2p): A peer to peer impact network for builders, makers, entrepreneurs & creators working in climate & social impact.
   - [Offline Protocol](https://x.com/OfflineProtocol): A censorship-resistant, offline-first infrastructure layer that enables an ecosystem of products and applications to operate without internet.
   - [Poster Fun](https://x.com/posterdotfun): Memes & info-fi backed with IP Artist owned & created platform + miniapp.
-- Wallets
+- **Wallets**
   - [Okto](https://twitter.com/okto_wallet): DeFi wallet and asset management for mobile users.
   - [Biconomy](https://www.biconomy.io): Account abstraction / gasless infra & SDKs.
   - [Frontier](https://x.com/FrontierDotXYZ): Multi-chain wallet; active on Ethereum & L2s.
-- Major exchanges
+- **Major exchanges**
   - [CoinDCX](https://x.com/CoinDCX), [CoinSwitch](https://x.com/CoinSwitch), [WazirX](https://x.com/WazirXIndia) (bankrupt), [ZebPay](https://x.com/zebpay), [Bitbns](https://x.com/bitbns), etc.
-- Ecosystem builder
+- **Ecosystem builder**
   - [Devfolio](https://x.com/devfolio) / [ETHIndia](https://x.com/ethindiaco): hackathons, fellowships, grants that have bootstrapped many India ETH devs. Projects like [Instadapp](https://x.com/Instadapp), [Epoch Protocol](https://x.com/0xEpochProtocol), [Liquidity Auction Protocol](https://devfolio.co/projects/auction-house-b572), among others, originated from ETHIndia hackathons.
   - [0xcoordinated](https://x.com/satyaki44?s=21&t=gwXwTXtM98TR22Cz08oxwg): for EigenLayer ecosystem.
   - L2s: [Farcaster Builders](https://x.com/callusfbi) India and [Based India](https://x.com/BasedIndia) for Base; [Arbitrum India](https://x.com/arbitrum_india); [Starknet India](https://x.com/StarknetIN)…
@@ -113,7 +115,7 @@ _Source: Hashed Emergent, India Web3 Landscape Report 2024_
     ![Global open source crypto developer share by country](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/1562cbcb-b4ff-4bf9-9ad0-b4786bf42547/india4.png)
     _Global open source crypto developer share by country_
 
-## Grassroots **Community**
+## Grassroots Community
 
 India has many active Web3 communities that host events and conferences nationwide, but Ethereum-centric developer communities are limited. 
 
@@ -123,14 +125,14 @@ Community meetups are concentrated in major tech hubs, with Bengaluru leading,
 
 Highlighted communities for Ethereum and related builders include [EthIndia](https://twitter.com/ETHIndiaco), [ZK Bankai,](https://twitter.com/zk_bankai) [The Phoenix Guild](https://x.com/phoenixguildhq), [ETHMumbai](https://x.com/ethmumbai), [Farcaster Builders India](https://x.com/callusfbi), [Zo World](https://zo.xyz), [LocalHost India](https://x.com/localhostHQ), etc.
 
-## **Acceleration & Investment**
+## Acceleration & Investment
 
 - Early-Stage Accelerator is hard: ETHIndia hackathons and Fellowship, [Protostars](https://www.hashedem.com/protostars) by Hashed Emergent, BuidlersTribe (archived).
 - VCs: Hashed Emergent and Coinbase Ventures actively invest India web3 builders. Previously Borderless, Polygon Ventures, Sequoia Capital India, CoinDCX Ventures, Lightspeed Venture India, and IOSG Ventures were also active.
 - In 2024, funding for Indian Web3 founders [doubled to $564M](https://coindcx.com/wp-content/uploads/2025/03/India-Web3-Landscape-Report-2024_v5.pdf), up 109% from $270M in 2023, with capital being allocated to Infrastructure, DeFi, and Entertainment.
 - Polygon's Role: Polygon has been a key player in India’s Web3 ecosystem, hiring top engineers and backing early-stage projects like LayerZero, Gnosis Safe, and EigenLayer. They actively support Indian builders through hackathons, fellowships, and initial investments before 2022. Beyond India, Polygon helped save Ethereum from competitors like Binance Smart Chain by providing low-cost scaling solutions before rollups were widely adopted.
 
-## **University & Academia**
+## University & Academia
 
 - Blockchain Courses: A few top IITs offer blockchain courses, such as [IIT Kharagpur](https://nptel.ac.in/courses/106105235), [IIT Kanpur](https://nptel.ac.in/courses/106104220), and [IIT Madras](https://nptel.ac.in/courses/106105184), which usually cover Bitcoin and Ethereum basics, but rarely beyond. [IIIT Bangalore](https://nptel.ac.in/courses/106106221), [IIT Guwahati](https://nptel.ac.in/courses/106103015) and [NPTEL](https://nptel.ac.in/courses/106106221) offer cryptography courses that cover zk-proofs and peer-to-peer networking. Blockchain course enrollment correlates with crypto market cycles.
 - Research: Research topics range from cryptography to broader blockchain applications. Some professors active in the space include Associate Professor [Saravanan Vijayakumaran](https://www.ee.iitb.ac.in/~sarva/) from IIT Bombay on Applied Cryptography and ZKP; Associate Professor [Sandip Chakraborty](https://sandipc-iitkgp.github.io/sandip-web/index.html) from IIT Kharagpur on Distributed Systems; Associate Professor [Amit Dua](https://www.bits-pilani.ac.in/pilani/amit-dua/) from BITS Pilani on blockchain and network security; Assistant Professor [Ankit Gangwal](https://ciaoankit.github.io/) from IIIT Hyderabad on Ethereum, wallets, privacy, and address clustering; and Associate Professor [Himanshu Tyagi](https://ece.iisc.ac.in/~htyagi/) from IISc on blockchain and privacy…
