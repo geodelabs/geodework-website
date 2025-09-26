@@ -12,8 +12,17 @@ const customComponents: MDXComponents = {
   h3: ({ children }) => (
     <h3 className="mb-4 mt-8 text-xl md:text-2xl">{children}</h3>
   ),
+  ul: (props) => (
+    <ul
+      {...props}
+      style={{
+        listStylePosition: "outside",
+        paddingLeft: "1.25rem",
+      }}
+    />
+  ),
 }
-export function useMDXComponents(components: MDXComponents): MDXComponents {
+export function useMDXComponents(components: MDXComponents) {
   return {
     ...MarkdownComponents,
     ...components,
