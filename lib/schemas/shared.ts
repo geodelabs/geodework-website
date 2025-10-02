@@ -27,3 +27,10 @@ export const optionalDataResponseSchema = <T>(itemSchema: z.ZodSchema<T>) =>
 export type OptionalDataResponseSchema<T> = ReturnType<
   typeof optionalDataResponseSchema<T>
 >
+
+export const isoDateStringSchema = z.iso.datetime({ offset: true })
+export const hexColorSchema = z
+  .string()
+  .regex(/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/, {
+    message: "Expected a hex color like #fff or #ffffff",
+  })
