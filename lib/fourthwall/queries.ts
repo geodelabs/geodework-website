@@ -1,6 +1,6 @@
-import { infiniteQueryOptions } from "@tanstack/react-query"
+import { infiniteQueryOptions, queryOptions } from "@tanstack/react-query"
 
-import { fetchProductListPage } from "@/lib/fourthwall/api"
+import { fetchProductDetails, fetchProductListPage } from "@/lib/fourthwall/api"
 import { SHARED_QUERIES } from "@/lib/queries"
 
 export const FOURTHWALL_QUERIES = {
@@ -16,5 +16,10 @@ export const FOURTHWALL_QUERIES = {
       initialPageParam: 0,
       getNextPageParam: ({ paging: { pageNumber, hasNextPage } }) =>
         hasNextPage ? pageNumber + 1 : undefined,
+    }),
+  product: (slug: string, currency?: string) =>
+    queryOptions({
+      queryKey: [...FOURTHWALL_QUERIES.all, "product", slug, currency],
+      queryFn: async () => fetchProductDetails({ slug, currency }),
     }),
 } as const
