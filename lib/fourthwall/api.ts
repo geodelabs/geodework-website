@@ -1,3 +1,4 @@
+import { DEFAULT_CURRENCY } from "@/lib/fourthwall/constants"
 import {
   productSchema,
   storefrontProductsResponseSchema,
@@ -34,7 +35,7 @@ export const fetchProductListPage = async ({
 
 export const fetchProductDetails = async ({
   slug,
-  currency = "USD",
+  currency = DEFAULT_CURRENCY,
 }: {
   slug: string
   currency?: string
