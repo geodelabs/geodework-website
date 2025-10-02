@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 import "@/styles/globals.css"
 
 import { generateMetadata } from "@/lib/metadata"
+import { RootProvider } from "@/lib/providers/root.provider"
 export const metadata = generateMetadata()
 
 export default function RootLayout({
@@ -64,7 +65,9 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="row-start-2">{children}</main>
+        <main className="row-start-2">
+          <RootProvider>{children}</RootProvider>
+        </main>
 
         <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
           <Subscribe />
