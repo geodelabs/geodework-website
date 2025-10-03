@@ -4,6 +4,7 @@ import { fileURLToPath } from "url"
 import simpleImportSort from "eslint-plugin-simple-import-sort"
 import unusedImports from "eslint-plugin-unused-imports"
 import { FlatCompat } from "@eslint/eslintrc"
+import pluginQuery from "@tanstack/eslint-plugin-query"
 import typescriptEslint from "@typescript-eslint/eslint-plugin"
 import typescriptParser from "@typescript-eslint/parser"
 
@@ -16,6 +17,7 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
+  ...pluginQuery.configs["flat/recommended"],
   ...compat.extends(
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
