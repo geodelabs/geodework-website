@@ -4,6 +4,9 @@ import createMDX from "@next/mdx"
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "cdn.fourthwall.com" }],
+  },
   webpack(config) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fileLoaderRule = config.module.rules.find((rule: any) =>
