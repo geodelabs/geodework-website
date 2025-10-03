@@ -58,10 +58,16 @@ export default function RootLayout({
             className="flex gap-6"
             style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
           >
-            <Link href="/#">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/grants">Grants</Link>
+            <Link
+              hideArrow
+              isNewTab={false}
+              href={process.env.NEXT_PUBLIC_MERCH_URL}
+            >
+              Merch
+            </Link>
           </nav>
         </header>
 

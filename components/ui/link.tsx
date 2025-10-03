@@ -9,6 +9,7 @@ import * as url from "@/lib/url"
 
 type BaseProps = {
   hideArrow?: boolean
+  isNewTab?: boolean
 }
 
 export type LinkProps = BaseProps &
@@ -25,7 +26,14 @@ export type LinkProps = BaseProps &
  * e.g. <Link href="https://example.com/">
  */
 export const BaseLink = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
-  { href, children, className, hideArrow, ...props }: LinkProps,
+  {
+    href,
+    children,
+    className,
+    hideArrow,
+    isNewTab = true,
+    ...props
+  }: LinkProps,
   ref
 ) {
   if (!href) {
@@ -38,7 +46,7 @@ export const BaseLink = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
 
   const commonProps = { ref, ...props, className, href }
 
-  if (isExternal) {
+  if (isExternal && isNewTab) {
     return (
       <a target="_blank" rel="noopener" {...commonProps}>
         {children}
