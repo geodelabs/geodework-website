@@ -6,6 +6,7 @@ export const MarkdownComponents: Components = {
   a: ({ children, href }) => <Link href={href}>{children}</Link>,
   img: ({ src, alt }) => (
     // TODO: See if we can optimize images with NextImage; known domain?
+    // eslint-disable-next-line @next/next/no-img-element
     <img className="mx-auto my-8 block" src={src || ""} alt={alt || ""} />
   ),
   h2: ({ children }) => (
@@ -22,4 +23,9 @@ export const MarkdownComponents: Components = {
   ),
   pre: ({ children }) => <pre className="bg-black/20 p-4">{children}</pre>,
   hr: () => <hr className="my-12 border-primary" />,
+  em: ({ children }) => (
+    <em className="-mt-5 flex w-full justify-center gap-1 !text-xs italic [&>*]:text-xs">
+      {children}
+    </em>
+  ),
 }
