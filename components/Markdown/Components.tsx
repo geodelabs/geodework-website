@@ -7,7 +7,7 @@ export const MarkdownComponents: Components = {
   img: ({ src, alt }) => (
     // TODO: See if we can optimize images with NextImage; known domain?
     // eslint-disable-next-line @next/next/no-img-element
-    <img className="mx-auto my-8 block" src={src || ""} alt={alt || ""} />
+    <img className="mx-auto my-8 block h-auto max-w-full" src={src} alt={alt} />
   ),
   h2: ({ children }) => (
     <h2 className="mb-4 mt-16 text-3xl md:text-4xl">{children}</h2>
