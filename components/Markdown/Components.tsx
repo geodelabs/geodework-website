@@ -28,4 +28,12 @@ export const MarkdownComponents: Components = {
       {children}
     </em>
   ),
+  ol: ({ children }) => (
+    <ol className="mb-4 list-outside list-decimal ps-6 [&>li]:mt-4">
+      {children}
+    </ol>
+  ),
+  ul: ({ children }) => (
+    <ul className="mb-4 list-outside list-disc ps-6 [&>li]:mt-4">{children}</ul>
+  ),
 }
