@@ -5,7 +5,7 @@ publishedTime: 2025-04-23 12:00:00 Z-00:00
 
 ## This month, let's explore Argentina's thriving Ethereum ecosystem.
 
-![Ethereum Image](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/37343040-8cff-48ee-88ab-3c90e3a4bc47/cover_white.jpg?t=1745372062)
+![Ethereum Image](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/f8f2551d-336f-4cda-b6b2-2567bc66196a/banner-new.png)
 
 Special thanks to Eugenia, Romina, Candu for feedback and review.
 
