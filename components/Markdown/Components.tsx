@@ -6,7 +6,8 @@ export const MarkdownComponents: Components = {
   a: ({ children, href }) => <Link href={href}>{children}</Link>,
   img: ({ src, alt }) => (
     // TODO: See if we can optimize images with NextImage; known domain?
-    <img className="mx-auto my-8 block" src={src || ""} alt={alt || ""} />
+    // eslint-disable-next-line @next/next/no-img-element
+    <img className="mx-auto my-8 block h-auto max-w-full" src={src} alt={alt} />
   ),
   h2: ({ children }) => (
     <h2 className="mb-4 mt-16 text-3xl md:text-4xl">{children}</h2>
@@ -22,4 +23,17 @@ export const MarkdownComponents: Components = {
   ),
   pre: ({ children }) => <pre className="bg-black/20 p-4">{children}</pre>,
   hr: () => <hr className="my-12 border-primary" />,
+  em: ({ children }) => (
+    <em className="-mt-5 flex w-full justify-center gap-1 !text-xs italic [&>*]:text-xs">
+      {children}
+    </em>
+  ),
+  ol: ({ children }) => (
+    <ol className="mb-4 list-outside list-decimal ps-6 [&>li]:mt-4">
+      {children}
+    </ol>
+  ),
+  ul: ({ children }) => (
+    <ul className="mb-4 list-outside list-disc ps-6 [&>li]:mt-4">{children}</ul>
+  ),
 }
