@@ -61,13 +61,13 @@ export default function RootLayout({
             <Link href="/about">About</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/grants">Grants</Link>
-            <Link
+            {/* <Link
               hideArrow
               isNewTab={false}
               href={process.env.NEXT_PUBLIC_MERCH_URL}
             >
               Merch
-            </Link>
+            </Link> */}
           </nav>
         </header>
 
