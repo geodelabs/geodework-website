@@ -4,6 +4,7 @@ import Socials from "@/components/Socials"
 import Subscribe from "@/components/Subscribe"
 import Heart from "@/components/svgs/heart.svg"
 import Link from "@/components/ui/link"
+import { Heart as HeartIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -11,6 +12,7 @@ import "@/styles/globals.css"
 
 import { generateMetadata } from "@/lib/metadata"
 import { RootProvider } from "@/lib/providers/root.provider"
+import { generateClipPath } from "@/styles/clipPaths"
 export const metadata = generateMetadata()
 
 export default function RootLayout({
@@ -55,21 +57,21 @@ export default function RootLayout({
           </Link>
 
           {/* Header end */}
+          <div className="flex gap-6 justify-center items-center">
+
           <nav
             className="flex gap-6"
             style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
-          >
+            >
             <Link href="/about">About</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/grants">Grants</Link>
-            {/* <Link
-              hideArrow
-              isNewTab={false}
-              href={process.env.NEXT_PUBLIC_MERCH_URL}
-            >
-              Merch
-            </Link> */}
           </nav>
+            <Link href="/donate" className="donate-button inline-flex items-center" style={generateClipPath("TopRight", "medium")}>
+              <HeartIcon className="mr-2 h-4 w-4 hover:fill-primary-dark transition-all" />
+              Donate
+            </Link>
+            </div>
         </header>
 
         <main className="row-start-2">
@@ -77,23 +79,17 @@ export default function RootLayout({
         </main>
         </div>
         
-
-        <footer className="row-start-3 m-14 flex flex-col items-center gap-6">
-          {/* <Subscribe /> */}
-
-
-          <div className="flex justify-between w-full border-t-2 border-primary-light pt-6">
-            <div className="flex gap-6">
-              <p className="text-body-secondary">
-              &copy; Geode Labs {new Date().getFullYear()}
-              </p>
-              <Link href="/terms-of-use">Terms of Use</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+        <footer className="row-start-3 mt-24 mx-auto  px-4">
+            <div className="flex flex-col m-8 md:flex-row justify-between items-center md:items-start border-t-2 border-primary-light pt-6 gap-6 md:gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
+                <p className="text-body-secondary">
+                &copy; Geode Labs {new Date().getFullYear()}
+                </p>
+                <Link href="/terms-of-use">Terms of Use</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </div>
+              <Socials />
             </div>
-            <Socials />
-
-          </div>
-          
         </footer>
 
         <Matomo />

@@ -48,4 +48,23 @@
   ul {
     @apply list-inside ps-4 mb-2;
   }
+
+  .donate-button {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    background-color: hsla(var(--accent));
+    color: hsla(var(--primary-dark)) !important;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .donate-button:hover {
+    background-color: hsla(var(--accent-light));
+    color: hsla(var(--primary-dark)) !important;
+  }
+
+  .donate-button:visited {
+    color: hsla(var(--primary-dark)) !important;
+  }
 }
