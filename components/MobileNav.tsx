@@ -1,102 +1,10 @@
-import AdSense from "@/components/AdSense"
-import Matomo from "@/components/Matomo"
-import MobileNav from "@/components/MobileNav"
-import Socials from "@/components/Socials"
-import Subscribe from "@/components/Subscribe"
-import Heart from "@/components/svgs/heart.svg"
+"use client"
+
+import { useState } from "react"
+import { Menu, X, Heart } from "lucide-react"
 import Link from "@/components/ui/link"
-import { Heart as HeartIcon } from "lucide-react"
-
 import { cn } from "@/lib/utils"
-
-import "@/styles/globals.css"
-
-import { generateMetadata } from "@/lib/metadata"
-import { RootProvider } from "@/lib/providers/root.provider"
 import { generateClipPath } from "@/styles/clipPaths"
-export const metadata = generateMetadata()
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          rel="preload"
-          href="/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        {/* https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-icon.png"
-          type="image/png"
-          sizes="180x180"
-        />
-        <AdSense />
-      </head>
-
-      <body className="">
-        <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
-          <header
-          className={cn(
-            "z-10 row-start-1 w-full py-8",
-            "flex items-center justify-between gap-3",
-            "[&_a]:outline-offset-8"
-          )}
-        >
-          <Link href="/" className="flex items-center">
-            <Logo />
-          </Link>
-
-          <div className="hidden md:flex gap-6 justify-center items-center">
-            <nav
-              className="flex gap-6"
-              style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
-            >
-              <Link href="/about">About</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/grants">Grants</Link>
-            </nav>
-            <Link href="/donate" className="donate-button inline-flex items-center" style={generateClipPath("TopRight", "medium")}>
-              <HeartIcon className="mr-2 h-4 w-4 hover:fill-primary-dark transition-all" />
-              Donate
-            </Link>
-          </div>
-
-          <MobileNav />
-        </header>
-
-        <main className="row-start-2">
-          <RootProvider>{children}</RootProvider>
-        </main>
-        </div>
-        
-        <footer className="row-start-3 mt-24 mx-auto  px-4">
-            <div className="flex flex-col m-8 md:flex-row justify-between items-center md:items-start border-t-2 border-primary-light pt-6 gap-6 md:gap-4">
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
-                <p className="text-body-secondary">
-                &copy; Geode Labs {new Date().getFullYear()}
-                </p>
-                <Link href="/terms-of-use">Terms of Use</Link>
-                <Link href="/privacy-policy">Privacy Policy</Link>
-              </div>
-              <Socials />
-            </div>
-        </footer>
-
-        <Matomo />
-      </body>
-    </html>
-  )
-}
 
 const Logo = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -152,3 +60,87 @@ const Logo = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default function MobileNav() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => setIsOpen(!isOpen)
+  const closeMenu = () => setIsOpen(false)
+
+  return (
+    <div className="md:hidden">
+      <button
+        onClick={toggleMenu}
+        className="p-2 text-white hover:text-primary-light transition-colors"
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40"
+          onClick={closeMenu}
+        />
+      )}
+
+      <div
+        className={cn(
+          "fixed top-0 left-0 h-screen w-full bg-primary z-50 transform transition-transform duration-300 ease-in-out",
+          isOpen ? "translate-x-0" : "translate-x-full"
+        )}
+      >
+        <div className="flex flex-col gap-6 p-6">
+          <div className="flex items-center justify-between py-2">
+            <Link href="/" onClick={closeMenu} className="flex items-center">
+              <Logo />
+            </Link>
+            <button
+              onClick={closeMenu}
+              className="p-2 text-white hover:text-primary-light transition-colors"
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          
+          <nav 
+            className="flex flex-col gap-6 mt-4"
+            style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
+          >
+            <Link 
+              href="/about" 
+              onClick={closeMenu}
+              className="text-lg hover:text-primary-light transition-colors"
+            >
+              About
+            </Link>
+            <Link 
+              href="/blog" 
+              onClick={closeMenu}
+              className="text-lg hover:text-primary-light transition-colors"
+            >
+              Blog
+            </Link>
+            <Link 
+              href="/grants" 
+              onClick={closeMenu}
+              className="text-lg hover:text-primary-light transition-colors"
+            >
+              Grants
+            </Link>
+            <Link 
+              href="/donate" 
+              onClick={closeMenu}
+              className="donate-button py-2 inline-flex items-center justify-center mt-4" 
+              style={generateClipPath(["TopRight", "BottomLeft"], "medium")}
+            >
+              <Heart className="mr-2 h-4 w-4 hover:fill-primary-dark transition-all" />
+              Donate
+            </Link>
+          </nav>
+        </div>
+      </div>
+    </div>
+  )
+}
