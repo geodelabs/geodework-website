@@ -60,6 +60,7 @@ export default function RootLayout({
           >
             <Link href="/about">About</Link>
             <Link href="/blog">Blog</Link>
+            <Link href="/products">Products</Link>
             <Link href="/grants">Grants</Link>
             {/* <Link
               hideArrow
