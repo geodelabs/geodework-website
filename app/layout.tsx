@@ -40,8 +40,9 @@ export default function RootLayout({
         <AdSense />
       </head>
 
-      <body className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
-        <header
+      <body className="">
+        <div className="mx-auto grid min-h-screen max-w-screen-lg grid-rows-[auto_1fr_auto] px-4">
+          <header
           className={cn(
             "z-10 row-start-1 w-full py-8 max-sm:flex-col",
             "flex items-center justify-between gap-3",
@@ -74,25 +75,25 @@ export default function RootLayout({
         <main className="row-start-2">
           <RootProvider>{children}</RootProvider>
         </main>
+        </div>
+        
 
-        <footer className="row-start-3 my-14 flex flex-col items-center gap-6">
-          <Subscribe />
+        <footer className="row-start-3 m-14 flex flex-col items-center gap-6">
+          {/* <Subscribe /> */}
 
-          <p className="-mt-2">
-            Donate: <Link href="/donate">geodelabs.eth</Link>{" "}
-            <Heart className="inline text-[red]" />
-          </p>
 
-          <Socials />
+          <div className="flex justify-between w-full border-t-2 border-primary-light pt-6">
+            <div className="flex gap-6">
+              <p className="text-body-secondary">
+              &copy; Geode Labs {new Date().getFullYear()}
+              </p>
+              <Link href="/terms-of-use">Terms of Use</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+            </div>
+            <Socials />
 
-          <div className="flex flex-wrap gap-6">
-            <Link href="/terms-of-use">Terms of Use</Link>
-            <Link href="/privacy-policy">Privacy Policy</Link>
           </div>
-
-          <p className="w-full p-4 text-center text-body-secondary">
-            &copy; Geode Labs {new Date().getFullYear()}
-          </p>
+          
         </footer>
 
         <Matomo />

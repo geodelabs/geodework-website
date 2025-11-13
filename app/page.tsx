@@ -2,8 +2,9 @@ import HeroBackground from "@/components/HeroBackground"
 import HomepageHeroContent from "@/components/HomepageHeroContent"
 import Link from "@/components/ui/link"
 import { Meteors } from "@/components/ui/meteors"
-
+import HeroDock from "@/components/HeroDock"
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
+import Subscribe from "@/components/Subscribe"
 
 export default async function Home() {
   const allPosts = getBlogPosts()
@@ -25,8 +26,10 @@ export default async function Home() {
         <HomepageHeroContent />
       </section>
 
+      <HeroDock />
+
       {/* From the blog */}
-      <section className="-mt-12 max-w-screen-sm flex-col-reverse items-center gap-1 p-8 tracking-widest">
+      <section className="flex w-full justify-between items-end gap-6 px-4">
         <Link
           className="group flex flex-col items-center"
           href={getHrefFromSlug(latestPost.slug)}
@@ -38,6 +41,7 @@ export default async function Home() {
             {latestPost.frontmatter.title}
           </p>
         </Link>
+        <Subscribe />
       </section>
     </div>
   )
