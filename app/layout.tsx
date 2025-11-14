@@ -1,20 +1,23 @@
-import { Heart as HeartIcon, ArrowRight } from "lucide-react"
+import { ArrowRight,Heart as HeartIcon } from "lucide-react"
 
 import AdSense from "@/components/AdSense"
 import Matomo from "@/components/Matomo"
 import MobileNav from "@/components/MobileNav"
 import Socials from "@/components/Socials"
 import Subscribe from "@/components/Subscribe"
+import Logo from "@/components/svgs/logo.svg"
 import QR from "@/components/svgs/QR.svg"
 import Link from "@/components/ui/link"
-import { ETHEREUM_ADDRESS, ETHEREUM_ENS } from "@/lib/constants"
-import { generateMetadata } from "@/lib/metadata"
-import { RootProvider } from "@/lib/providers/root.provider"
+
 import { cn } from "@/lib/utils"
-import { generateClipPath } from "@/styles/clipPaths"
-import Logo from "@/components/svgs/logo.svg"
+
+import { ETHEREUM_ADDRESS, ETHEREUM_ENS } from "@/lib/constants"
 
 import "@/styles/globals.css"
+
+import { generateMetadata } from "@/lib/metadata"
+import { RootProvider } from "@/lib/providers/root.provider"
+import { generateClipPath } from "@/styles/clipPaths"
 
 
 export const metadata = generateMetadata()

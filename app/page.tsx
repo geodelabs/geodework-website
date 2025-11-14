@@ -4,6 +4,7 @@ import HomepageHeroContent from "@/components/HomepageHeroContent"
 import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
 import { Meteors } from "@/components/ui/meteors"
+
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
 
 export default async function Home() {

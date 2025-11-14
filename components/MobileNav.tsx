@@ -1,12 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Heart, ArrowRight } from "lucide-react"
+import { ArrowRight,Heart, Menu, X } from "lucide-react"
 
-import Link from "@/components/ui/link"
-import { cn } from "@/lib/utils"
-import { generateClipPath } from "@/styles/clipPaths"
 import Logo from "@/components/svgs/logo.svg"
+import Link from "@/components/ui/link"
+
+import { cn } from "@/lib/utils"
+
+import { generateClipPath } from "@/styles/clipPaths"
 
 
 export default function MobileNav() {
