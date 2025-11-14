@@ -102,7 +102,7 @@
     align-items: center;
     background-color: white !important;
     color: hsla(var(--primary-dark)) !important;
-    padding: 10px 10px 10px 10px !important;
+    padding: 0.5rem !important;
     text-decoration: none;
   }
 
