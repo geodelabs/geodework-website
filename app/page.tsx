@@ -1,10 +1,11 @@
 import HeroBackground from "@/components/HeroBackground"
+import HeroDock from "@/components/HeroDock"
 import HomepageHeroContent from "@/components/HomepageHeroContent"
+import Subscribe from "@/components/Subscribe"
 import Link from "@/components/ui/link"
 import { Meteors } from "@/components/ui/meteors"
-import HeroDock from "@/components/HeroDock"
+
 import { getBlogPosts, getHrefFromSlug } from "@/lib/blog"
-import Subscribe from "@/components/Subscribe"
 
 export default async function Home() {
   const allPosts = getBlogPosts()
@@ -26,7 +27,7 @@ export default async function Home() {
         <HomepageHeroContent />
       </section>
 
-      <HeroDock />
+      {/* <HeroDock /> */}
 
       {/* From the blog */}
       <section className="flex flex-col justify-center items-center md:flex-row w-full md:justify-between md:items-end gap-6 px-4">

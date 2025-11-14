@@ -1,7 +1,8 @@
 import React from 'react'
-import Subscribe from '@/components/Subscribe'
-import Link from 'next/link'
 import { Heart } from 'lucide-react'
+import Link from 'next/link'
+
+import Subscribe from '@/components/Subscribe'
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (

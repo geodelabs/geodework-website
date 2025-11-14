@@ -57,14 +57,43 @@
     font-weight: 600;
     transition: all 0.2s;
     text-decoration: none;
+    border: 3px solid hsla(var(--accent));
   }
 
   .donate-button:hover {
-    background-color: hsla(var(--accent-light));
+    background-color: white !important;
     color: hsla(var(--primary-dark)) !important;
   }
 
   .donate-button:visited {
     color: hsla(var(--primary-dark)) !important;
+  }
+
+  .donate-button:hover .donate-heart {
+    fill: hsla(var(--primary-dark));
+  }
+
+  .donate-button-card {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 3px solid hsla(var(--accent));
+    background-color: white !important;
+    color: hsla(var(--primary-dark)) !important;
+    padding: 1rem 1.5rem 0.5rem 1.5rem !important;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999 !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+    transition: opacity 0.2s, visibility 0.2s;
+    pointer-events: none;
+  }
+
+  .donate-button-card:hover,
+  .donate-button:hover + .donate-button-card {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }

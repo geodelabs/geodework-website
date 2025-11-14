@@ -1,3 +1,4 @@
+import { Heart } from "lucide-react"
 import Image from "next/image"
 
 import HeroBackground from "@/components/HeroBackground"
@@ -6,7 +7,6 @@ import BitcoinLogo from "@/components/svgs/bitcoin.svg"
 import { CopyButton } from "@/components/ui/copy-button"
 import Link from "@/components/ui/link"
 import { QRCode } from "@/components/ui/qr-code"
-import { Heart } from "lucide-react"
 
 import {
   BITCOIN_ADDRESS,
