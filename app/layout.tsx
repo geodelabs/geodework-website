@@ -3,17 +3,20 @@ import Matomo from "@/components/Matomo"
 import MobileNav from "@/components/MobileNav"
 import Socials from "@/components/Socials"
 import Subscribe from "@/components/Subscribe"
-import Heart from "@/components/svgs/heart.svg"
 import Link from "@/components/ui/link"
-import { Heart as HeartIcon } from "lucide-react"
-
+import { Heart as HeartIcon, ArrowRight } from "lucide-react"
+import QR from "@/components/svgs/QR.svg"
 import { cn } from "@/lib/utils"
+
+import { ETHEREUM_ADDRESS, ETHEREUM_ENS } from "@/lib/constants"
 
 import "@/styles/globals.css"
 
 import { generateMetadata } from "@/lib/metadata"
 import { RootProvider } from "@/lib/providers/root.provider"
 import { generateClipPath } from "@/styles/clipPaths"
+
+
 export const metadata = generateMetadata()
 
 export default function RootLayout({
@@ -56,7 +59,7 @@ export default function RootLayout({
             <Logo />
           </Link>
 
-          <div className="hidden md:flex gap-6 justify-center items-center">
+          <div className="hidden md:flex gap-6 justify-center items-center overflow-visible">
             <nav
               className="flex gap-6"
               style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
@@ -65,10 +68,16 @@ export default function RootLayout({
               <Link href="/blog">Blog</Link>
               <Link href="/grants">Grants</Link>
             </nav>
-            <Link href="/donate" className="donate-button inline-flex items-center" style={generateClipPath("TopRight", "medium")}>
-              <HeartIcon className="mr-2 h-4 w-4 hover:fill-primary-dark transition-all" />
-              Donate
-            </Link>
+            <div className="relative">
+              <Link href="/donate" className="donate-button inline-flex items-center" style={generateClipPath("TopRight", "medium")}>
+                <HeartIcon className="donate-heart mr-2 h-4 w-4 transition-all" />
+                Donate
+              </Link>
+              <Link href="/donate" className="donate-button-card flex flex-col justify-center items-center">
+                 <QR className="h-40 w-40" />
+                 <p className="flex items-center gap-2">View options <ArrowRight className="h-4 w-4 inline" /></p>
+              </Link>
+            </div>
           </div>
 
           <MobileNav />
@@ -79,7 +88,7 @@ export default function RootLayout({
         </main>
         </div>
         
-        <footer className="row-start-3 mt-24 mx-auto  px-4">
+        <footer className="row-start-3 md:mt-24 mx-auto  px-4">
             <div className="flex flex-col m-8 md:flex-row justify-between items-center md:items-start border-t-2 border-primary-light pt-6 gap-6 md:gap-4">
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
                 <p className="text-body-secondary">

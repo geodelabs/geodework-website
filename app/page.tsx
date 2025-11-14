@@ -26,7 +26,7 @@ export default async function Home() {
         <HomepageHeroContent />
       </section>
 
-      <HeroDock />
+      {/* <HeroDock /> */}
 
       {/* From the blog */}
       <section className="flex flex-col justify-center items-center md:flex-row w-full md:justify-between md:items-end gap-6 px-4">

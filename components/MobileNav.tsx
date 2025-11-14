@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Heart } from "lucide-react"
+import { Menu, X, Heart, ArrowRight } from "lucide-react"
 import Link from "@/components/ui/link"
 import { cn } from "@/lib/utils"
 import { generateClipPath } from "@/styles/clipPaths"
@@ -105,29 +105,32 @@ export default function MobileNav() {
           </div>
           
           <nav 
-            className="flex flex-col gap-6 mt-4"
+            className="flex flex-col gap-4 mt-4"
             style={{ textShadow: "0 0 1rem rgba(0,0,0,0.75)" }}
           >
             <Link 
               href="/about" 
               onClick={closeMenu}
-              className="text-lg hover:text-primary-light transition-colors"
+              className="text-lg !text-white border-b border-white pb-3 flex items-center justify-between"
             >
-              About
+              <span>About</span>
+              <ArrowRight size={20} />
             </Link>
             <Link 
               href="/blog" 
               onClick={closeMenu}
-              className="text-lg hover:text-primary-light transition-colors"
+              className="text-lg !text-white border-b border-white pb-3 flex items-center justify-between"
             >
-              Blog
+              <span>Blog</span>
+              <ArrowRight size={20} />
             </Link>
             <Link 
               href="/grants" 
               onClick={closeMenu}
-              className="text-lg hover:text-primary-light transition-colors"
+              className="text-lg !text-white border-b border-white pb-3 flex items-center justify-between"
             >
-              Grants
+              <span>Grants</span>
+              <ArrowRight size={20} />
             </Link>
             <Link 
               href="/donate" 
