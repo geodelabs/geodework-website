@@ -84,7 +84,7 @@ export default function RootLayout({
                     Donate
                   </Link>
                 </div>
-                {/* <div
+                <div
                   className="donate-button-card-wrapper mx-auto"
                   style={generateClipPath("BottomLeft", "medium")}
                 >
@@ -99,7 +99,7 @@ export default function RootLayout({
                       <ArrowRight className="inline h-4 w-4" />
                     </p>
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
 
