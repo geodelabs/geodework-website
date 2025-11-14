@@ -1,7 +1,8 @@
-import React from 'react'
-import { generateClipPath } from '@/styles/clipPaths'
 import Link from 'next/link'
+import React from 'react'
 import { Heart } from "lucide-react"
+
+import { generateClipPath } from '@/styles/clipPaths'
 
 
 const HeroDock = () => {

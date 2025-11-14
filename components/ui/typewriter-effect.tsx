@@ -52,7 +52,7 @@ export const TypewriterEffect = ({
 
       return () => clearTimeout(timeoutId) // Cleanup timeout on unmount or isInView change
     }
-  }, [isInView])
+  }, [isInView, animate, delayInSeconds])
 
   const renderWords = () => {
     return (

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Heart } from "lucide-react"
 
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
@@ -6,8 +7,6 @@ import BitcoinLogo from "@/components/svgs/bitcoin.svg"
 import { CopyButton } from "@/components/ui/copy-button"
 import Link from "@/components/ui/link"
 import { QRCode } from "@/components/ui/qr-code"
-import { Heart } from "lucide-react"
-
 import {
   BITCOIN_ADDRESS,
   BUY_ME_A_COFFEE_URL,
@@ -17,7 +16,6 @@ import {
   GIVETH_URL,
   SITE_NAME,
 } from "@/lib/constants"
-
 import { generateMetadata } from "@/lib/metadata"
 import { shortenAddress } from "@/lib/web3"
 

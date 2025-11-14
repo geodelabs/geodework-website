@@ -48,7 +48,7 @@ export const generateRssFeed = async (posts: BlogPost[]): Promise<Feed> => {
             .filter(Boolean)
             .map((pathComponent) => encodeURIComponent(pathComponent))
           return new URL(resolve(...pathComponents), origin).toString()
-        } catch (e) {
+        } catch {
           console.warn("Could not sanitize image url, skipping: ", imagePath)
         }
       })()

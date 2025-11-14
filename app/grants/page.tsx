@@ -1,11 +1,10 @@
+import Link from "next/link"
 import React from "react"
+import { Heart } from "lucide-react"
 
 import GrantsMain from "@/components/GrantsMain"
 import HeroBackground from "@/components/HeroBackground"
 import Subscribe from "@/components/Subscribe"
-import Link from "next/link"
-import { Heart } from "lucide-react"
-
 import { generateMetadata } from "@/lib/metadata"
 
 export const metadata = generateMetadata("Grants", "/grants")

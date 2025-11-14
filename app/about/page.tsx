@@ -1,14 +1,13 @@
+import Link from "next/link"
+import { Heart } from "lucide-react"
 import type { MDXComponents } from "mdx/types"
 
 import GeodeIcon from "@/components/GeodeIcon"
 import HeroBackground from "@/components/HeroBackground"
+import Subscribe from "@/components/Subscribe"
+import { generateMetadata } from "@/lib/metadata"
 
 import About from "./content.mdx"
-
-import { generateMetadata } from "@/lib/metadata"
-import Subscribe from "@/components/Subscribe"
-import { Heart } from "lucide-react"
-import Link from "next/link"
 
 export const metadata = generateMetadata("About", "/about")
 
