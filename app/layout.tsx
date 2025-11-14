@@ -72,14 +72,18 @@ export default function RootLayout({
               <Link href="/grants">Grants</Link>
             </nav>
             <div className="relative">
-              <Link href="/donate" className="donate-button inline-flex items-center" style={generateClipPath("TopRight", "medium")}>
-                <HeartIcon className="donate-heart mr-2 h-4 w-4 transition-all" />
-                Donate
-              </Link>
-              <Link href="/donate" className="donate-button-card flex flex-col justify-center items-center">
-                 <QR className="h-40 w-40" />
-                 <p className="flex items-center gap-2">View options <ArrowRight className="h-4 w-4 inline" /></p>
-              </Link>
+              <div className="donate-button-wrapper" style={generateClipPath("TopRight", "medium")}>
+                <Link href="/donate" className="donate-button" style={generateClipPath("TopRight", "medium")}>
+                  <HeartIcon className="donate-heart mr-2 h-4 w-4 transition-all" />
+                  Donate
+                </Link>
+              </div>
+              <div className="donate-button-card-wrapper mx-auto" style={generateClipPath("BottomLeft", "medium")}>
+                <Link href="/donate" className="donate-button-card" style={generateClipPath("BottomLeft", "medium")}>
+                  <QR className="h-44 w-44" />
+                  <p className="flex items-center gap-2 text-sm">View other options <ArrowRight className="h-4 w-4 inline" /></p>
+                </Link>
+              </div>
             </div>
           </div>
 
