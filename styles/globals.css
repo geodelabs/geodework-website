@@ -49,18 +49,26 @@
     @apply list-inside ps-4 mb-2;
   }
 
-  .donate-button {
+  .donate-button-wrapper {
+    position: relative;
     display: inline-block;
+    padding: 0.125rem;
+    background-color: hsla(var(--accent));
+  }
+
+  .donate-button {
+    position: relative;
+    display: flex;
+    align-items: center;
     padding: 0.2rem 1rem;
     background-color: hsla(var(--accent));
     color: hsla(var(--primary-dark)) !important;
     font-weight: 600;
-    transition: all 0.2s;
     text-decoration: none;
-    border: 3px solid hsla(var(--accent));
+    transition: all 0.2s;
   }
 
-  .donate-button:hover {
+  .donate-button-wrapper:hover .donate-button {
     background-color: white !important;
     color: hsla(var(--primary-dark)) !important;
   }
@@ -69,29 +77,37 @@
     color: hsla(var(--primary-dark)) !important;
   }
 
-  .donate-button:hover .donate-heart {
+  .donate-button-wrapper:hover .donate-heart {
     fill: hsla(var(--primary-dark));
   }
 
-  .donate-button-card {
+  .donate-button-card-wrapper {
     position: absolute;
     top: 100%;
     right: 0;
-    border: 3px solid hsla(var(--accent));
-    background-color: white !important;
-    color: hsla(var(--primary-dark)) !important;
-    padding: 1rem 1.5rem 0.5rem 1.5rem !important;
+    background-color: hsla(var(--accent));
+    padding: 0.125rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
     opacity: 0;
     visibility: hidden;
     z-index: 9999 !important;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
     transition: opacity 0.2s, visibility 0.2s;
     pointer-events: none;
   }
 
-  .donate-button-card:hover,
-  .donate-button:hover + .donate-button-card {
+  .donate-button-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    color: hsla(var(--primary-dark)) !important;
+    padding: 0.5rem 0.125rem 0.5rem 0.5rem !important;
+    text-decoration: none;
+  }
+
+  .donate-button-card-wrapper:hover,
+  .donate-button-wrapper:hover + .donate-button-card-wrapper {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;

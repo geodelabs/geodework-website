@@ -5,23 +5,23 @@ interface ILink {
 }
 
 export type TCountry =
-  | 'Argentina'
-  | 'Colombia'
-  | 'Denmark'
-  | 'Greece'
-  | 'Honduras'
-  | 'India'
-  | 'Japan'
-  | 'Malaysia'
-  | 'Mexico'
-  | 'Poland'
-  | 'Romania'
-  | 'Serbia'
-  | 'Slovakia'
-  | 'Taiwan'
-  | 'Thailand'
-  | 'Ukraine'
-  | 'USA';
+  | "Argentina"
+  | "Colombia"
+  | "Denmark"
+  | "Greece"
+  | "Honduras"
+  | "India"
+  | "Japan"
+  | "Malaysia"
+  | "Mexico"
+  | "Poland"
+  | "Romania"
+  | "Serbia"
+  | "Slovakia"
+  | "Taiwan"
+  | "Thailand"
+  | "Ukraine"
+  | "USA"
 
 export interface IGrant {
   project: ILink
@@ -315,7 +315,8 @@ export const grantsData: IGrant[] = [
     project: {
       title: "ETHKL 2025",
     },
-    description: "ETHKL 2025 development and self-sustainability exploration v3.",
+    description:
+      "ETHKL 2025 development and self-sustainability exploration v3.",
     links: [
       {
         title: "ETHKL",
@@ -411,5 +412,5 @@ export const grantsData: IGrant[] = [
       },
     ],
     country: "Romania",
-  }
+  },
 ]

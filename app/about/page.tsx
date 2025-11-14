@@ -22,7 +22,7 @@ const overrideComponents: MDXComponents = {
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center">
       <HeroBackground />
       <article className="mx-auto my-16 max-w-prose [&>p]:mb-12">
         <About components={overrideComponents} />
@@ -32,9 +32,12 @@ export default function AboutPage() {
         </div>
       </article>
       <Subscribe />
-      <div className="mt-8 mb-16 text-center">
+      <div className="mb-16 mt-8 text-center">
         <p className="text-lg">
-          Donate: <Link href="/donate" className="text-accent hover:underline">geodelabs.eth</Link>{" "}
+          Donate:{" "}
+          <Link href="/donate" className="text-accent hover:underline">
+            geodelabs.eth
+          </Link>{" "}
           <Heart className="inline h-5 w-5 text-red-500" fill="currentColor" />
         </p>
       </div>
