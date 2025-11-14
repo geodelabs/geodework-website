@@ -32,13 +32,13 @@ export default async function Home() {
       {/* From the blog */}
       <section className="flex w-full flex-col items-center justify-center gap-6 px-4 md:flex-row md:items-end md:justify-between">
         <Link
-          className="group flex flex-col items-center"
+          className="group flex flex-col items-start"
           href={getHrefFromSlug(latestPost.slug)}
         >
-          <p className="text-center text-sm font-light text-accent group-hover:text-body">
+          <p className="text-left text-sm font-light text-accent group-hover:text-body">
             read latest &gt;
           </p>
-          <p className="text-center font-mono text-lg text-body group-hover:text-accent">
+          <p className="text-left font-mono text-lg text-body group-hover:text-accent">
             {latestPost.frontmatter.title}
           </p>
         </Link>
