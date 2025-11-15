@@ -15,7 +15,6 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col items-center gap-20">
-      {/* Hero */}
       <section className="py-12">
         <Meteors number={20} />
         <Meteors
@@ -27,10 +26,9 @@ export default async function Home() {
         <HomepageHeroContent />
       </section>
 
-      {/* <HeroDock /> */}
+      <HeroDock />
 
-      {/* From the blog */}
-      <section className="flex w-full flex-col items-center justify-center gap-6 px-4 md:flex-row md:items-end md:justify-between">
+      <section className="flex w-full flex-col items-start justify-center gap-6 px-4 md:flex-row md:items-end md:justify-between">
         <Link
           className="group flex flex-col items-start"
           href={getHrefFromSlug(latestPost.slug)}
