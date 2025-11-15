@@ -28,7 +28,7 @@ export default async function Home() {
 
       <HeroDock />
 
-      <section className="flex flex-col items-center justify-center gap-12 px-4 md:w-full md:flex-row md:items-end md:justify-between">
+      <section className="mb-12 flex flex-col items-center justify-center gap-12 px-4 md:mb-0 md:w-full md:flex-row md:items-end md:justify-between">
         <Link
           className="group flex flex-col items-center md:items-start"
           href={getHrefFromSlug(latestPost.slug)}
