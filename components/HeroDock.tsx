@@ -30,7 +30,7 @@ const HeroDock = () => {
             <span className="relative z-10 block transition-colors group-hover:text-primary">
               <Link
                 href="/newsletter"
-                className="flex h-full w-full items-center justify-center"
+                className="flex h-full w-full items-center justify-center px-1"
               >
                 Newsletter
               </Link>
@@ -48,7 +48,7 @@ const HeroDock = () => {
         <div className="w-0.5 flex-shrink-0 bg-white sm:w-1" />
         {/* Shop */}
         <div className="relative min-w-0 flex-1 basis-0">
-          <button className="h-full w-full border-2 border-transparent px-3 py-2 transition-colors hover:border-primary hover:bg-white hover:text-primary sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8">
+          <button className="h-full w-full border-2 border-transparent px-6 py-3 transition-colors hover:border-primary hover:bg-white hover:text-primary lg:px-8">
             <Link
               href="https://shop.geode.build/"
               className="flex h-full w-full items-center justify-center"
