@@ -14,7 +14,7 @@ export default async function Home() {
   const latestPost = allPosts[0]
 
   return (
-    <div className="flex flex-col items-center gap-20">
+    <div className="flex flex-col items-center justify-center gap-20">
       <section className="py-12">
         <Meteors number={20} />
         <Meteors
@@ -28,15 +28,15 @@ export default async function Home() {
 
       <HeroDock />
 
-      <section className="flex w-full flex-col items-start justify-center gap-6 px-4 md:flex-row md:items-end md:justify-between">
+      <section className="flex flex-col items-center justify-center gap-12 px-4 md:w-full md:flex-row md:items-end md:justify-between">
         <Link
-          className="group flex flex-col items-start"
+          className="group flex flex-col items-center md:items-start"
           href={getHrefFromSlug(latestPost.slug)}
         >
           <p className="text-left text-sm font-light text-accent group-hover:text-body">
             read latest &gt;
           </p>
-          <p className="text-left font-mono text-lg text-body group-hover:text-accent">
+          <p className="text-center font-mono text-lg text-body group-hover:text-accent md:text-left">
             {latestPost.frontmatter.title}
           </p>
         </Link>
