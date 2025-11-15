@@ -11,14 +11,13 @@ const HeroDock = () => {
 
   return (
     <div
-      className="min-w-4xl relative mx-auto bg-white p-0.5 font-mono text-sm font-semibold sm:p-1 md:text-lg lg:text-xl"
+      className="relative mx-auto w-full bg-white p-0.5 font-mono text-sm font-semibold sm:p-1 md:w-[45%] md:text-lg lg:text-xl"
       style={clipPathStyle}
     >
       <div
         className="flex items-stretch overflow-visible bg-primary"
         style={clipPathStyle}
       >
-        {/* Newsletter */}
         <div
           className="relative min-w-0 flex-1 basis-0"
           style={bottomLeftClipPath}
@@ -29,10 +28,10 @@ const HeroDock = () => {
           >
             <span className="relative z-10 block transition-colors group-hover:text-primary">
               <Link
-                href="/newsletter"
+                href="/blog"
                 className="flex h-full w-full items-center justify-center px-1"
               >
-                Newsletter
+                Blog
               </Link>
             </span>
             <div
