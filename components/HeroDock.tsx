@@ -38,7 +38,7 @@ const HeroDock = () => {
         <div className="w-0.5 flex-shrink-0 bg-white sm:w-1" />
         <div className="relative isolate flex-1">
           <button className="h-full w-full border-2 border-transparent px-3 py-2 transition-colors hover:border-primary hover:bg-white hover:text-primary sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8">
-            <Link href="https://shop.geode.build/">Merch</Link>
+            <Link href="https://shop.geode.build/">Shop</Link>
           </button>
         </div>
         <div className="w-0.5 flex-shrink-0 bg-white sm:w-1" />
