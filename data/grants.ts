@@ -22,6 +22,10 @@ export type TCountry =
   | "Thailand"
   | "Ukraine"
   | "USA"
+  | "Nigeria"
+  | "Costa Rica"
+  | "Brazil"
+  | "Indonesia"
 
 export interface IGrant {
   project: ILink
@@ -30,7 +34,7 @@ export interface IGrant {
   country: TCountry
 }
 
-export const lastUpdated = "2025-05-20"
+export const lastUpdated = "2025-11-14"
 
 export const grantsData: IGrant[] = [
   {
@@ -412,5 +416,130 @@ export const grantsData: IGrant[] = [
       },
     ],
     country: "Romania",
+  },
+  {
+    project: { title: "Nyx Research House 2026" },
+    description:
+      "A research-focused residency that brings together academics, industry professionals, and independent builders to tackle key problems in Ethereum. The house hosts regular gatherings, offers shared living space, and fosters collaboration across disciplines to accelerate problem-solving.",
+    links: [
+      {
+        title: "Nyx Foundation",
+        url: "https://nyx.foundation/",
+      },
+    ],
+    country: "Japan",
+  },
+  {
+    project: {
+      title: "ZKP Cryptography Courses at Mathematical Academy 2025/26",
+      url: "https://matematickaakademija.com/",
+    },
+    description:
+      "A 10-week lecture series on zero-knowledge cryptography, aimed at deepening technical understanding and expanding advanced ZK knowledge within the developer and research community.",
+    links: [
+      {
+        title: "Mathematical Academy",
+        url: "https://matematickaakademija.com/",
+      },
+    ],
+    country: "Serbia",
+  },
+  {
+    project: { title: "ETH Pura Vida 2025" },
+    description:
+      "Ethereum Costa Rica’s conference at Universidad Fidélitas in San José, bringing together builders, students, and professionals to explore Ethereum use cases, technology, and local ecosystem opportunities.",
+    links: [
+      {
+        title: "Ethereum Costa Rica",
+        url: "https://ethereum.cr/",
+      },
+    ],
+    country: "Costa Rica",
+  },
+  {
+    project: {
+      title: "Blocktrain",
+      url: "https://hackathon-boost.devfolio.co/overview",
+    },
+    description:
+      "India’s first hackathon on a moving train, running 36 hours from Bangalore to New Delhi. The journey brought together builders and creators who developed projects onboard, blending travel, collaboration, and rapid prototyping.",
+    links: [
+      {
+        title: "Devfolio",
+        url: "https://devfolio.co/",
+      },
+    ],
+    country: "India",
+  },
+  {
+    project: { title: "ETHTokyo 2025" },
+    description:
+      "ETH Tokyo 2025 features a one-day conference and a three-day hackathon bringing together developers and builders to explore new ideas, prototype projects, and collaborate across the Ethereum ecosystem.",
+    links: [
+      {
+        title: "ETHTokyo",
+        url: "https://www.ethtokyo.org/",
+      },
+    ],
+    country: "Japan",
+  },
+  {
+    project: { title: "Hackathons: Da Ideia ao Código" },
+    description:
+      "A two-day Ethereum mini-hackathon in São Paulo that brings local developers together to prototype ideas, learn Ethereum concepts, and build hands-on projects in a collaborative environment.",
+    links: [
+      {
+        title: "ERC55",
+        url: "https://erc55.xyz/",
+      },
+    ],
+    country: "Brazil",
+  },
+  {
+    project: { title: "Ethereum Genesis: A Decade of Decentralization" },
+    description:
+      "A community event in Jakarta celebrating Ethereum’s 10-year journey, featuring talks, panels, interactive sessions, and networking.",
+    links: [
+      {
+        title: "Ethereum Jakarta",
+        url: "https://ethjkt.com/",
+      },
+    ],
+    country: "Indonesia",
+  },
+  {
+    project: { title: "js13kGames 2025" },
+    description:
+      "An annual global challenge where developers create lightweight, open-source web games, encouraging experimentation, creativity, and community collaboration.",
+    links: [
+      {
+        title: "js13kGames",
+        url: "https://js13kgames.com/2025/",
+      },
+    ],
+    country: "Poland",
+  },
+  {
+    project: { title: "Ethereum Córdoba" },
+    description:
+      "A technical meetup in Córdoba featuring sessions on smart contracts, CI/CD, security practices, and ERC-4337, designed to strengthen local developer skills and expand Ethereum-focused engineering knowledge.",
+    links: [
+      {
+        title: "Ethereum Córdoba",
+      },
+    ],
+    country: "Argentina",
+  },
+  {
+    project: { title: "Web3bridge" },
+    description:
+      "Web3Bridge is an Africa-based education initiative committed to training developers, supporting founders, and activating local communities.",
+    links: [
+      {
+        title: "Web3Bridge",
+        url: "https://www.web3bridgeafrica.com/",
+      },
+    ],
+    country: "Nigeria",
   },
 ]
