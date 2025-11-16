@@ -25,14 +25,14 @@ const alternativeOptions: {
   name: string
   url: string
 }[] = [
-  {
-    name: "Giveth",
-    url: GIVETH_URL,
-  },
-  {
-    name: "Gitcoin",
-    url: GITCOIN_URL,
-  },
+  // {
+  //   name: "Giveth",
+  //   url: GIVETH_URL,
+  // },
+  // {
+  //   name: "Gitcoin",
+  //   url: GITCOIN_URL,
+  // },
   {
     name: "Buy Me a Coffee",
     url: BUY_ME_A_COFFEE_URL,
