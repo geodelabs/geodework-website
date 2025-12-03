@@ -7,7 +7,7 @@ publishedTime: 2025-03-20 12:00:00 Z-00:00
 
 Special thanks to Hsiao Wei, Changwu, Martinet, Anton, Astro and Sunsec for feedback and review.
 
-![Ethereum Image](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/98db0321-df12-4d57-a14c-82f00edba640/Screenshot_2025-03-20_at_20.05.08.png?t=1742497577)
+![Ethereum Image](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/Taiwan-Ethereum-Ecosystem-Cover.png)
 _[ETHTaipei](https://ethtaipei.org/) is just around the corner – secure your spot today!_
 
 ## Tl;dr

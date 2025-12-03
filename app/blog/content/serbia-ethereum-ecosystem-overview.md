@@ -5,7 +5,7 @@ publishedTime: 2025-05-21 12:00:00 Z-00:00
 
 ## This month, let's explore Serbia's thriving Ethereum ecosystem.
 
-![Serbia Ecosystem](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/1c71ccb8-a6e4-4765-aec9-e503c176bc1d/Serbia_new_version___2_.png?t=1747810130)
+![Serbia Ecosystem](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/Serbia-Ethereum-Ecosystem-Cover.png)
 
 Special thanks to [Bogdan Jovicevic](https://www.linkedin.com/in/bogdan-jovicevic?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=serbia-ethereum-ecosystem-overview), [Petar Popovic](https://x.com/0xdevelopera?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=serbia-ethereum-ecosystem-overview) and [Tanja Mladenovic](https://x.com/tanjaweb3?utm_source=localethereum.beehiiv.com&utm_medium=referral&utm_campaign=serbia-ethereum-ecosystem-overview) for the review and the feedback.
 

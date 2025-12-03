@@ -5,7 +5,7 @@ publishedTime: 2025-08-28 12:00:00 Z-00:00
 
 ## What’s Fueling India’s Ethereum & Web3 Surge?
 
-![India Ethereum Ecosystem Overview](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/e2836d1e-a38e-487e-a2d5-3c82469492b4/india_cover.png)
+![India Ethereum Ecosystem Overview](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/India-Ethereum-Ecosystem-Cover.png)
 Special thanks to Denver Dsouza, Mudit Gupta, Sarang Parikh and Yash Saraswat for helping with the feedback and the review. ❤️
 
 ## TL;DR

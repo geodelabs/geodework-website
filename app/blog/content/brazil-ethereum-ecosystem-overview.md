@@ -5,7 +5,7 @@ publishedTime: 2025-10-01 12:00:00 Z-00:00
 
 ## Has Brazil invented the future of money? 🇧🇷 💸
 
-![Brazil Ethereum Ecosystem](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/f89b6a4b-bbb6-4b29-b2b3-0e1a30d25025/brazil_deep_dive_cover.png)
+![Brazil Ethereum Ecosystem](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/Brazil-Ethereum-Ecosystem-Cover.png)
 
 Special thanks to Rob Junior, Thiago Rocha, Romina Sejas, Cristiano Silva, Luciana and João Kury for the feedback and the review.
 

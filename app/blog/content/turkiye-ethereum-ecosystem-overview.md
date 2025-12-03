@@ -5,7 +5,7 @@ publishedTime: 2025-07-24 12:00:00 Z-00:00
 
 ## 🇹🇷 Where crisis meets innovation.
 
-![Turkiye Ethereum Ecosystem Overview](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/d81050a9-a3ba-4427-82f5-34bef4c3e148/Tu%CC%88rkiye_Ethereum_Ecosystem_Overview.jpg)
+![Turkiye Ethereum Ecosystem Overview](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/Turkiye-Ethereum-Ecosystem-Cover.png)
 Special thanks to Kaan, Mechul.eth, Errold, and Doruk for the review and feedback. ❤️
 
 ## TL;DR

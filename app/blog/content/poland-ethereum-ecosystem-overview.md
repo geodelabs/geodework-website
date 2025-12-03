@@ -5,7 +5,7 @@ publishedTime: 2025-06-26 12:00:00 Z-00:00
 
 This month, let's explore Poland's thriving Ethereum ecosystem.
 
-![Poland Ecosystem](https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/56884b50-e62a-4b87-b2a3-d634e9eaeb9d/Poland_Ethereum_Ecosystem_Overview.png?t=1750925717)
+![Poland Ecosystem](https://pvvrtckedmrkyzfxubkk.supabase.co/storage/v1/object/public/geode-images/cover-images/Poland-Ethereum-Ecosystem-Cover.png)
 
 Special thanks to Paweł Bylica, Monika Zając and Martyna Jeuté for the review and the feedback.
 
