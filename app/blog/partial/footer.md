@@ -14,7 +14,7 @@ Best regards,
 
 > ❤️❤️❤️
 >
-> Love Local Ethereum? [Share](https://localethereum.beehiiv.com/subscribe).
+> Love Local Ethereum? [Share](https://localethereum.substack.com/).
 >
 > Have any comments or feedback? [DM](http://t.me/rielychen).
 >
