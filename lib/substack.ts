@@ -47,4 +47,3 @@ export async function subscribeToSubstack(email: string): Promise<boolean> {
     return false
   }
 }
-
