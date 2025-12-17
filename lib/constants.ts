@@ -29,7 +29,8 @@ export const GITCOIN_URL =
   "https://explorer.gitcoin.co/#/projects/0x9688fb4c1d28b3d8774f148917bbd9def2fc1e47ef5098f39e02482c1c1f71b0"
 
 // Blog
-export const LOCAL_ETHEREUM_BLOG_URL = "https://localethereum.beehiiv.com"
+export const LOCAL_ETHEREUM_BLOG_URL = "https://localethereum.substack.com"
+export const SUBSTACK_PUBLICATION_NAME = "localethereum"
 
 export enum EBlogProvider {
   LOCAL_ETHEREUM = "localethereum",
