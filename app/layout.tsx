@@ -117,7 +117,7 @@ export default function RootLayout({
               <p className="text-body-secondary">
                 &copy; Geode Labs {new Date().getFullYear()}
               </p>
-              <Link href="/terms-of-use">Terms of Use</Link>
+              <Link href="/terms-and-conditions">Terms and Conditions</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
             <Socials />

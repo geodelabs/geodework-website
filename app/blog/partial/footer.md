@@ -18,7 +18,7 @@ Best regards,
 >
 > Have any comments or feedback? [DM](http://t.me/rielychen).
 >
-> Want to **advertise** on Local Ethereum? [DM](http://t.me/rielychen) or [Email](mailto:hello@geodework.com).
+> Want to **advertise** on Local Ethereum? [DM](http://t.me/rielychen) or [Email](mailto:hello@geode.build).
 >
 > ###
 >
