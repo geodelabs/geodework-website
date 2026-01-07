@@ -45,7 +45,7 @@ publishedTime: 2026-01-06 00:00:00 Z-00:00
 - [MoneyGram](https://www.moneygram.com/de/en) (50M+ customers, 200+ territories) [partnered with Fireblocks](https://www.theblock.co/post/381343/moneygram-taps-fireblocks-stablecoin-settlements-remittance-giant) for stablecoin settlements, following Western Union and other remittance giants. Blockchain payment rails are now proven at scale.
 - [x402 V2 launched](https://www.x402.org/writing/x402-v2-launch), evolving the standard for internet-native payments based on production learnings.
 - Moody's [proposed a framework](https://www.theblock.co/post/382422/moodys-proposes-stablecoin-ratings-framework-focused-on-reserve-quality) for rating stablecoins focused on reserve quality. Traditional finance treating stablecoins as a permanent category.
-- Visa launched a ['stablecoins advisory practice'](https://www.google.com/search?client=safari&rls=en&q=Visa+launched+a+%27stablecoins+advisory+practice%27+to+help+banks+and+businesses+build+strategies&ie=UTF-8&oe=UTF-8) to help banks and businesses build strategies. The question is "how fast," not "if."
+- Visa launched a ['stablecoins advisory practice'](https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.21946.html) to help banks and businesses build strategies. The question is "how fast," not "if."
 
 ### Institutional
 
@@ -121,11 +121,11 @@ The Ethereum story isn’t written in numbers, but data offers a glimpse into ho
 
 ## Opportunities 💡
 
-- [ETHPrague 2026](https://www.notion.so/link) (May 8-10) is opening volunteer applications. Support the event, meet builders, and join the organizing crew - [apply by April 10](https://www.notion.so/link).
-- [DEPCON Hakodate](https://www.notion.so/link), a research house side event by Nyx Foundation during Japan's largest cryptography and security conference SCIS2026, is now accepting applications.
-- Circle Ventures is launching [Arc Builders Fund](https://www.notion.so/link), backing early-stage projects building on Arc, the Economic OS for the internet.
-- Thinking about starting something in crypto in 2026? [ETHGlobal shared ideas worth exploring](https://www.notion.so/link).
-- Stateless Consensus team (EF) shared a [proposal on addressing Ethereum's state size](https://www.notion.so/link). Calling client developers, node operators, and builders to contribute feedback through forums and calls.
+- [ETHPrague 2026](https://ethprague.com/) (May 8-10) is opening volunteer applications. Support the event, meet builders, and join the organizing crew - [apply by April 10](https://tally.so/r/mBO991).
+- [DEPCON Hakodate](https://x.com/NyxFoundation/status/1998186003807494352?s=20), a research house side event by Nyx Foundation during Japan's largest cryptography and security conference SCIS2026, is now accepting applications.
+- Circle Ventures is launching [Arc Builders Fund](https://x.com/circle/status/2001381893204287843?s=20), backing early-stage projects building on Arc, the Economic OS for the internet.
+- Thinking about starting something in crypto in 2026? [ETHGlobal shared ideas worth exploring](https://x.com/ETHGlobal/status/2007452896015855793).
+- Stateless Consensus team (EF) shared a [proposal on addressing Ethereum's state size](https://blog.ethereum.org/2025/12/16/future-of-state). Calling client developers, node operators, and builders to contribute feedback through forums and calls.
 - [EF is hiring](https://jobs.ashbyhq.com/ethereum-foundation) for multiple roles across Enterprise Acceleration, Protocol, dAI, and more.
 
 ## Highlighted Events in Jan and early Feb ✨
@@ -135,4 +135,4 @@ The Ethereum story isn’t written in numbers, but data offers a glimpse into ho
 - [HackMoney 2026](https://ethglobal.com/events/hackmoney2026) by ETHGlobal, Online, Async DeFi hackathon, Jan 30-Feb 11, 2026.
 - [Digital Assets Forum](https://eblockchainconvention.com/digital-assets-forum/), London, UK, Institutional conference, Feb 5-6, 2026.
 - [Consensus Hong Kong](https://consensus-hongkong.coindesk.com/), Hong Kong SAR, Digital assets conference, Feb 10-12, 2026.
-- Browse 100+ Ethereum events worldwide at [ETHStars Events](https://www.notion.so/link).
+- Browse 100+ Ethereum events worldwide at [ETHStars Events](https://ethstars.xyz/events).
