@@ -626,7 +626,6 @@ export const grantsData: IGrant[] = [
     ],
     country: "Greece",
   },
-  // January 3, 2025
   {
     project: {
       title: "Uzumakit 2025",
