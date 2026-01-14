@@ -7,6 +7,7 @@ interface ILink {
 export type TCountry =
   | "Argentina"
   | "Colombia"
+  | "Croatia"
   | "Denmark"
   | "Greece"
   | "Honduras"
@@ -34,9 +35,354 @@ export interface IGrant {
   country: TCountry
 }
 
-export const lastUpdated = "2025-11-14"
+export const lastUpdated = "2026-01-14"
 
+// Sorted by descending approved time
 export const grantsData: IGrant[] = [
+  // December 24, 2025
+  {
+    project: { title: "ETHTaipei 2026" },
+    description:
+      "ETHTaipei is Taiwan's largest Ethereum community hub, hosting annual conferences, monthly meetups, public goods grants, and publishing Ethereum-focused articles to onboard new developers and community members while promoting Ethereum education.",
+    links: [
+      {
+        title: "ETHTaipei",
+        url: "https://ethtaipei.org/",
+      },
+    ],
+    country: "Taiwan",
+  },
+  {
+    project: {
+      title: "ETHCluj 2026",
+      url: "https://www.ethcluj.org/",
+    },
+    description:
+      "ETHCluj is a technical Ethereum community and conference based in Cluj-Napoca, Romania. It supports Ethereum builders by focusing on protocol literacy, applied education, and collaboration, rather than general crypto exposure.",
+    links: [
+      {
+        title: "ETHCluj",
+        url: "https://www.ethcluj.org/",
+      },
+    ],
+    country: "Romania",
+  },
+  // December 22, 2025
+  {
+    project: {
+      title: "ETHIndiaVilla 2025",
+      url: "https://ethindia-villa.devfolio.co/",
+    },
+    description:
+      "ETHIndiaVilla is a focused Ethereum hackathon bringing top builders and SuperHackers together through a small-team, embedded-mentorship format to unlock real collaboration and deeper building.",
+    links: [
+      {
+        title: "Devfolio",
+        url: "https://x.com/devfolio",
+      },
+    ],
+    country: "India",
+  },
+  // December 12, 2025
+  {
+    project: { title: "Crecimiento 2026" },
+    description:
+      "In 2026, Crecimiento will be building Latin America's strongest startup ecosystem with a full-year builder funnel. From Aleph Hackathons and Pop-Up Cities to Acceleration Season and the Startup World Cup, they'll help launch the next generation of crypto and AI startups. Through the pillars - Aleph Hub, Startup Club, Hackers Club, and Policy Advocacy - they provide the infrastructure, community, and support founders need to thrive.",
+    links: [
+      {
+        title: "Crecimiento",
+        url: "https://crecimiento.build/",
+      },
+    ],
+    country: "Argentina",
+  },
+  {
+    project: { title: "Ethereum in Argentina" },
+    description:
+      "Ethereum in Argentina is a documentary about the past, current & future potential impact of Ethereum in Argentina. How Ethereum can help regular people & replace failing institutions and how Argentina is serving as the testing ground for bringing an entire country onchain.",
+    links: [
+      {
+        title: "MetaMedia",
+        url: "https://www.youtube.com/@metamedia",
+      },
+    ],
+    country: "Croatia",
+  },
+  // October 31, 2025
+  {
+    project: { title: "ETH Pura Vida 2025" },
+    description:
+      "Ethereum Costa Rica's conference at Universidad Fidélitas in San José, bringing together builders, students, and professionals to explore Ethereum use cases, technology, and local ecosystem opportunities.",
+    links: [
+      {
+        title: "Ethereum Costa Rica",
+        url: "https://ethereum.cr/",
+      },
+    ],
+    country: "Costa Rica",
+  },
+  // October 29, 2025
+  {
+    project: { title: "Nyx Research House 2026" },
+    description:
+      "A research-focused residency that brings together academics, industry professionals, and independent builders to tackle key problems in Ethereum. The house hosts regular gatherings, offers shared living space, and fosters collaboration across disciplines to accelerate problem-solving.",
+    links: [
+      {
+        title: "Nyx Foundation",
+        url: "https://nyx.foundation/",
+      },
+    ],
+    country: "Japan",
+  },
+  // October 28, 2025
+  {
+    project: {
+      title: "ZKP Cryptography Courses at Mathematical Academy 2025/26",
+      url: "https://matematickaakademija.com/",
+    },
+    description:
+      "A 10-week lecture series on zero-knowledge cryptography, aimed at deepening technical understanding and expanding advanced ZK knowledge within the developer and research community.",
+    links: [
+      {
+        title: "Mathematical Academy",
+        url: "https://matematickaakademija.com/",
+      },
+    ],
+    country: "Serbia",
+  },
+  // September 25, 2025
+  {
+    project: {
+      title: "Blocktrain",
+      url: "https://hackathon-boost.devfolio.co/overview",
+    },
+    description:
+      "India's first hackathon on a moving train, running 36 hours from Bangalore to New Delhi. The journey brought together builders and creators who developed projects onboard, blending travel, collaboration, and rapid prototyping.",
+    links: [
+      {
+        title: "Devfolio",
+        url: "https://devfolio.co/",
+      },
+    ],
+    country: "India",
+  },
+  // August 31, 2025
+  {
+    project: { title: "ETHTokyo 2025" },
+    description:
+      "ETH Tokyo 2025 features a one-day conference and a three-day hackathon bringing together developers and builders to explore new ideas, prototype projects, and collaborate across the Ethereum ecosystem.",
+    links: [
+      {
+        title: "ETHTokyo",
+        url: "https://www.ethtokyo.org/",
+      },
+    ],
+    country: "Japan",
+  },
+  // August 14, 2025
+  {
+    project: { title: "Hackathons: Da Ideia ao Código" },
+    description:
+      "A two-day Ethereum mini-hackathon in São Paulo that brings local developers together to prototype ideas, learn Ethereum concepts, and build hands-on projects in a collaborative environment.",
+    links: [
+      {
+        title: "ERC55",
+        url: "https://erc55.xyz/",
+      },
+    ],
+    country: "Brazil",
+  },
+  // July 29, 2025
+  {
+    project: { title: "Ethereum Genesis: A Decade of Decentralization" },
+    description:
+      "A community event in Jakarta celebrating Ethereum's 10-year journey, featuring talks, panels, interactive sessions, and networking.",
+    links: [
+      {
+        title: "Ethereum Jakarta",
+        url: "https://ethjkt.com/",
+      },
+    ],
+    country: "Indonesia",
+  },
+  // July 28, 2025
+  {
+    project: { title: "js13kGames 2025" },
+    description:
+      "An annual global challenge where developers create lightweight, open-source web games, encouraging experimentation, creativity, and community collaboration.",
+    links: [
+      {
+        title: "js13kGames",
+        url: "https://js13kgames.com/2025/",
+      },
+    ],
+    country: "Poland",
+  },
+  // July 18, 2025
+  {
+    project: { title: "Ethereum Córdoba" },
+    description:
+      "A technical meetup in Córdoba featuring sessions on smart contracts, CI/CD, security practices, and ERC-4337, designed to strengthen local developer skills and expand Ethereum-focused engineering knowledge.",
+    links: [
+      {
+        title: "Ethereum Córdoba",
+      },
+    ],
+    country: "Argentina",
+  },
+  // July 11, 2025
+  {
+    project: { title: "Web3bridge" },
+    description:
+      "Web3Bridge is an Africa-based education initiative committed to training developers, supporting founders, and activating local communities.",
+    links: [
+      {
+        title: "Web3Bridge",
+        url: "https://www.web3bridgeafrica.com/",
+      },
+    ],
+    country: "Nigeria",
+  },
+  // May 22, 2025
+  {
+    project: {
+      title: "Ethereum Mexico Org 2025",
+    },
+    description:
+      "Ethereum Mexico Org 2025 is focused on growing the Ethereum ecosystem in Mexico through education and community-driven programs.",
+    links: [
+      {
+        title: "Ethereum Mexico",
+        url: "https://www.ethmexico.org/",
+      },
+    ],
+    country: "Mexico",
+  },
+  // May 8, 2025
+  {
+    project: {
+      title: "ETHCluj 2025: Ethereum for Everyone",
+      url: "https://www.ethcluj.org/",
+    },
+    description:
+      "ETHCluj is hosting a 3-day conference from June 26-28, 2025 at Technical University of Cluj-Napoca, Romania.\n\nThis conference will feature 3 stages including workshop, sessions and hands-on workshops, with topics across six main tracks, including Dev Onboarding, Ethereum Roadmap, DeFi, AI, Regulation, and Adoption.",
+    links: [
+      {
+        title: "ETHCluj",
+        url: "https://x.com/ETHCluj",
+      },
+    ],
+    country: "Romania",
+  },
+  {
+    project: {
+      title: "Copenhagen Ethereum Meetup 10 Years Anniversary",
+    },
+    description:
+      "This meetup(held on 7/14/2025) is non-technical and will be a reflection on what happened for Ethereum ecosystem in the past 10 years and where they see the space is heading in the next 10 years.",
+    links: [
+      {
+        title: "Copenhagen Ethereum Meetup",
+        url: "https://www.meetup.com/copenhagen-ethereum-meetup/",
+      },
+    ],
+    country: "Denmark",
+  },
+  // April 28, 2025
+  {
+    project: {
+      title: "Web3SSH:2.0",
+      url: "https://web3ssh.dev/",
+    },
+    description:
+      "Web3SSH 2.0 is a 7-day summer blockchain/Ethereum focused offline camp, which consists of a Summer School program and a Hackathon, taking place at IIIT Sri City, India, from 29 June to 6th July, 2025.",
+    links: [
+      {
+        title: "IIIT Sri City, India",
+        url: "https://www.iiits.ac.in/",
+      },
+    ],
+    country: "India",
+  },
+  // April 25, 2025
+  {
+    project: {
+      title: "DAOstar Research Fellowship",
+      url: "https://daostar.org/research",
+    },
+    description:
+      "The DAOstar Research Fellowship Program funds research fellows in 2025 to produce actionable research on DAO governance, labor practices, contributor retention, and compensation structures with outputs including: public research reports, blog posts, and presentations at conferences.",
+    links: [
+      {
+        title: "Metagov",
+        url: "https://metagov.org/",
+      },
+    ],
+    country: "USA",
+  },
+  {
+    project: {
+      title: "ETH Belgrade 2025",
+      url: "https://ethbelgrade.rs/",
+    },
+    description:
+      "ETH Belgrade(June 3–5) featuring both a conference and a hackathon, will be focused on topics of  Ethereum, ZK, DeFi, and Web3 security.",
+    links: [
+      {
+        title: "ETH Belgrade",
+        url: "https://x.com/ethbelgrade",
+      },
+    ],
+    country: "Serbia",
+  },
+  // April 22, 2025
+  {
+    project: {
+      title: "ETHKL 2025",
+    },
+    description:
+      "ETHKL 2025 development and self-sustainability exploration v3.",
+    links: [
+      {
+        title: "ETHKL",
+        url: "https://ethkl.org/",
+      },
+    ],
+    country: "Malaysia",
+  },
+  // April 15, 2025
+  {
+    project: {
+      title: "Agentic Ethereum Hackathon 2025",
+      url: "https://reskilll.com/hack/agentic",
+    },
+    description:
+      "Agentic Ethereum Hackathon is a 30-hour hackathon which will gather over 150-200 passionate developers from Delhi NCR or Bangalore, aiming to catalyze the creation of AI-driven autonomous agents and smart contracts on Ethereum, fostering innovation at the intersection of blockchain and artificial intelligence.",
+    links: [
+      {
+        title: "Reskilll",
+        url: "https://reskilll.com/",
+      },
+    ],
+    country: "India",
+  },
+  // April 8, 2025
+  {
+    project: {
+      title: "Onchain bootcamp 2025",
+      url: "https://www.facebook.com/people/Onchain-Bootcamp/61576231011833/",
+    },
+    description:
+      "Onchain bootcamp 2025 is a 10-Day(16 - 27 June) Structured Program, which is taking place at Chulalongkorn University providing with comprehensive Ethereum-based curriculum, hands-on workshops and support for career pipeline.",
+    links: [
+      {
+        title: "CUBS (Chulalongkorn University Blockchain Society)",
+        url: "https://chulablockchain.com/",
+      },
+    ],
+    country: "Thailand",
+  },
+  // March 28, 2025
   {
     project: {
       title: "Crecimiento 2025 Season 4",
@@ -65,6 +411,21 @@ export const grantsData: IGrant[] = [
     ],
     country: "Poland",
   },
+  // March 25, 2025
+  {
+    project: {
+      title: "The Playground for Decentralizerians - Centrum Node",
+    },
+    description:
+      "To run an Ethereum node at the Centrum coworking space in Shibuya, Tokyo, where many Japanese Ethereum communities usually gather here.",
+    links: [
+      {
+        title: "Centrum",
+        url: "https://centrum.studio",
+      },
+    ],
+    country: "Japan",
+  },
   {
     project: {
       title: "PhishQuest: Interactive Web3 Anti-Phishing Training Platform",
@@ -80,20 +441,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "Taiwan",
   },
-  {
-    project: {
-      title: "The Playground for Decentralizerians - Centrum Node",
-    },
-    description:
-      "To run an Ethereum node at the Centrum coworking space in Shibuya, Tokyo, where many Japanese Ethereum communities usually gather here.",
-    links: [
-      {
-        title: "Centrum",
-        url: "https://centrum.studio",
-      },
-    ],
-    country: "Japan",
-  },
+  // March 18, 2025
   {
     project: {
       title: "IIIT Hyderabad Ethereum Education Explorations v2",
@@ -120,6 +468,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "India",
   },
+  // March 14, 2025
   {
     project: {
       title: "Ethereum Tegucigalpa 2025",
@@ -134,6 +483,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "Honduras",
   },
+  // March 7, 2025
   {
     project: {
       title:
@@ -154,6 +504,22 @@ export const grantsData: IGrant[] = [
     ],
     country: "India",
   },
+  // February 28, 2025
+  {
+    project: {
+      title: "Web3 Development Internship Program",
+    },
+    description:
+      "Web3 Development Internship Program is focused on Ethereum ecosystem development in Ukraine. The program will bridge the gap between technical education and industry needs by connecting students with practical development opportunities.",
+    links: [
+      {
+        title: "Web3 Institute (W3I)",
+        url: "https://w3i.network",
+      },
+    ],
+    country: "Ukraine",
+  },
+  // February 26, 2025
   {
     project: {
       title: "Ethereum Argentina Cordoba Edition 2025",
@@ -169,20 +535,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "Argentina",
   },
-  {
-    project: {
-      title: "Kyiv Ethereum Community 2025",
-    },
-    description:
-      "2025 yearly support for the Kyiv Ethereum Community, which is focused on fostering Ethereum development and adoption in Kyiv. It serves as a hub for developers, builders, and enthusiasts who want to engage with Ethereum through educational events, hands-on hacking, and networking.",
-    links: [
-      {
-        title: "EthKyiv",
-        url: "https://x.com/ethkyiv_ua",
-      },
-    ],
-    country: "Ukraine",
-  },
+  // February 11, 2025
   {
     project: {
       title: "Bratislava 2025",
@@ -214,18 +567,19 @@ export const grantsData: IGrant[] = [
   },
   {
     project: {
-      title: "Web3 Development Internship Program",
+      title: "Kyiv Ethereum Community 2025",
     },
     description:
-      "Web3 Development Internship Program is focused on Ethereum ecosystem development in Ukraine. The program will bridge the gap between technical education and industry needs by connecting students with practical development opportunities.",
+      "2025 yearly support for the Kyiv Ethereum Community, which is focused on fostering Ethereum development and adoption in Kyiv. It serves as a hub for developers, builders, and enthusiasts who want to engage with Ethereum through educational events, hands-on hacking, and networking.",
     links: [
       {
-        title: "Web3 Institute (W3I)",
-        url: "https://w3i.network",
+        title: "EthKyiv",
+        url: "https://x.com/ethkyiv_ua",
       },
     ],
     country: "Ukraine",
   },
+  // January 14, 2025
   {
     project: {
       title: "EthCluj 24-25",
@@ -240,6 +594,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "Romania",
   },
+  // January 7, 2025
   {
     project: {
       title: "StackTooDeep Hackathon - 2025 Edition",
@@ -255,6 +610,7 @@ export const grantsData: IGrant[] = [
     ],
     country: "India",
   },
+  // January 6, 2025
   {
     project: {
       title: "The House of Ether 2025",
@@ -270,10 +626,10 @@ export const grantsData: IGrant[] = [
     ],
     country: "Greece",
   },
+  // January 3, 2025
   {
     project: {
-      title: "Uzumakit",
-      url: "https://x.com/uzumakihouse1",
+      title: "Uzumakit 2025",
     },
     description:
       "An annual Ethereum research house in Tokyo, Japan, including 12 monthly meetups in 2025.",
@@ -284,262 +640,5 @@ export const grantsData: IGrant[] = [
       },
     ],
     country: "Japan",
-  },
-  {
-    project: {
-      title: "Onchain bootcamp 2025",
-      url: "https://www.facebook.com/people/Onchain-Bootcamp/61576231011833/",
-    },
-    description:
-      "Onchain bootcamp 2025 is a 10-Day(16 - 27 June) Structured Program, which is taking place at Chulalongkorn University providing with comprehensive Ethereum-based curriculum, hands-on workshops and support for career pipeline.",
-    links: [
-      {
-        title: "CUBS (Chulalongkorn University Blockchain Society)",
-        url: "https://chulablockchain.com/",
-      },
-    ],
-    country: "Thailand",
-  },
-  {
-    project: {
-      title: "Agentic Ethereum Hackathon 2025",
-      url: "https://reskilll.com/hack/agentic",
-    },
-    description:
-      "Agentic Ethereum Hackathon is a 30-hour hackathon which will gather over 150-200 passionate developers from Delhi NCR or Bangalore, aiming to catalyze the creation of AI-driven autonomous agents and smart contracts on Ethereum, fostering innovation at the intersection of blockchain and artificial intelligence.",
-    links: [
-      {
-        title: "Reskilll",
-        url: "https://reskilll.com/",
-      },
-    ],
-    country: "India",
-  },
-  {
-    project: {
-      title: "ETHKL 2025",
-    },
-    description:
-      "ETHKL 2025 development and self-sustainability exploration v3.",
-    links: [
-      {
-        title: "ETHKL",
-        url: "https://ethkl.org/",
-      },
-    ],
-    country: "Malaysia",
-  },
-  {
-    project: {
-      title: "DAOstar Research Fellowship",
-      url: "https://daostar.org/research",
-    },
-    description:
-      "The DAOstar Research Fellowship Program funds research fellows in 2025 to produce actionable research on DAO governance, labor practices, contributor retention, and compensation structures with outputs including: public research reports, blog posts, and presentations at conferences.",
-    links: [
-      {
-        title: "Metagov",
-        url: "https://metagov.org/",
-      },
-    ],
-    country: "USA",
-  },
-  {
-    project: {
-      title: "ETH Belgrade 2025",
-      url: "https://ethbelgrade.rs/",
-    },
-    description:
-      "ETH Belgrade(June 3–5) featuring both a conference and a hackathon, will be focused on topics of  Ethereum, ZK, DeFi, and Web3 security.",
-    links: [
-      {
-        title: "ETH Belgrade",
-        url: "https://x.com/ethbelgrade",
-      },
-    ],
-    country: "Serbia",
-  },
-  {
-    project: {
-      title: "Web3SSH:2.0",
-      url: "https://web3ssh.dev/",
-    },
-    description:
-      "Web3SSH 2.0 is a 7-day summer blockchain/Ethereum focused offline camp, which consists of a Summer School program and a Hackathon, taking place at IIIT Sri City, India, from 29 June to 6th July, 2025.",
-    links: [
-      {
-        title: "IIIT Sri City, India",
-        url: "https://www.iiits.ac.in/",
-      },
-    ],
-    country: "India",
-  },
-  {
-    project: {
-      title: "Ethereum Mexico Org 2025",
-    },
-    description:
-      "Ethereum Mexico Org 2025 is focused on growing the Ethereum ecosystem in Mexico through education and community-driven programs.",
-    links: [
-      {
-        title: "Ethereum Mexico",
-        url: "https://www.ethmexico.org/",
-      },
-    ],
-    country: "Mexico",
-  },
-  {
-    project: {
-      title: "Copenhagen Ethereum Meetup 10 Years Anniversary",
-    },
-    description:
-      "This meetup(held on 7/14/2025) is non-technical and will be a reflection on what happened for Ethereum ecosystem in the past 10 years and where they see the space is heading in the next 10 years.",
-    links: [
-      {
-        title: "Copenhagen Ethereum Meetup",
-        url: "https://www.meetup.com/copenhagen-ethereum-meetup/",
-      },
-    ],
-    country: "Denmark",
-  },
-  {
-    project: {
-      title: "ETHCluj 2025: Ethereum for Everyone",
-      url: "https://www.ethcluj.org/",
-    },
-    description:
-      "ETHCluj is hosting a 3-day conference from June 26-28, 2025 at Technical University of Cluj-Napoca, Romania.\n\nThis conference will feature 3 stages including workshop, sessions and hands-on workshops, with topics across six main tracks, including Dev Onboarding, Ethereum Roadmap, DeFi, AI, Regulation, and Adoption.",
-    links: [
-      {
-        title: "ETHCluj",
-        url: "https://x.com/ETHCluj",
-      },
-    ],
-    country: "Romania",
-  },
-  {
-    project: { title: "Nyx Research House 2026" },
-    description:
-      "A research-focused residency that brings together academics, industry professionals, and independent builders to tackle key problems in Ethereum. The house hosts regular gatherings, offers shared living space, and fosters collaboration across disciplines to accelerate problem-solving.",
-    links: [
-      {
-        title: "Nyx Foundation",
-        url: "https://nyx.foundation/",
-      },
-    ],
-    country: "Japan",
-  },
-  {
-    project: {
-      title: "ZKP Cryptography Courses at Mathematical Academy 2025/26",
-      url: "https://matematickaakademija.com/",
-    },
-    description:
-      "A 10-week lecture series on zero-knowledge cryptography, aimed at deepening technical understanding and expanding advanced ZK knowledge within the developer and research community.",
-    links: [
-      {
-        title: "Mathematical Academy",
-        url: "https://matematickaakademija.com/",
-      },
-    ],
-    country: "Serbia",
-  },
-  {
-    project: { title: "ETH Pura Vida 2025" },
-    description:
-      "Ethereum Costa Rica’s conference at Universidad Fidélitas in San José, bringing together builders, students, and professionals to explore Ethereum use cases, technology, and local ecosystem opportunities.",
-    links: [
-      {
-        title: "Ethereum Costa Rica",
-        url: "https://ethereum.cr/",
-      },
-    ],
-    country: "Costa Rica",
-  },
-  {
-    project: {
-      title: "Blocktrain",
-      url: "https://hackathon-boost.devfolio.co/overview",
-    },
-    description:
-      "India’s first hackathon on a moving train, running 36 hours from Bangalore to New Delhi. The journey brought together builders and creators who developed projects onboard, blending travel, collaboration, and rapid prototyping.",
-    links: [
-      {
-        title: "Devfolio",
-        url: "https://devfolio.co/",
-      },
-    ],
-    country: "India",
-  },
-  {
-    project: { title: "ETHTokyo 2025" },
-    description:
-      "ETH Tokyo 2025 features a one-day conference and a three-day hackathon bringing together developers and builders to explore new ideas, prototype projects, and collaborate across the Ethereum ecosystem.",
-    links: [
-      {
-        title: "ETHTokyo",
-        url: "https://www.ethtokyo.org/",
-      },
-    ],
-    country: "Japan",
-  },
-  {
-    project: { title: "Hackathons: Da Ideia ao Código" },
-    description:
-      "A two-day Ethereum mini-hackathon in São Paulo that brings local developers together to prototype ideas, learn Ethereum concepts, and build hands-on projects in a collaborative environment.",
-    links: [
-      {
-        title: "ERC55",
-        url: "https://erc55.xyz/",
-      },
-    ],
-    country: "Brazil",
-  },
-  {
-    project: { title: "Ethereum Genesis: A Decade of Decentralization" },
-    description:
-      "A community event in Jakarta celebrating Ethereum’s 10-year journey, featuring talks, panels, interactive sessions, and networking.",
-    links: [
-      {
-        title: "Ethereum Jakarta",
-        url: "https://ethjkt.com/",
-      },
-    ],
-    country: "Indonesia",
-  },
-  {
-    project: { title: "js13kGames 2025" },
-    description:
-      "An annual global challenge where developers create lightweight, open-source web games, encouraging experimentation, creativity, and community collaboration.",
-    links: [
-      {
-        title: "js13kGames",
-        url: "https://js13kgames.com/2025/",
-      },
-    ],
-    country: "Poland",
-  },
-  {
-    project: { title: "Ethereum Córdoba" },
-    description:
-      "A technical meetup in Córdoba featuring sessions on smart contracts, CI/CD, security practices, and ERC-4337, designed to strengthen local developer skills and expand Ethereum-focused engineering knowledge.",
-    links: [
-      {
-        title: "Ethereum Córdoba",
-      },
-    ],
-    country: "Argentina",
-  },
-  {
-    project: { title: "Web3bridge" },
-    description:
-      "Web3Bridge is an Africa-based education initiative committed to training developers, supporting founders, and activating local communities.",
-    links: [
-      {
-        title: "Web3Bridge",
-        url: "https://www.web3bridgeafrica.com/",
-      },
-    ],
-    country: "Nigeria",
   },
 ]
